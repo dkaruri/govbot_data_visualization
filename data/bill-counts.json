@@ -1,58 +1,399 @@
 {
-  "generated_at": "2026-06-24T20:55:16Z",
+  "generated_at": "2026-06-24T21:50:32Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
-    {"repo":"ak-legislation","state":"AK","count":514},
-    {"repo":"al-legislation","state":"AL","count":1507},
-    {"repo":"ar-legislation","state":"AR","count":1928},
-    {"repo":"ca-legislation","state":"CA","count":5003},
-    {"repo":"co-legislation","state":"CO","count":749},
-    {"repo":"de-legislation","state":"DE","count":1274},
-    {"repo":"fl-legislation","state":"FL","count":1927},
-    {"repo":"ga-legislation","state":"GA","count":5646},
-    {"repo":"gu-legislation","state":"GU","count":277},
-    {"repo":"hi-legislation","state":"HI","count":8224},
-    {"repo":"ia-legislation","state":"IA","count":3744},
-    {"repo":"id-legislation","state":"ID","count":791},
-    {"repo":"il-legislation","state":"IL","count":8648},
-    {"repo":"in-legislation","state":"IN","count":40},
-    {"repo":"ks-legislation","state":"KS","count":1483},
-    {"repo":"ky-legislation","state":"KY","count":1515},
-    {"repo":"la-legislation","state":"LA","count":19},
-    {"repo":"ma-legislation","state":"MA","count":8975},
-    {"repo":"md-legislation","state":"MD","count":3148},
-    {"repo":"me-legislation","state":"ME","count":2451},
-    {"repo":"mi-legislation","state":"MI","count":2360},
-    {"repo":"mn-legislation","state":"MN","count":9859},
-    {"repo":"mo-legislation","state":"MO","count":3221},
-    {"repo":"mp-legislation","state":"MP","count":301},
-    {"repo":"ms-legislation","state":"MS","count":3097},
-    {"repo":"mt-legislation","state":"MT","count":4495},
-    {"repo":"nc-legislation","state":"NC","count":1794},
-    {"repo":"nd-legislation","state":"ND","count":1101},
-    {"repo":"ne-legislation","state":"NE","count":1037},
-    {"repo":"nh-legislation","state":"NH","count":2448},
-    {"repo":"nj-legislation","state":"NJ","count":19456},
-    {"repo":"nm-legislation","state":"NM","count":2},
-    {"repo":"nv-legislation","state":"NV","count":27},
-    {"repo":"ny-legislation","state":"NY","count":19407},
-    {"repo":"oh-legislation","state":"OH","count":1538},
-    {"repo":"ok-legislation","state":"OK","count":9262},
-    {"repo":"or-legislation","state":"OR","count":267},
-    {"repo":"pa-legislation","state":"PA","count":3578},
-    {"repo":"pr-legislation","state":"PR","count":4998},
-    {"repo":"ri-legislation","state":"RI","count":5612},
-    {"repo":"sc-legislation","state":"SC","count":2244},
-    {"repo":"sd-legislation","state":"SD","count":43},
-    {"repo":"tn-legislation","state":"TN","count":6117},
-    {"repo":"usa-legislation","state":"USA","count":11317},
-    {"repo":"ut-legislation","state":"UT","count":26},
-    {"repo":"vi-legislation","state":"VI","count":148},
-    {"repo":"vt-legislation","state":"VT","count":898},
-    {"repo":"wa-legislation","state":"WA","count":3411},
-    {"repo":"wi-legislation","state":"WI","count":1626},
-    {"repo":"wv-legislation","state":"WV","count":3315},
-    {"repo":"wy-legislation","state":"WY","count":579}
+    {
+      "repo": "ak-legislation",
+      "state": "AK",
+      "count": 514
+    },
+    {
+      "repo": "al-legislation",
+      "state": "AL",
+      "count": 1507
+    },
+    {
+      "repo": "ar-legislation",
+      "state": "AR",
+      "count": 1928
+    },
+    {
+      "repo": "ca-legislation",
+      "state": "CA",
+      "count": 5003
+    },
+    {
+      "repo": "co-legislation",
+      "state": "CO",
+      "count": 749
+    },
+    {
+      "repo": "de-legislation",
+      "state": "DE",
+      "count": 1274
+    },
+    {
+      "repo": "fl-legislation",
+      "state": "FL",
+      "count": 1927
+    },
+    {
+      "repo": "ga-legislation",
+      "state": "GA",
+      "count": 5646
+    },
+    {
+      "repo": "gu-legislation",
+      "state": "GU",
+      "count": 277
+    },
+    {
+      "repo": "hi-legislation",
+      "state": "HI",
+      "count": 8224
+    },
+    {
+      "repo": "ia-legislation",
+      "state": "IA",
+      "count": 3744
+    },
+    {
+      "repo": "id-legislation",
+      "state": "ID",
+      "count": 791
+    },
+    {
+      "repo": "il-legislation",
+      "state": "IL",
+      "count": 8648
+    },
+    {
+      "repo": "in-legislation",
+      "state": "IN",
+      "count": 40
+    },
+    {
+      "repo": "ks-legislation",
+      "state": "KS",
+      "count": 1483
+    },
+    {
+      "repo": "ky-legislation",
+      "state": "KY",
+      "count": 1515
+    },
+    {
+      "repo": "la-legislation",
+      "state": "LA",
+      "count": 19
+    },
+    {
+      "repo": "ma-legislation",
+      "state": "MA",
+      "count": 8975
+    },
+    {
+      "repo": "md-legislation",
+      "state": "MD",
+      "count": 3148
+    },
+    {
+      "repo": "me-legislation",
+      "state": "ME",
+      "count": 2451
+    },
+    {
+      "repo": "mi-legislation",
+      "state": "MI",
+      "count": 2360
+    },
+    {
+      "repo": "mn-legislation",
+      "state": "MN",
+      "count": 9859
+    },
+    {
+      "repo": "mo-legislation",
+      "state": "MO",
+      "count": 3221
+    },
+    {
+      "repo": "mp-legislation",
+      "state": "MP",
+      "count": 301
+    },
+    {
+      "repo": "ms-legislation",
+      "state": "MS",
+      "count": 3097
+    },
+    {
+      "repo": "mt-legislation",
+      "state": "MT",
+      "count": 4495
+    },
+    {
+      "repo": "nc-legislation",
+      "state": "NC",
+      "count": 1794
+    },
+    {
+      "repo": "nd-legislation",
+      "state": "ND",
+      "count": 1101
+    },
+    {
+      "repo": "ne-legislation",
+      "state": "NE",
+      "count": 1037
+    },
+    {
+      "repo": "nh-legislation",
+      "state": "NH",
+      "count": 2448
+    },
+    {
+      "repo": "nj-legislation",
+      "state": "NJ",
+      "count": 19456
+    },
+    {
+      "repo": "nm-legislation",
+      "state": "NM",
+      "count": 2
+    },
+    {
+      "repo": "nv-legislation",
+      "state": "NV",
+      "count": 27
+    },
+    {
+      "repo": "ny-legislation",
+      "state": "NY",
+      "count": 19407
+    },
+    {
+      "repo": "oh-legislation",
+      "state": "OH",
+      "count": 1538
+    },
+    {
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 9262
+    },
+    {
+      "repo": "or-legislation",
+      "state": "OR",
+      "count": 267
+    },
+    {
+      "repo": "pa-legislation",
+      "state": "PA",
+      "count": 3578
+    },
+    {
+      "repo": "pr-legislation",
+      "state": "PR",
+      "count": 4998
+    },
+    {
+      "repo": "ri-legislation",
+      "state": "RI",
+      "count": 5612
+    },
+    {
+      "repo": "sc-legislation",
+      "state": "SC",
+      "count": 2244
+    },
+    {
+      "repo": "sd-legislation",
+      "state": "SD",
+      "count": 43
+    },
+    {
+      "repo": "tn-legislation",
+      "state": "TN",
+      "count": 6117
+    },
+    {
+      "repo": "usa-legislation",
+      "state": "USA",
+      "count": 11317
+    },
+    {
+      "repo": "ut-legislation",
+      "state": "UT",
+      "count": 26
+    },
+    {
+      "repo": "vi-legislation",
+      "state": "VI",
+      "count": 148
+    },
+    {
+      "repo": "vt-legislation",
+      "state": "VT",
+      "count": 898
+    },
+    {
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 3411
+    },
+    {
+      "repo": "wi-legislation",
+      "state": "WI",
+      "count": 1626
+    },
+    {
+      "repo": "wv-legislation",
+      "state": "WV",
+      "count": 3315
+    },
+    {
+      "repo": "wy-legislation",
+      "state": "WY",
+      "count": 579
+    }
   ],
-  "monthly_totals": []
+  "monthly_totals": [
+    {
+      "month": "2005-01",
+      "count": 1
+    },
+    {
+      "month": "2015-11",
+      "count": 1
+    },
+    {
+      "month": "2021-02",
+      "count": 1
+    },
+    {
+      "month": "2021-10",
+      "count": 1
+    },
+    {
+      "month": "2024-01",
+      "count": 6034
+    },
+    {
+      "month": "2024-02",
+      "count": 1084
+    },
+    {
+      "month": "2024-03",
+      "count": 384
+    },
+    {
+      "month": "2024-04",
+      "count": 247
+    },
+    {
+      "month": "2024-05",
+      "count": 474
+    },
+    {
+      "month": "2024-06",
+      "count": 515
+    },
+    {
+      "month": "2024-07",
+      "count": 12
+    },
+    {
+      "month": "2024-08",
+      "count": 97
+    },
+    {
+      "month": "2024-09",
+      "count": 931
+    },
+    {
+      "month": "2024-10",
+      "count": 891
+    },
+    {
+      "month": "2024-11",
+      "count": 1673
+    },
+    {
+      "month": "2024-12",
+      "count": 5020
+    },
+    {
+      "month": "2025-01",
+      "count": 34303
+    },
+    {
+      "month": "2025-02",
+      "count": 40301
+    },
+    {
+      "month": "2025-03",
+      "count": 16756
+    },
+    {
+      "month": "2025-04",
+      "count": 8354
+    },
+    {
+      "month": "2025-05",
+      "count": 6504
+    },
+    {
+      "month": "2025-06",
+      "count": 3922
+    },
+    {
+      "month": "2025-07",
+      "count": 2168
+    },
+    {
+      "month": "2025-08",
+      "count": 1522
+    },
+    {
+      "month": "2025-09",
+      "count": 2914
+    },
+    {
+      "month": "2025-10",
+      "count": 3188
+    },
+    {
+      "month": "2025-11",
+      "count": 2861
+    },
+    {
+      "month": "2025-12",
+      "count": 3732
+    },
+    {
+      "month": "2026-01",
+      "count": 19435
+    },
+    {
+      "month": "2026-02",
+      "count": 10466
+    },
+    {
+      "month": "2026-03",
+      "count": 4279
+    },
+    {
+      "month": "2026-04",
+      "count": 955
+    },
+    {
+      "month": "2026-05",
+      "count": 684
+    },
+    {
+      "month": "2026-06",
+      "count": 533
+    }
+  ]
 }
