@@ -168,13 +168,12 @@
       position: relative;
       min-height: 340px;
       padding: 12px 14px 14px;
-      overflow-x: auto;
-      overflow-y: hidden;
+      overflow: hidden;
     }
 
     .line-chart svg {
       display: block;
-      min-width: 100%;
+      width: 100%;
       height: 320px;
       overflow: visible;
     }
@@ -199,7 +198,7 @@
     }
 
     .timeline-area {
-      fill: rgba(35, 100, 170, 0.1);
+      fill: url(#timelineGradient);
     }
 
     .focus-line {
@@ -616,10 +615,9 @@
     }
 
     function renderLineChart() {
-      const rows = monthlyData;
-      const monthSpacing = 54;
-      const margin = { top: 64, right: 64, bottom: 64, left: 64 };
-      const width = Math.max(920, margin.left + margin.right + Math.max(1, rows.length - 1) * monthSpacing);
+      const rows = monthlyData.filter(row => row.month >= "2024-01");
+      const margin = { top: 40, right: 40, bottom: 86, left: 74 };
+      const width = 920;
       const height = 320;
       const innerWidth = width - margin.left - margin.right;
       const innerHeight = height - margin.top - margin.bottom;
@@ -632,15 +630,14 @@
         return;
       }
 
-      const maxCount = Math.max(1, ...rows.map(row => row.count));
+      const maxCount = 45000;
       const xStep = rows.length <= 1 ? innerWidth : innerWidth / (rows.length - 1);
       const xFor = index => margin.left + index * xStep;
       const yFor = count => margin.top + innerHeight - (count / maxCount) * innerHeight;
       const points = rows.map((row, index) => [xFor(index), yFor(row.count)]);
       const linePath = points.map(([x, y], index) => `${index ? "L" : "M"} ${x.toFixed(2)} ${y.toFixed(2)}`).join(" ");
       const areaPath = `${linePath} L ${points.at(-1)[0].toFixed(2)} ${margin.top + innerHeight} L ${points[0][0].toFixed(2)} ${margin.top + innerHeight} Z`;
-      const tickCount = 5;
-      const yTicks = Array.from({ length: tickCount + 1 }, (_, index) => Math.round((maxCount / tickCount) * index));
+      const yTicks = Array.from({ length: 10 }, (_, index) => index * 5000);
 
       const grid = yTicks.map(tick => {
         const y = yFor(tick);
@@ -660,14 +657,20 @@
         return `
           <g class="axis">
             <line x1="${x}" x2="${x}" y1="${margin.top + innerHeight}" y2="${margin.top + innerHeight + 5}"></line>
-            <text x="${x}" y="${height - 18}" text-anchor="middle">${month}/${year.slice(2)}</text>
+            <text x="${x}" y="${height - 20}" text-anchor="end" transform="rotate(-55 ${x} ${height - 20})">${formatMonth(row.month)}</text>
           </g>
         `;
       }).join("");
 
       els.lineSvg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-      els.lineSvg.style.width = `${width}px`;
+      els.lineSvg.style.width = "100%";
       els.lineSvg.innerHTML = `
+        <defs>
+          <linearGradient id="timelineGradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#2364aa" stop-opacity="0.35"></stop>
+            <stop offset="100%" stop-color="#2364aa" stop-opacity="0.02"></stop>
+          </linearGradient>
+        </defs>
         ${grid}
         <g class="axis">
           <line x1="${margin.left}" x2="${margin.left}" y1="${margin.top}" y2="${margin.top + innerHeight}"></line>
@@ -702,7 +705,7 @@
         focusDot.style.opacity = "1";
         els.lineTooltip.innerHTML = `<strong>${formatMonth(point.row.month)}</strong><span>${fmt.format(point.row.count)} bills</span>`;
         const chartRect = els.lineChart.getBoundingClientRect();
-        els.lineTooltip.style.left = `${event.clientX - chartRect.left + els.lineChart.scrollLeft}px`;
+        els.lineTooltip.style.left = `${event.clientX - chartRect.left}px`;
         els.lineTooltip.style.top = `${event.clientY - chartRect.top}px`;
         els.lineTooltip.style.opacity = "1";
       });
@@ -713,7 +716,7 @@
         els.lineTooltip.style.opacity = "0";
       });
 
-      els.timelineLabel.textContent = `${formatMonth(rows[0].month)} to ${formatMonth(rows.at(-1).month)}`;
+      els.timelineLabel.textContent = `US repo - ${formatMonth(rows[0].month)} to ${formatMonth(rows.at(-1).month)}`;
     }
 
     function renderTable(rows) {
