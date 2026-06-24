@@ -1,0 +1,47 @@
+name: Update Govbot Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Check out dashboard repo
+        uses: actions/checkout@v4
+
+      - name: Install govbot nightly
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/chihacknight/govbot/main/actions/govbot/scripts/install-nightly.sh | bash
+          echo "$HOME/.govbot/bin" >> "$GITHUB_PATH"
+
+      - name: Clone or update govbot data repos
+        env:
+          GOVBOT_JOBS: "4"
+        run: |
+          govbot clone all --govbot-dir "$RUNNER_TEMP/govbot"
+
+      - name: Build bill count JSON
+        env:
+          GOVBOT_SOURCE_URL: "https://github.com/chihacknight/govbot/tree/main/docs"
+        run: |
+          bash scripts/build-bill-counts.sh "$RUNNER_TEMP/govbot/repos" data/bill-counts.json
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/bill-counts.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Update govbot bill count data"
+            git push
+          fi

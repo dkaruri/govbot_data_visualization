@@ -344,7 +344,7 @@
   </main>
 
   <script>
-    const rawData = [
+    const fallbackData = [
       {"repo":"ak-legislation","state":"AK","count":514},
       {"repo":"al-legislation","state":"AL","count":1507},
       {"repo":"ar-legislation","state":"AR","count":1928},
@@ -414,7 +414,7 @@
       WI: "Wisconsin", WV: "West Virginia", WY: "Wyoming"
     };
 
-    const data = rawData.map(row => ({ ...row, name: names[row.state] || row.state }));
+    let data = [];
     const fmt = new Intl.NumberFormat();
 
     const els = {
@@ -450,11 +450,23 @@
       return rows;
     }
 
+    function normalizeRows(rows) {
+      return rows.map(row => {
+        const state = String(row.state || "").toUpperCase();
+        return {
+          repo: row.repo,
+          state,
+          count: Number(row.count) || 0,
+          name: names[state] || state
+        };
+      });
+    }
+
     function renderMetrics(rows) {
       const total = data.reduce((sum, row) => sum + row.count, 0);
       const visible = rows.reduce((sum, row) => sum + row.count, 0);
-      const max = data.reduce((best, row) => row.count > best.count ? row : best, data[0]);
-      const avg = Math.round(total / data.length);
+      const max = data.reduce((best, row) => row.count > best.count ? row : best, { state: "N/A", count: 0 });
+      const avg = data.length ? Math.round(total / data.length) : 0;
       els.metrics.innerHTML = [
         ["Total Bills", fmt.format(total)],
         ["Visible Bills", fmt.format(visible)],
@@ -469,7 +481,7 @@
     }
 
     function renderChart(rows) {
-      const max = Math.max(...data.map(row => row.count), 1);
+      const max = Math.max(1, ...data.map(row => row.count));
       const top = [35, 100, 170];
       const bottom = [47, 125, 82];
       const mix = (a, b, t) => Math.round(a + (b - a) * t);
@@ -521,11 +533,23 @@
       URL.revokeObjectURL(url);
     }
 
+    async function loadData() {
+      try {
+        const response = await fetch("./data/bill-counts.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        data = normalizeRows(payload.rows || []);
+      } catch (error) {
+        data = normalizeRows(fallbackData);
+      }
+      render();
+    }
+
     els.search.addEventListener("input", render);
     els.limit.addEventListener("change", render);
     els.sort.addEventListener("change", render);
     els.export.addEventListener("click", exportCsv);
-    render();
+    loadData();
   </script>
 </body>
 </html>
