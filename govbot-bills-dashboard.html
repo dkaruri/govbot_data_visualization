@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Govbot Bill Counts</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #68707d;
+      --line: #d9dee7;
+      --paper: #f7f8fb;
+      --panel: #ffffff;
+      --blue: #2364aa;
+      --green: #2f7d52;
+      --red: #b94a48;
+      --gold: #c58b25;
+      --row: #eef3f8;
+      --shadow: 0 10px 30px rgba(23, 32, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.15;
+      font-weight: 750;
+      letter-spacing: 0;
+    }
+
+    .source {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    main {
+      padding: 22px 0 36px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .metric strong {
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) 160px 180px auto;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    input, select, button {
+      height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 14px;
+    }
+
+    input, select {
+      padding: 0 12px;
+    }
+
+    button {
+      padding: 0 14px;
+      cursor: pointer;
+      font-weight: 650;
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .section-head {
+      min-height: 48px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      gap: 12px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 750;
+      letter-spacing: 0;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .chart {
+      padding: 12px 14px 14px;
+      max-height: 720px;
+      overflow: auto;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr) 76px;
+      gap: 10px;
+      align-items: center;
+      min-height: 30px;
+    }
+
+    .abbr {
+      font-size: 12px;
+      font-weight: 750;
+      text-transform: uppercase;
+    }
+
+    .track {
+      height: 16px;
+      background: #e8edf3;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      min-width: 2px;
+      background: var(--bar-color, var(--blue));
+    }
+
+    .value {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background: #f9fafc;
+      color: #3f4854;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      z-index: 1;
+    }
+
+    td:last-child, th:last-child {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--row);
+    }
+
+    .table-wrap {
+      max-height: 720px;
+      overflow: auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 24px;
+      border-radius: 999px;
+      background: #e8f0f8;
+      color: var(--blue);
+      font-weight: 750;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    @media (max-width: 880px) {
+      .topbar, .toolbar {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .source {
+        white-space: normal;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        width: min(100% - 20px, 1180px);
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .bar-row {
+        grid-template-columns: 42px minmax(0, 1fr) 62px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <h1>Govbot Bill Counts</h1>
+      <div class="source">Source: \\wsl.localhost\Ubuntu\root\.govbot\repos</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="metrics" id="metrics"></div>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search state or repo" />
+      <select id="limit">
+        <option value="all">All states</option>
+        <option value="10">Top 10</option>
+        <option value="20">Top 20</option>
+        <option value="30">Top 30</option>
+      </select>
+      <select id="sort">
+        <option value="count-desc">Bills, high to low</option>
+        <option value="count-asc">Bills, low to high</option>
+        <option value="state-asc">State, A to Z</option>
+        <option value="state-desc">State, Z to A</option>
+      </select>
+      <button id="export">Export CSV</button>
+    </div>
+
+    <div class="layout">
+      <section>
+        <div class="section-head">
+          <h2>Bill Volume</h2>
+          <span class="small" id="chartLabel"></span>
+        </div>
+        <div class="chart" id="chart"></div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>State Table</h2>
+          <span class="small" id="tableLabel"></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>State</th>
+                <th>Repo</th>
+                <th>Bills</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const rawData = [
+      {"repo":"ak-legislation","state":"AK","count":514},
+      {"repo":"al-legislation","state":"AL","count":1507},
+      {"repo":"ar-legislation","state":"AR","count":1928},
+      {"repo":"ca-legislation","state":"CA","count":5003},
+      {"repo":"co-legislation","state":"CO","count":749},
+      {"repo":"de-legislation","state":"DE","count":1274},
+      {"repo":"fl-legislation","state":"FL","count":1927},
+      {"repo":"ga-legislation","state":"GA","count":5646},
+      {"repo":"gu-legislation","state":"GU","count":277},
+      {"repo":"hi-legislation","state":"HI","count":8224},
+      {"repo":"ia-legislation","state":"IA","count":3744},
+      {"repo":"id-legislation","state":"ID","count":791},
+      {"repo":"il-legislation","state":"IL","count":8648},
+      {"repo":"in-legislation","state":"IN","count":40},
+      {"repo":"ks-legislation","state":"KS","count":1483},
+      {"repo":"ky-legislation","state":"KY","count":1515},
+      {"repo":"la-legislation","state":"LA","count":19},
+      {"repo":"ma-legislation","state":"MA","count":8975},
+      {"repo":"md-legislation","state":"MD","count":3148},
+      {"repo":"me-legislation","state":"ME","count":2451},
+      {"repo":"mi-legislation","state":"MI","count":2360},
+      {"repo":"mn-legislation","state":"MN","count":9859},
+      {"repo":"mo-legislation","state":"MO","count":3221},
+      {"repo":"mp-legislation","state":"MP","count":301},
+      {"repo":"ms-legislation","state":"MS","count":3097},
+      {"repo":"mt-legislation","state":"MT","count":4495},
+      {"repo":"nc-legislation","state":"NC","count":1794},
+      {"repo":"nd-legislation","state":"ND","count":1101},
+      {"repo":"ne-legislation","state":"NE","count":1037},
+      {"repo":"nh-legislation","state":"NH","count":2448},
+      {"repo":"nj-legislation","state":"NJ","count":19456},
+      {"repo":"nm-legislation","state":"NM","count":2},
+      {"repo":"nv-legislation","state":"NV","count":27},
+      {"repo":"ny-legislation","state":"NY","count":19407},
+      {"repo":"oh-legislation","state":"OH","count":1538},
+      {"repo":"ok-legislation","state":"OK","count":9262},
+      {"repo":"or-legislation","state":"OR","count":267},
+      {"repo":"pa-legislation","state":"PA","count":3578},
+      {"repo":"pr-legislation","state":"PR","count":4998},
+      {"repo":"ri-legislation","state":"RI","count":5612},
+      {"repo":"sc-legislation","state":"SC","count":2244},
+      {"repo":"sd-legislation","state":"SD","count":43},
+      {"repo":"tn-legislation","state":"TN","count":6117},
+      {"repo":"usa-legislation","state":"USA","count":11317},
+      {"repo":"ut-legislation","state":"UT","count":26},
+      {"repo":"vi-legislation","state":"VI","count":148},
+      {"repo":"vt-legislation","state":"VT","count":898},
+      {"repo":"wa-legislation","state":"WA","count":3411},
+      {"repo":"wi-legislation","state":"WI","count":1626},
+      {"repo":"wv-legislation","state":"WV","count":3315},
+      {"repo":"wy-legislation","state":"WY","count":579}
+    ];
+
+    const names = {
+      AK: "Alaska", AL: "Alabama", AR: "Arkansas", CA: "California", CO: "Colorado",
+      DE: "Delaware", FL: "Florida", GA: "Georgia", GU: "Guam", HI: "Hawaii",
+      IA: "Iowa", ID: "Idaho", IL: "Illinois", IN: "Indiana", KS: "Kansas",
+      KY: "Kentucky", LA: "Louisiana", MA: "Massachusetts", MD: "Maryland",
+      ME: "Maine", MI: "Michigan", MN: "Minnesota", MO: "Missouri",
+      MP: "Northern Mariana Islands", MS: "Mississippi", MT: "Montana",
+      NC: "North Carolina", ND: "North Dakota", NE: "Nebraska",
+      NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NV: "Nevada",
+      NY: "New York", OH: "Ohio", OK: "Oklahoma", OR: "Oregon",
+      PA: "Pennsylvania", PR: "Puerto Rico", RI: "Rhode Island",
+      SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", USA: "Federal",
+      UT: "Utah", VI: "U.S. Virgin Islands", VT: "Vermont", WA: "Washington",
+      WI: "Wisconsin", WV: "West Virginia", WY: "Wyoming"
+    };
+
+    const data = rawData.map(row => ({ ...row, name: names[row.state] || row.state }));
+    const fmt = new Intl.NumberFormat();
+
+    const els = {
+      metrics: document.getElementById("metrics"),
+      search: document.getElementById("search"),
+      limit: document.getElementById("limit"),
+      sort: document.getElementById("sort"),
+      chart: document.getElementById("chart"),
+      tbody: document.getElementById("tbody"),
+      chartLabel: document.getElementById("chartLabel"),
+      tableLabel: document.getElementById("tableLabel"),
+      export: document.getElementById("export")
+    };
+
+    function getRows() {
+      const query = els.search.value.trim().toLowerCase();
+      const limit = els.limit.value;
+      const sort = els.sort.value;
+      let rows = data.filter(row =>
+        row.state.toLowerCase().includes(query) ||
+        row.name.toLowerCase().includes(query) ||
+        row.repo.toLowerCase().includes(query)
+      );
+
+      rows.sort((a, b) => {
+        if (sort === "count-asc") return a.count - b.count;
+        if (sort === "state-asc") return a.state.localeCompare(b.state);
+        if (sort === "state-desc") return b.state.localeCompare(a.state);
+        return b.count - a.count;
+      });
+
+      if (limit !== "all") rows = rows.slice(0, Number(limit));
+      return rows;
+    }
+
+    function renderMetrics(rows) {
+      const total = data.reduce((sum, row) => sum + row.count, 0);
+      const visible = rows.reduce((sum, row) => sum + row.count, 0);
+      const max = data.reduce((best, row) => row.count > best.count ? row : best, data[0]);
+      const avg = Math.round(total / data.length);
+      els.metrics.innerHTML = [
+        ["Total Bills", fmt.format(total)],
+        ["Visible Bills", fmt.format(visible)],
+        ["Top State", `${max.state} · ${fmt.format(max.count)}`],
+        ["Average", fmt.format(avg)]
+      ].map(([label, value]) => `
+        <div class="metric">
+          <span>${label}</span>
+          <strong>${value}</strong>
+        </div>
+      `).join("");
+    }
+
+    function renderChart(rows) {
+      const max = Math.max(...data.map(row => row.count), 1);
+      const top = [35, 100, 170];
+      const bottom = [47, 125, 82];
+      const mix = (a, b, t) => Math.round(a + (b - a) * t);
+      els.chart.innerHTML = rows.map((row, index) => {
+        const width = Math.max(0.5, row.count / max * 100);
+        const t = rows.length <= 1 ? 0 : index / (rows.length - 1);
+        const color = `rgb(${mix(top[0], bottom[0], t)}, ${mix(top[1], bottom[1], t)}, ${mix(top[2], bottom[2], t)})`;
+        return `
+          <div class="bar-row" title="${row.name}: ${fmt.format(row.count)} bills">
+            <div class="abbr">${row.state}</div>
+            <div class="track"><div class="fill" style="width:${width}%; --bar-color:${color}"></div></div>
+            <div class="value">${fmt.format(row.count)}</div>
+          </div>
+        `;
+      }).join("");
+      els.chartLabel.textContent = `${rows.length} rows`;
+    }
+
+    function renderTable(rows) {
+      els.tbody.innerHTML = rows.map(row => `
+        <tr>
+          <td><span class="badge">${row.state}</span> ${row.name}</td>
+          <td>${row.repo}</td>
+          <td>${fmt.format(row.count)}</td>
+        </tr>
+      `).join("");
+      els.tableLabel.textContent = `${rows.length} of ${data.length}`;
+    }
+
+    function render() {
+      const rows = getRows();
+      renderMetrics(rows);
+      renderChart(rows);
+      renderTable(rows);
+    }
+
+    function exportCsv() {
+      const rows = getRows();
+      const csv = [
+        ["state", "name", "repo", "bill_count"],
+        ...rows.map(row => [row.state, row.name, row.repo, row.count])
+      ].map(row => row.map(value => `"${String(value).replaceAll('"', '""')}"`).join(",")).join("\n");
+      const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "govbot-bill-counts.csv";
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+
+    els.search.addEventListener("input", render);
+    els.limit.addEventListener("change", render);
+    els.sort.addEventListener("change", render);
+    els.export.addEventListener("click", exportCsv);
+    render();
+  </script>
+</body>
+</html>
