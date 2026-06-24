@@ -168,11 +168,13 @@
       position: relative;
       min-height: 340px;
       padding: 12px 14px 14px;
+      overflow-x: auto;
+      overflow-y: hidden;
     }
 
     .line-chart svg {
       display: block;
-      width: 100%;
+      min-width: 100%;
       height: 320px;
       overflow: visible;
     }
@@ -615,14 +617,16 @@
 
     function renderLineChart() {
       const rows = monthlyData;
-      const width = 920;
+      const monthSpacing = 54;
+      const margin = { top: 64, right: 64, bottom: 64, left: 64 };
+      const width = Math.max(920, margin.left + margin.right + Math.max(1, rows.length - 1) * monthSpacing);
       const height = 320;
-      const margin = { top: 22, right: 22, bottom: 48, left: 68 };
       const innerWidth = width - margin.left - margin.right;
       const innerHeight = height - margin.top - margin.bottom;
 
       if (!rows.length) {
         els.lineSvg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+        els.lineSvg.style.width = "100%";
         els.lineSvg.innerHTML = `<text x="${width / 2}" y="${height / 2}" text-anchor="middle" fill="#68707d">No monthly data available yet</text>`;
         els.timelineLabel.textContent = "0 months";
         return;
@@ -637,7 +641,6 @@
       const areaPath = `${linePath} L ${points.at(-1)[0].toFixed(2)} ${margin.top + innerHeight} L ${points[0][0].toFixed(2)} ${margin.top + innerHeight} Z`;
       const tickCount = 5;
       const yTicks = Array.from({ length: tickCount + 1 }, (_, index) => Math.round((maxCount / tickCount) * index));
-      const xTickEvery = Math.max(1, Math.ceil(rows.length / 8));
 
       const grid = yTicks.map(tick => {
         const y = yFor(tick);
@@ -652,7 +655,6 @@
       }).join("");
 
       const xLabels = rows.map((row, index) => {
-        if (index % xTickEvery !== 0 && index !== rows.length - 1) return "";
         const x = xFor(index);
         const [year, month] = row.month.split("-");
         return `
@@ -664,6 +666,7 @@
       }).join("");
 
       els.lineSvg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      els.lineSvg.style.width = `${width}px`;
       els.lineSvg.innerHTML = `
         ${grid}
         <g class="axis">
@@ -698,8 +701,9 @@
         focusDot.setAttribute("cy", point.y);
         focusDot.style.opacity = "1";
         els.lineTooltip.innerHTML = `<strong>${formatMonth(point.row.month)}</strong><span>${fmt.format(point.row.count)} bills</span>`;
-        els.lineTooltip.style.left = `${event.offsetX}px`;
-        els.lineTooltip.style.top = `${event.offsetY}px`;
+        const chartRect = els.lineChart.getBoundingClientRect();
+        els.lineTooltip.style.left = `${event.clientX - chartRect.left + els.lineChart.scrollLeft}px`;
+        els.lineTooltip.style.top = `${event.clientY - chartRect.top}px`;
         els.lineTooltip.style.opacity = "1";
       });
 
