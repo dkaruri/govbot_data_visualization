@@ -19,8 +19,11 @@ jobs:
 
       - name: Install govbot nightly
         run: |
-          curl -fsSL https://raw.githubusercontent.com/chihacknight/govbot/main/actions/govbot/scripts/install-nightly.sh | bash
+          mkdir -p "$HOME/.govbot/bin"
+          curl -fsSL https://github.com/chihacknight/govbot/releases/download/nightly/govbot-linux-x86_64 -o "$HOME/.govbot/bin/govbot"
+          chmod +x "$HOME/.govbot/bin/govbot"
           echo "$HOME/.govbot/bin" >> "$GITHUB_PATH"
+          "$HOME/.govbot/bin/govbot" --version
 
       - name: Clone or update govbot data repos
         env:
