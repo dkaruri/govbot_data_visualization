@@ -129,6 +129,10 @@
       align-items: start;
     }
 
+    .timeline {
+      margin-bottom: 16px;
+    }
+
     section {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -158,6 +162,83 @@
     .small {
       color: var(--muted);
       font-size: 12px;
+    }
+
+    .line-chart {
+      position: relative;
+      min-height: 340px;
+      padding: 12px 14px 14px;
+    }
+
+    .line-chart svg {
+      display: block;
+      width: 100%;
+      height: 320px;
+      overflow: visible;
+    }
+
+    .axis text {
+      fill: var(--muted);
+      font-size: 12px;
+    }
+
+    .axis line,
+    .grid line {
+      stroke: var(--line);
+      stroke-width: 1;
+    }
+
+    .timeline-line {
+      fill: none;
+      stroke: var(--blue);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .timeline-area {
+      fill: rgba(35, 100, 170, 0.1);
+    }
+
+    .focus-line {
+      stroke: var(--gold);
+      stroke-width: 1.5;
+      stroke-dasharray: 4 4;
+      opacity: 0;
+    }
+
+    .focus-dot {
+      fill: var(--gold);
+      stroke: #fff;
+      stroke-width: 3;
+      opacity: 0;
+    }
+
+    .tooltip {
+      position: absolute;
+      pointer-events: none;
+      transform: translate(12px, -48px);
+      min-width: 132px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: var(--ink);
+      color: #fff;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      transition: opacity 120ms ease;
+      z-index: 3;
+    }
+
+    .tooltip strong,
+    .tooltip span {
+      display: block;
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
+    .tooltip span {
+      color: #d8dde6;
+      margin-top: 3px;
     }
 
     .chart {
@@ -313,6 +394,17 @@
       <button id="export">Export CSV</button>
     </div>
 
+    <section class="timeline">
+      <div class="section-head">
+        <h2>Bills By Month</h2>
+        <span class="small" id="timelineLabel"></span>
+      </div>
+      <div class="line-chart" id="lineChart">
+        <svg id="lineSvg" role="img" aria-label="Line graph of total U.S. bills by month and year"></svg>
+        <div class="tooltip" id="lineTooltip"></div>
+      </div>
+    </section>
+
     <div class="layout">
       <section>
         <div class="section-head">
@@ -415,6 +507,7 @@
     };
 
     let data = [];
+    let monthlyData = [];
     const fmt = new Intl.NumberFormat();
 
     const els = {
@@ -423,8 +516,12 @@
       limit: document.getElementById("limit"),
       sort: document.getElementById("sort"),
       chart: document.getElementById("chart"),
+      lineChart: document.getElementById("lineChart"),
+      lineSvg: document.getElementById("lineSvg"),
+      lineTooltip: document.getElementById("lineTooltip"),
       tbody: document.getElementById("tbody"),
       chartLabel: document.getElementById("chartLabel"),
+      timelineLabel: document.getElementById("timelineLabel"),
       tableLabel: document.getElementById("tableLabel"),
       export: document.getElementById("export")
     };
@@ -462,6 +559,22 @@
       });
     }
 
+    function normalizeMonthly(rows) {
+      return rows
+        .map(row => ({
+          month: String(row.month || ""),
+          count: Number(row.count) || 0
+        }))
+        .filter(row => /^\d{4}-\d{2}$/.test(row.month))
+        .sort((a, b) => a.month.localeCompare(b.month));
+    }
+
+    function formatMonth(month) {
+      const [year, monthNumber] = month.split("-").map(Number);
+      const date = new Date(Date.UTC(year, monthNumber - 1, 1));
+      return date.toLocaleString(undefined, { month: "long", year: "numeric", timeZone: "UTC" });
+    }
+
     function renderMetrics(rows) {
       const total = data.reduce((sum, row) => sum + row.count, 0);
       const visible = rows.reduce((sum, row) => sum + row.count, 0);
@@ -470,7 +583,7 @@
       els.metrics.innerHTML = [
         ["Total Bills", fmt.format(total)],
         ["Visible Bills", fmt.format(visible)],
-        ["Top State", `${max.state} · ${fmt.format(max.count)}`],
+        ["Top State", `${max.state} - ${fmt.format(max.count)}`],
         ["Average", fmt.format(avg)]
       ].map(([label, value]) => `
         <div class="metric">
@@ -500,6 +613,105 @@
       els.chartLabel.textContent = `${rows.length} rows`;
     }
 
+    function renderLineChart() {
+      const rows = monthlyData;
+      const width = 920;
+      const height = 320;
+      const margin = { top: 22, right: 22, bottom: 48, left: 68 };
+      const innerWidth = width - margin.left - margin.right;
+      const innerHeight = height - margin.top - margin.bottom;
+
+      if (!rows.length) {
+        els.lineSvg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+        els.lineSvg.innerHTML = `<text x="${width / 2}" y="${height / 2}" text-anchor="middle" fill="#68707d">No monthly data available yet</text>`;
+        els.timelineLabel.textContent = "0 months";
+        return;
+      }
+
+      const maxCount = Math.max(1, ...rows.map(row => row.count));
+      const xStep = rows.length <= 1 ? innerWidth : innerWidth / (rows.length - 1);
+      const xFor = index => margin.left + index * xStep;
+      const yFor = count => margin.top + innerHeight - (count / maxCount) * innerHeight;
+      const points = rows.map((row, index) => [xFor(index), yFor(row.count)]);
+      const linePath = points.map(([x, y], index) => `${index ? "L" : "M"} ${x.toFixed(2)} ${y.toFixed(2)}`).join(" ");
+      const areaPath = `${linePath} L ${points.at(-1)[0].toFixed(2)} ${margin.top + innerHeight} L ${points[0][0].toFixed(2)} ${margin.top + innerHeight} Z`;
+      const tickCount = 5;
+      const yTicks = Array.from({ length: tickCount + 1 }, (_, index) => Math.round((maxCount / tickCount) * index));
+      const xTickEvery = Math.max(1, Math.ceil(rows.length / 8));
+
+      const grid = yTicks.map(tick => {
+        const y = yFor(tick);
+        return `
+          <g class="grid">
+            <line x1="${margin.left}" x2="${width - margin.right}" y1="${y}" y2="${y}"></line>
+          </g>
+          <g class="axis">
+            <text x="${margin.left - 10}" y="${y + 4}" text-anchor="end">${fmt.format(tick)}</text>
+          </g>
+        `;
+      }).join("");
+
+      const xLabels = rows.map((row, index) => {
+        if (index % xTickEvery !== 0 && index !== rows.length - 1) return "";
+        const x = xFor(index);
+        const [year, month] = row.month.split("-");
+        return `
+          <g class="axis">
+            <line x1="${x}" x2="${x}" y1="${margin.top + innerHeight}" y2="${margin.top + innerHeight + 5}"></line>
+            <text x="${x}" y="${height - 18}" text-anchor="middle">${month}/${year.slice(2)}</text>
+          </g>
+        `;
+      }).join("");
+
+      els.lineSvg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      els.lineSvg.innerHTML = `
+        ${grid}
+        <g class="axis">
+          <line x1="${margin.left}" x2="${margin.left}" y1="${margin.top}" y2="${margin.top + innerHeight}"></line>
+          <line x1="${margin.left}" x2="${width - margin.right}" y1="${margin.top + innerHeight}" y2="${margin.top + innerHeight}"></line>
+          <text x="18" y="${margin.top + innerHeight / 2}" transform="rotate(-90 18 ${margin.top + innerHeight / 2})" text-anchor="middle">Bills</text>
+        </g>
+        ${xLabels}
+        <path class="timeline-area" d="${areaPath}"></path>
+        <path class="timeline-line" d="${linePath}"></path>
+        <line id="focusLine" class="focus-line" x1="0" x2="0" y1="${margin.top}" y2="${margin.top + innerHeight}"></line>
+        <circle id="focusDot" class="focus-dot" cx="0" cy="0" r="5"></circle>
+        <rect id="lineHitArea" x="${margin.left}" y="${margin.top}" width="${innerWidth}" height="${innerHeight}" fill="transparent"></rect>
+      `;
+
+      const focusLine = els.lineSvg.querySelector("#focusLine");
+      const focusDot = els.lineSvg.querySelector("#focusDot");
+      const hitArea = els.lineSvg.querySelector("#lineHitArea");
+      const pointForEvent = event => {
+        const rect = els.lineSvg.getBoundingClientRect();
+        const svgX = (event.clientX - rect.left) * (width / rect.width);
+        const index = Math.max(0, Math.min(rows.length - 1, Math.round((svgX - margin.left) / xStep)));
+        return { index, x: xFor(index), y: yFor(rows[index].count), row: rows[index] };
+      };
+
+      hitArea.addEventListener("mousemove", event => {
+        const point = pointForEvent(event);
+        focusLine.setAttribute("x1", point.x);
+        focusLine.setAttribute("x2", point.x);
+        focusLine.style.opacity = "1";
+        focusDot.setAttribute("cx", point.x);
+        focusDot.setAttribute("cy", point.y);
+        focusDot.style.opacity = "1";
+        els.lineTooltip.innerHTML = `<strong>${formatMonth(point.row.month)}</strong><span>${fmt.format(point.row.count)} bills</span>`;
+        els.lineTooltip.style.left = `${event.offsetX}px`;
+        els.lineTooltip.style.top = `${event.offsetY}px`;
+        els.lineTooltip.style.opacity = "1";
+      });
+
+      hitArea.addEventListener("mouseleave", () => {
+        focusLine.style.opacity = "0";
+        focusDot.style.opacity = "0";
+        els.lineTooltip.style.opacity = "0";
+      });
+
+      els.timelineLabel.textContent = `${formatMonth(rows[0].month)} to ${formatMonth(rows.at(-1).month)}`;
+    }
+
     function renderTable(rows) {
       els.tbody.innerHTML = rows.map(row => `
         <tr>
@@ -514,6 +726,7 @@
     function render() {
       const rows = getRows();
       renderMetrics(rows);
+      renderLineChart();
       renderChart(rows);
       renderTable(rows);
     }
@@ -539,8 +752,10 @@
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const payload = await response.json();
         data = normalizeRows(payload.rows || []);
+        monthlyData = normalizeMonthly(payload.monthly_totals || []);
       } catch (error) {
         data = normalizeRows(fallbackData);
+        monthlyData = [];
       }
       render();
     }

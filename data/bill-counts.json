@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-06-24T20:55:16Z",
-  "source": "https://github.com/chihacknight/govbot/tree/main/docs",
+  "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {"repo":"ak-legislation","state":"AK","count":514},
     {"repo":"al-legislation","state":"AL","count":1507},
@@ -53,5 +53,6 @@
     {"repo":"wi-legislation","state":"WI","count":1626},
     {"repo":"wv-legislation","state":"WV","count":3315},
     {"repo":"wy-legislation","state":"WY","count":579}
-  ]
+  ],
+  "monthly_totals": []
 }

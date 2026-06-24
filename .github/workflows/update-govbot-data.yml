@@ -33,7 +33,7 @@ jobs:
 
       - name: Build bill count JSON
         env:
-          GOVBOT_SOURCE_URL: "https://github.com/chihacknight/govbot/tree/main/docs"
+          GOVBOT_SOURCE_URL: "https://chihacknight.github.io/govbot/"
         run: |
           bash scripts/build-bill-counts.sh "$RUNNER_TEMP/govbot/repos" data/bill-counts.json
 
