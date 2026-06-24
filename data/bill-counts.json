@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T21:50:32Z",
+  "generated_at": "2026-06-24T22:13:48Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -260,140 +260,48 @@
   ],
   "monthly_totals": [
     {
-      "month": "2005-01",
-      "count": 1
-    },
-    {
-      "month": "2015-11",
-      "count": 1
-    },
-    {
-      "month": "2021-02",
-      "count": 1
-    },
-    {
-      "month": "2021-10",
-      "count": 1
-    },
-    {
-      "month": "2024-01",
-      "count": 6034
-    },
-    {
-      "month": "2024-02",
-      "count": 1084
-    },
-    {
-      "month": "2024-03",
-      "count": 384
-    },
-    {
-      "month": "2024-04",
-      "count": 247
-    },
-    {
-      "month": "2024-05",
-      "count": 474
-    },
-    {
-      "month": "2024-06",
-      "count": 515
-    },
-    {
-      "month": "2024-07",
-      "count": 12
-    },
-    {
-      "month": "2024-08",
-      "count": 97
-    },
-    {
-      "month": "2024-09",
-      "count": 931
-    },
-    {
-      "month": "2024-10",
-      "count": 891
-    },
-    {
-      "month": "2024-11",
-      "count": 1673
-    },
-    {
-      "month": "2024-12",
-      "count": 5020
-    },
-    {
       "month": "2025-01",
-      "count": 34303
+      "count": 1417
     },
     {
       "month": "2025-02",
-      "count": 40301
+      "count": 1519
     },
     {
       "month": "2025-03",
-      "count": 16756
+      "count": 1368
     },
     {
       "month": "2025-04",
-      "count": 8354
+      "count": 1082
     },
     {
       "month": "2025-05",
-      "count": 6504
+      "count": 1082
     },
     {
       "month": "2025-06",
-      "count": 3922
+      "count": 1076
     },
     {
       "month": "2025-07",
-      "count": 2168
+      "count": 1127
     },
     {
       "month": "2025-08",
-      "count": 1522
+      "count": 354
     },
     {
       "month": "2025-09",
-      "count": 2914
+      "count": 1077
     },
     {
       "month": "2025-10",
-      "count": 3188
+      "count": 502
     },
     {
       "month": "2025-11",
-      "count": 2861
-    },
-    {
-      "month": "2025-12",
-      "count": 3732
-    },
-    {
-      "month": "2026-01",
-      "count": 19435
-    },
-    {
-      "month": "2026-02",
-      "count": 10466
-    },
-    {
-      "month": "2026-03",
-      "count": 4279
-    },
-    {
-      "month": "2026-04",
-      "count": 955
-    },
-    {
-      "month": "2026-05",
-      "count": 684
-    },
-    {
-      "month": "2026-06",
-      "count": 533
+      "count": 713
     }
   ]
 }
