@@ -124,7 +124,7 @@
 
     .layout {
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+      grid-template-columns: minmax(420px, 1.25fr) minmax(360px, 0.75fr);
       gap: 16px;
       align-items: start;
     }
@@ -243,15 +243,15 @@
     }
 
     .chart {
-      padding: 12px 14px 14px;
+      padding: 14px 18px 18px;
       max-height: 720px;
       overflow: auto;
     }
 
     .bar-row {
       display: grid;
-      grid-template-columns: 54px minmax(0, 1fr) 76px;
-      gap: 10px;
+      grid-template-columns: 58px minmax(180px, 1fr) 82px;
+      gap: 12px;
       align-items: center;
       min-height: 30px;
     }
@@ -576,6 +576,24 @@
       return date.toLocaleString(undefined, { month: "long", year: "numeric", timeZone: "UTC" });
     }
 
+    function formatShortMonth(month) {
+      const [year, monthNumber] = month.split("-").map(Number);
+      const date = new Date(Date.UTC(year, monthNumber - 1, 1));
+      return date.toLocaleString(undefined, { month: "short", timeZone: "UTC" });
+    }
+
+    function curvedPath(points) {
+      if (points.length < 2) return points.length ? `M ${points[0][0]} ${points[0][1]}` : "";
+      let path = `M ${points[0][0].toFixed(2)} ${points[0][1].toFixed(2)}`;
+      for (let index = 1; index < points.length; index++) {
+        const [x0, y0] = points[index - 1];
+        const [x1, y1] = points[index];
+        const midX = (x0 + x1) / 2;
+        path += ` C ${midX.toFixed(2)} ${y0.toFixed(2)}, ${midX.toFixed(2)} ${y1.toFixed(2)}, ${x1.toFixed(2)} ${y1.toFixed(2)}`;
+      }
+      return path;
+    }
+
     function renderMetrics(rows) {
       const total = data.reduce((sum, row) => sum + row.count, 0);
       const visible = rows.reduce((sum, row) => sum + row.count, 0);
@@ -616,7 +634,7 @@
 
     function renderLineChart() {
       const rows = monthlyData.filter(row => row.month >= "2024-01");
-      const margin = { top: 40, right: 40, bottom: 86, left: 74 };
+      const margin = { top: 40, right: 40, bottom: 58, left: 74 };
       const width = 920;
       const height = 320;
       const innerWidth = width - margin.left - margin.right;
@@ -635,7 +653,7 @@
       const xFor = index => margin.left + index * xStep;
       const yFor = count => margin.top + innerHeight - (count / maxCount) * innerHeight;
       const points = rows.map((row, index) => [xFor(index), yFor(row.count)]);
-      const linePath = points.map(([x, y], index) => `${index ? "L" : "M"} ${x.toFixed(2)} ${y.toFixed(2)}`).join(" ");
+      const linePath = curvedPath(points);
       const areaPath = `${linePath} L ${points.at(-1)[0].toFixed(2)} ${margin.top + innerHeight} L ${points[0][0].toFixed(2)} ${margin.top + innerHeight} Z`;
       const yTicks = Array.from({ length: 10 }, (_, index) => index * 5000);
 
@@ -657,7 +675,7 @@
         return `
           <g class="axis">
             <line x1="${x}" x2="${x}" y1="${margin.top + innerHeight}" y2="${margin.top + innerHeight + 5}"></line>
-            <text x="${x}" y="${height - 20}" text-anchor="end" transform="rotate(-55 ${x} ${height - 20})">${formatMonth(row.month)}</text>
+            <text x="${x}" y="${height - 24}" text-anchor="middle">${formatShortMonth(row.month)}</text>
           </g>
         `;
       }).join("");
@@ -716,7 +734,7 @@
         els.lineTooltip.style.opacity = "0";
       });
 
-      els.timelineLabel.textContent = `US repo - ${formatMonth(rows[0].month)} to ${formatMonth(rows.at(-1).month)}`;
+      els.timelineLabel.textContent = `${formatMonth(rows[0].month)} to ${formatMonth(rows.at(-1).month)}`;
     }
 
     function renderTable(rows) {

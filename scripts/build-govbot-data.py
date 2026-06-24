@@ -66,7 +66,7 @@ def main():
                 continue
 
             first_date = first_bill_date(metadata)
-            if repo == "usa-legislation" and first_date is not None:
+            if first_date is not None:
                 monthly[first_date.strftime("%Y-%m")] += 1
 
         rows.append({
