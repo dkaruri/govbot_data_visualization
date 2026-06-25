@@ -360,7 +360,7 @@
     }
 
     .state-filter {
-      width: 88px;
+      width: 150px;
       height: 34px;
       padding: 0 10px;
       border: 1px solid var(--line);
@@ -602,7 +602,7 @@
       <div class="section-head">
         <h2>Bluesky Feeds</h2>
         <div class="section-controls">
-          <input class="state-filter" id="blueskyState" type="text" maxlength="2" placeholder="State" aria-label="Filter Bluesky feed by state code" />
+          <input class="state-filter" id="blueskyState" type="text" placeholder="State or code" aria-label="Filter Bluesky feed by state name or code" />
           <span class="small" id="blueskyLabel">Select an account</span>
         </div>
       </div>
@@ -1015,9 +1015,25 @@
       return `https://bsky.app/profile/${handle}/post/${rkey}`;
     }
 
+    function normalizeStateSearch(value) {
+      return String(value || "").trim().toLowerCase().replace(/[^a-z]/g, "");
+    }
+
     function activeStateCode() {
-      const code = els.blueskyState.value.trim().toUpperCase().replace(/[^A-Z]/g, "").slice(0, 2);
-      return code.length === 2 ? code : "";
+      const raw = els.blueskyState.value.trim();
+      const code = raw.toUpperCase().replace(/[^A-Z]/g, "");
+      if (code.length === 2 && names[code]) return code;
+
+      const query = normalizeStateSearch(raw);
+      if (query.length < 3) return "";
+
+      const matches = Object.entries(names)
+        .filter(([state]) => state.length === 2)
+        .filter(([, name]) => {
+          const normalizedName = normalizeStateSearch(name);
+          return normalizedName === query || normalizedName.startsWith(query);
+        });
+      return matches.length === 1 ? matches[0][0] : "";
     }
 
     function postMatchesState(post, stateCode) {
@@ -1378,8 +1394,6 @@
       loadBlueskyFeed(row.dataset.actor);
     });
     els.blueskyState.addEventListener("input", () => {
-      const code = els.blueskyState.value.trim().toUpperCase().replace(/[^A-Z]/g, "").slice(0, 2);
-      els.blueskyState.value = code;
       renderBlueskyFeed();
       searchOlderPostsForState();
     });
