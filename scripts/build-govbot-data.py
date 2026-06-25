@@ -50,6 +50,7 @@ def main():
 
     rows = []
     monthly = Counter()
+    monthly_by_state = Counter()
 
     for repo in sorted(os.listdir(repos_dir)):
         repo_path = os.path.join(repos_dir, repo)
@@ -67,7 +68,10 @@ def main():
 
             first_date = first_bill_date(metadata)
             if first_date is not None:
-                monthly[first_date.strftime("%Y-%m")] += 1
+                month = first_date.strftime("%Y-%m")
+                state = repo.removesuffix("-legislation").upper()
+                monthly[month] += 1
+                monthly_by_state[(month, repo, state)] += 1
 
         rows.append({
             "repo": repo,
@@ -82,6 +86,10 @@ def main():
         "monthly_totals": [
             {"month": month, "count": monthly[month]}
             for month in sorted(monthly)
+        ],
+        "monthly_by_state": [
+            {"month": month, "repo": repo, "state": state, "count": count}
+            for (month, repo, state), count in sorted(monthly_by_state.items())
         ],
     }
 

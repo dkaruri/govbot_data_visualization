@@ -93,7 +93,7 @@
 
     .toolbar {
       display: grid;
-      grid-template-columns: minmax(220px, 1fr) 160px 180px auto;
+      grid-template-columns: minmax(220px, 1fr) 170px 160px 180px auto;
       gap: 10px;
       align-items: center;
       margin-bottom: 16px;
@@ -380,6 +380,9 @@
 
     <div class="toolbar">
       <input id="search" type="search" placeholder="Search state or repo" />
+      <select id="monthFilter">
+        <option value="all">All months</option>
+      </select>
       <select id="limit">
         <option value="all">All states</option>
         <option value="10">Top 10</option>
@@ -509,11 +512,13 @@
 
     let data = [];
     let monthlyData = [];
+    let monthlyByState = [];
     const fmt = new Intl.NumberFormat();
 
     const els = {
       metrics: document.getElementById("metrics"),
       search: document.getElementById("search"),
+      monthFilter: document.getElementById("monthFilter"),
       limit: document.getElementById("limit"),
       sort: document.getElementById("sort"),
       chart: document.getElementById("chart"),
@@ -527,11 +532,22 @@
       export: document.getElementById("export")
     };
 
+    function activeDataset() {
+      const month = els.monthFilter.value;
+      if (month === "all") return data;
+      const monthlyRows = monthlyByState.filter(row => row.month === month);
+      const byRepo = new Map(monthlyRows.map(row => [row.repo, row.count]));
+      return data.map(row => ({
+        ...row,
+        count: byRepo.get(row.repo) || 0
+      }));
+    }
+
     function getRows() {
       const query = els.search.value.trim().toLowerCase();
       const limit = els.limit.value;
       const sort = els.sort.value;
-      let rows = data.filter(row =>
+      let rows = activeDataset().filter(row =>
         row.state.toLowerCase().includes(query) ||
         row.name.toLowerCase().includes(query) ||
         row.repo.toLowerCase().includes(query)
@@ -570,6 +586,33 @@
         .sort((a, b) => a.month.localeCompare(b.month));
     }
 
+    function normalizeMonthlyByState(rows) {
+      return rows
+        .map(row => {
+          const state = String(row.state || "").toUpperCase();
+          return {
+            month: String(row.month || ""),
+            repo: row.repo,
+            state,
+            count: Number(row.count) || 0,
+            name: names[state] || state
+          };
+        })
+        .filter(row => /^\d{4}-\d{2}$/.test(row.month))
+        .sort((a, b) => a.month.localeCompare(b.month) || a.state.localeCompare(b.state));
+    }
+
+    function populateMonthFilter() {
+      const current = els.monthFilter.value;
+      const months = monthlyData
+        .filter(row => row.month >= "2024-01")
+        .map(row => row.month);
+      els.monthFilter.innerHTML = `<option value="all">All months</option>` + months.map(month => (
+        `<option value="${month}">${formatMonth(month)}</option>`
+      )).join("");
+      if (months.includes(current)) els.monthFilter.value = current;
+    }
+
     function formatMonth(month) {
       const [year, monthNumber] = month.split("-").map(Number);
       const date = new Date(Date.UTC(year, monthNumber - 1, 1));
@@ -595,12 +638,13 @@
     }
 
     function renderMetrics(rows) {
-      const total = data.reduce((sum, row) => sum + row.count, 0);
+      const scopedData = activeDataset();
+      const total = scopedData.reduce((sum, row) => sum + row.count, 0);
       const visible = rows.reduce((sum, row) => sum + row.count, 0);
-      const max = data.reduce((best, row) => row.count > best.count ? row : best, { state: "N/A", count: 0 });
-      const avg = data.length ? Math.round(total / data.length) : 0;
+      const max = scopedData.reduce((best, row) => row.count > best.count ? row : best, { state: "N/A", count: 0 });
+      const avg = scopedData.length ? Math.round(total / scopedData.length) : 0;
       els.metrics.innerHTML = [
-        ["Total Bills", fmt.format(total)],
+        [els.monthFilter.value === "all" ? "Total Bills" : "Month Bills", fmt.format(total)],
         ["Visible Bills", fmt.format(visible)],
         ["Top State", `${max.state} - ${fmt.format(max.count)}`],
         ["Average", fmt.format(avg)]
@@ -613,7 +657,7 @@
     }
 
     function renderChart(rows) {
-      const max = Math.max(1, ...data.map(row => row.count));
+      const max = Math.max(1, ...activeDataset().map(row => row.count));
       const top = [35, 100, 170];
       const bottom = [47, 125, 82];
       const mix = (a, b, t) => Math.round(a + (b - a) * t);
@@ -700,7 +744,7 @@
         <path class="timeline-line" d="${linePath}"></path>
         <line id="focusLine" class="focus-line" x1="0" x2="0" y1="${margin.top}" y2="${margin.top + innerHeight}"></line>
         <circle id="focusDot" class="focus-dot" cx="0" cy="0" r="5"></circle>
-        <rect id="lineHitArea" x="${margin.left}" y="${margin.top}" width="${innerWidth}" height="${innerHeight}" fill="transparent"></rect>
+        <rect id="lineHitArea" x="${margin.left}" y="${margin.top}" width="${innerWidth}" height="${innerHeight}" fill="transparent" pointer-events="all"></rect>
       `;
 
       const focusLine = els.lineSvg.querySelector("#focusLine");
@@ -713,7 +757,7 @@
         return { index, x: xFor(index), y: yFor(rows[index].count), row: rows[index] };
       };
 
-      hitArea.addEventListener("mousemove", event => {
+      hitArea.addEventListener("pointermove", event => {
         const point = pointForEvent(event);
         focusLine.setAttribute("x1", point.x);
         focusLine.setAttribute("x2", point.x);
@@ -723,12 +767,15 @@
         focusDot.style.opacity = "1";
         els.lineTooltip.innerHTML = `<strong>${formatMonth(point.row.month)}</strong><span>${fmt.format(point.row.count)} bills</span>`;
         const chartRect = els.lineChart.getBoundingClientRect();
-        els.lineTooltip.style.left = `${event.clientX - chartRect.left}px`;
-        els.lineTooltip.style.top = `${event.clientY - chartRect.top}px`;
+        const svgRect = els.lineSvg.getBoundingClientRect();
+        const tooltipX = svgRect.left - chartRect.left + point.x * (svgRect.width / width);
+        const tooltipY = svgRect.top - chartRect.top + point.y * (svgRect.height / height);
+        els.lineTooltip.style.left = `${tooltipX}px`;
+        els.lineTooltip.style.top = `${tooltipY}px`;
         els.lineTooltip.style.opacity = "1";
       });
 
-      hitArea.addEventListener("mouseleave", () => {
+      hitArea.addEventListener("pointerleave", () => {
         focusLine.style.opacity = "0";
         focusDot.style.opacity = "0";
         els.lineTooltip.style.opacity = "0";
@@ -745,7 +792,8 @@
           <td>${fmt.format(row.count)}</td>
         </tr>
       `).join("");
-      els.tableLabel.textContent = `${rows.length} of ${data.length}`;
+      const suffix = els.monthFilter.value === "all" ? "all months" : formatMonth(els.monthFilter.value);
+      els.tableLabel.textContent = `${rows.length} of ${data.length} - ${suffix}`;
     }
 
     function render() {
@@ -778,14 +826,18 @@
         const payload = await response.json();
         data = normalizeRows(payload.rows || []);
         monthlyData = normalizeMonthly(payload.monthly_totals || []);
+        monthlyByState = normalizeMonthlyByState(payload.monthly_by_state || []);
       } catch (error) {
         data = normalizeRows(fallbackData);
         monthlyData = [];
+        monthlyByState = [];
       }
+      populateMonthFilter();
       render();
     }
 
     els.search.addEventListener("input", render);
+    els.monthFilter.addEventListener("change", render);
     els.limit.addEventListener("change", render);
     els.sort.addEventListener("change", render);
     els.export.addEventListener("click", exportCsv);
