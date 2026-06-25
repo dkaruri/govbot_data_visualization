@@ -894,7 +894,7 @@
       return String(value || "").replace(/\s+by Govbot\s*$/i, "").trim();
     }
 
-    function linkifyText(value) {
+    function linkifyPlainText(value) {
       return String(value || "").split(/(https?:\/\/[^\s]+)/g).map(part => {
         if (!/^https?:\/\//i.test(part)) return escapeHtml(part);
         const match = part.match(/^(.*?)([.,!?)]*)$/);
@@ -902,6 +902,40 @@
         const trailing = match ? match[2] : "";
         return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a>${escapeHtml(trailing)}`;
       }).join("");
+    }
+
+    function linkifyText(value, facets = []) {
+      const text = String(value || "");
+      const linkedFacets = facets
+        .map(facet => {
+          const link = (facet.features || []).find(feature => feature.uri);
+          return {
+            uri: link?.uri,
+            start: Number(facet.index?.byteStart),
+            end: Number(facet.index?.byteEnd)
+          };
+        })
+        .filter(facet => facet.uri && Number.isFinite(facet.start) && Number.isFinite(facet.end) && facet.end > facet.start)
+        .sort((a, b) => a.start - b.start);
+
+      if (!linkedFacets.length) return linkifyPlainText(text);
+
+      const encoder = new TextEncoder();
+      const decoder = new TextDecoder();
+      const bytes = encoder.encode(text);
+      let cursor = 0;
+      let html = "";
+
+      linkedFacets.forEach(facet => {
+        const start = Math.max(cursor, Math.min(facet.start, bytes.length));
+        const end = Math.max(start, Math.min(facet.end, bytes.length));
+        html += linkifyPlainText(decoder.decode(bytes.slice(cursor, start)));
+        html += `<a href="${escapeHtml(facet.uri)}" target="_blank" rel="noopener noreferrer">${escapeHtml(decoder.decode(bytes.slice(start, end)))}</a>`;
+        cursor = end;
+      });
+
+      html += linkifyPlainText(decoder.decode(bytes.slice(cursor)));
+      return html;
     }
 
     function formatPostDate(value) {
@@ -975,7 +1009,7 @@
               <span>${escapeHtml(post.author?.displayName || post.author?.handle || "Bluesky")}</span>
               <span>${escapeHtml(formatPostDate(post.record?.createdAt))}</span>
             </div>
-            <p class="feed-text">${linkifyText(post.record?.text || "")}</p>
+            <p class="feed-text">${linkifyText(post.record?.text || "", post.record?.facets || [])}</p>
             <a class="feed-link" href="${blueskyPostUrl(post)}" target="_blank" rel="noopener noreferrer">Open on Bluesky</a>
           </article>
         `).join("");
