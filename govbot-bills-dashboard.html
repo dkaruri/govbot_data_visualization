@@ -393,6 +393,11 @@
       overflow-wrap: anywhere;
     }
 
+    .feed-text a {
+      color: var(--blue);
+      font-weight: 650;
+    }
+
     .feed-link {
       display: inline-block;
       margin-top: 10px;
@@ -885,6 +890,20 @@
         .replaceAll("'", "&#39;");
     }
 
+    function cleanAccountTitle(value) {
+      return String(value || "").replace(/\s+by Govbot\s*$/i, "").trim();
+    }
+
+    function linkifyText(value) {
+      return String(value || "").split(/(https?:\/\/[^\s]+)/g).map(part => {
+        if (!/^https?:\/\//i.test(part)) return escapeHtml(part);
+        const match = part.match(/^(.*?)([.,!?)]*)$/);
+        const url = match ? match[1] : part;
+        const trailing = match ? match[2] : "";
+        return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a>${escapeHtml(trailing)}`;
+      }).join("");
+    }
+
     function formatPostDate(value) {
       const date = new Date(value);
       if (Number.isNaN(date.getTime())) return "";
@@ -919,7 +938,7 @@
         blueskyAccounts.forEach(account => {
           const profile = profilesByDid.get(account.actor);
           if (!profile) return;
-          account.title = profile.displayName || profile.handle || account.title;
+          account.title = cleanAccountTitle(profile.displayName || profile.handle || account.title);
           account.handle = profile.handle || account.handle;
         });
       } catch (error) {
@@ -956,7 +975,7 @@
               <span>${escapeHtml(post.author?.displayName || post.author?.handle || "Bluesky")}</span>
               <span>${escapeHtml(formatPostDate(post.record?.createdAt))}</span>
             </div>
-            <p class="feed-text">${escapeHtml(post.record?.text || "")}</p>
+            <p class="feed-text">${linkifyText(post.record?.text || "")}</p>
             <a class="feed-link" href="${blueskyPostUrl(post)}" target="_blank" rel="noopener noreferrer">Open on Bluesky</a>
           </article>
         `).join("");
