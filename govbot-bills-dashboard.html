@@ -750,6 +750,7 @@
     let trendingSubjects = [];
     let selectedBlueskyActor = "";
     let blueskyFeed = { actor: "", posts: [], cursor: "", loading: false, exhausted: false };
+    let blueskySearchToken = 0;
     const fmt = new Intl.NumberFormat();
     const blueskyAccounts = [
       { actor: "did:plc:q2wsq7a6glnhg52d3h7lf6nh", title: "AI/Data Centers", handle: "govbotaidatacenter.bsky.social" },
@@ -1060,7 +1061,12 @@
           : `<div class="feed-more">Scroll for older posts${suffix}.</div>`;
 
       if (!visiblePosts.length) {
-        setFeedHtml(`<div class="feed-status">No loaded posts match ${escapeHtml(stateCode || "this filter")} yet. Scroll to search older posts.</div>${status}`);
+        const message = stateCode && blueskyFeed.loading
+          ? `Searching older posts for ${stateCode}...`
+          : stateCode && blueskyFeed.exhausted
+            ? `No posts match ${stateCode} in this account feed.`
+            : `No loaded posts match ${stateCode || "this filter"} yet.`;
+        setFeedHtml(`<div class="feed-status">${escapeHtml(message)}</div>${status}`);
         return;
       }
 
@@ -1096,26 +1102,22 @@
       const account = blueskyAccounts.find(item => item.actor === actor);
       els.blueskyLabel.textContent = account ? account.title : "Loading feed";
       blueskyFeed = { actor, posts: [], cursor: "", loading: false, exhausted: false };
+      blueskySearchToken += 1;
       await loadMoreBlueskyFeed();
+      searchOlderPostsForState();
     }
 
     async function searchOlderPostsForState() {
+      const token = ++blueskySearchToken;
       const stateCode = activeStateCode();
       if (!stateCode) {
         renderBlueskyFeed();
         return;
       }
-      let attempts = 0;
-      while (
-        attempts < 3 &&
-        !blueskyFeed.loading &&
-        !blueskyFeed.exhausted &&
-        !blueskyFeed.posts.some(post => postMatchesState(post, stateCode))
-      ) {
-        attempts += 1;
+      while (token === blueskySearchToken && !blueskyFeed.loading && !blueskyFeed.exhausted) {
         await loadMoreBlueskyFeed();
       }
-      renderBlueskyFeed();
+      if (token === blueskySearchToken) renderBlueskyFeed();
     }
 
     function curvedPath(points) {
