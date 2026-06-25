@@ -359,6 +359,17 @@
       background: #f8fafc;
     }
 
+    .state-filter {
+      width: 88px;
+      height: 34px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
     .feed-status {
       color: var(--muted);
       font-size: 13px;
@@ -404,6 +415,17 @@
       color: var(--blue);
       font-weight: 650;
       text-decoration: none;
+    }
+
+    .feed-more {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: #fff;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
     }
 
     .bar-row {
@@ -579,7 +601,10 @@
     <section class="bluesky">
       <div class="section-head">
         <h2>Bluesky Feeds</h2>
-        <span class="small" id="blueskyLabel">Select an account</span>
+        <div class="section-controls">
+          <input class="state-filter" id="blueskyState" type="text" maxlength="2" placeholder="State" aria-label="Filter Bluesky feed by state code" />
+          <span class="small" id="blueskyLabel">Select an account</span>
+        </div>
       </div>
       <div class="bluesky-grid">
         <div class="account-list">
@@ -724,6 +749,7 @@
     let monthlyByState = [];
     let trendingSubjects = [];
     let selectedBlueskyActor = "";
+    let blueskyFeed = { actor: "", posts: [], cursor: "", loading: false, exhausted: false };
     const fmt = new Intl.NumberFormat();
     const blueskyAccounts = [
       { actor: "did:plc:q2wsq7a6glnhg52d3h7lf6nh", title: "AI/Data Centers", handle: "govbotaidatacenter.bsky.social" },
@@ -752,6 +778,7 @@
       lineTooltip: document.getElementById("lineTooltip"),
       accountList: document.getElementById("accountList"),
       feedPanel: document.getElementById("feedPanel"),
+      blueskyState: document.getElementById("blueskyState"),
       blueskyLabel: document.getElementById("blueskyLabel"),
       tbody: document.getElementById("tbody"),
       chartLabel: document.getElementById("chartLabel"),
@@ -987,35 +1014,108 @@
       return `https://bsky.app/profile/${handle}/post/${rkey}`;
     }
 
+    function activeStateCode() {
+      const code = els.blueskyState.value.trim().toUpperCase().replace(/[^A-Z]/g, "").slice(0, 2);
+      return code.length === 2 ? code : "";
+    }
+
+    function postMatchesState(post, stateCode) {
+      if (!stateCode) return true;
+      const text = String(post.record?.text || "");
+      const billPrefix = new RegExp(`\\b${stateCode}\\s+[A-Z]{1,6}\\s*\\d+`, "i");
+      return billPrefix.test(text);
+    }
+
+    function setFeedHtml(html, preserveScroll = true) {
+      const scrollTop = els.feedPanel.scrollTop;
+      els.feedPanel.innerHTML = html;
+      if (preserveScroll) els.feedPanel.scrollTop = scrollTop;
+    }
+
+    function renderBlueskyFeed() {
+      const stateCode = activeStateCode();
+      const visiblePosts = blueskyFeed.posts.filter(post => postMatchesState(post, stateCode));
+      const suffix = stateCode ? ` - ${stateCode}` : "";
+
+      if (!blueskyFeed.posts.length && blueskyFeed.loading) {
+        setFeedHtml(`<div class="feed-status">Loading feed...</div>`, false);
+        return;
+      }
+
+      const cards = visiblePosts.map(post => `
+        <article class="feed-card">
+          <div class="feed-meta">
+            <span>${escapeHtml(post.author?.displayName || post.author?.handle || "Bluesky")}</span>
+            <span>${escapeHtml(formatPostDate(post.record?.createdAt))}</span>
+          </div>
+          <p class="feed-text">${linkifyText(post.record?.text || "", post.record?.facets || [])}</p>
+          <a class="feed-link" href="${blueskyPostUrl(post)}" target="_blank" rel="noopener noreferrer">Open on Bluesky</a>
+        </article>
+      `).join("");
+
+      const status = blueskyFeed.loading
+        ? `<div class="feed-more">Loading older posts...</div>`
+        : blueskyFeed.exhausted
+          ? `<div class="feed-more">No more posts found${suffix}.</div>`
+          : `<div class="feed-more">Scroll for older posts${suffix}.</div>`;
+
+      if (!visiblePosts.length) {
+        setFeedHtml(`<div class="feed-status">No loaded posts match ${escapeHtml(stateCode || "this filter")} yet. Scroll to search older posts.</div>${status}`);
+        return;
+      }
+
+      setFeedHtml(`${cards}${status}`);
+    }
+
+    async function loadMoreBlueskyFeed() {
+      if (blueskyFeed.loading || blueskyFeed.exhausted || !blueskyFeed.actor) return;
+      blueskyFeed.loading = true;
+      renderBlueskyFeed();
+      try {
+        const params = new URLSearchParams({ actor: blueskyFeed.actor, limit: "30", filter: "posts_no_replies" });
+        if (blueskyFeed.cursor) params.set("cursor", blueskyFeed.cursor);
+        const response = await fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?${params}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        const posts = (payload.feed || []).map(item => item.post).filter(Boolean);
+        blueskyFeed.posts = blueskyFeed.posts.concat(posts);
+        blueskyFeed.cursor = payload.cursor || "";
+        blueskyFeed.exhausted = !payload.cursor || !posts.length;
+      } catch (error) {
+        blueskyFeed.exhausted = true;
+        setFeedHtml(`<div class="feed-status">Unable to load this Bluesky feed right now.</div>`);
+      } finally {
+        blueskyFeed.loading = false;
+        renderBlueskyFeed();
+      }
+    }
+
     async function loadBlueskyFeed(actor) {
       selectedBlueskyActor = actor;
       renderBlueskyAccounts();
       const account = blueskyAccounts.find(item => item.actor === actor);
       els.blueskyLabel.textContent = account ? account.title : "Loading feed";
-      els.feedPanel.innerHTML = `<div class="feed-status">Loading feed...</div>`;
-      try {
-        const params = new URLSearchParams({ actor, limit: "12", filter: "posts_no_replies" });
-        const response = await fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?${params}`);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const payload = await response.json();
-        const posts = (payload.feed || []).map(item => item.post).filter(Boolean);
-        if (!posts.length) {
-          els.feedPanel.innerHTML = `<div class="feed-status">No posts available for this account.</div>`;
-          return;
-        }
-        els.feedPanel.innerHTML = posts.map(post => `
-          <article class="feed-card">
-            <div class="feed-meta">
-              <span>${escapeHtml(post.author?.displayName || post.author?.handle || "Bluesky")}</span>
-              <span>${escapeHtml(formatPostDate(post.record?.createdAt))}</span>
-            </div>
-            <p class="feed-text">${linkifyText(post.record?.text || "", post.record?.facets || [])}</p>
-            <a class="feed-link" href="${blueskyPostUrl(post)}" target="_blank" rel="noopener noreferrer">Open on Bluesky</a>
-          </article>
-        `).join("");
-      } catch (error) {
-        els.feedPanel.innerHTML = `<div class="feed-status">Unable to load this Bluesky feed right now.</div>`;
+      blueskyFeed = { actor, posts: [], cursor: "", loading: false, exhausted: false };
+      await loadMoreBlueskyFeed();
+    }
+
+    async function searchOlderPostsForState() {
+      const stateCode = activeStateCode();
+      if (!stateCode) {
+        renderBlueskyFeed();
+        return;
       }
+      let attempts = 0;
+      while (
+        attempts < 3 &&
+        !blueskyFeed.loading &&
+        !blueskyFeed.exhausted &&
+        !blueskyFeed.posts.some(post => postMatchesState(post, stateCode))
+      ) {
+        attempts += 1;
+        await loadMoreBlueskyFeed();
+      }
+      renderBlueskyFeed();
     }
 
     function curvedPath(points) {
@@ -1274,6 +1374,16 @@
       if (!row) return;
       event.preventDefault();
       loadBlueskyFeed(row.dataset.actor);
+    });
+    els.blueskyState.addEventListener("input", () => {
+      const code = els.blueskyState.value.trim().toUpperCase().replace(/[^A-Z]/g, "").slice(0, 2);
+      els.blueskyState.value = code;
+      renderBlueskyFeed();
+      searchOlderPostsForState();
+    });
+    els.feedPanel.addEventListener("scroll", () => {
+      const nearBottom = els.feedPanel.scrollTop + els.feedPanel.clientHeight >= els.feedPanel.scrollHeight - 80;
+      if (nearBottom) loadMoreBlueskyFeed();
     });
     selectedBlueskyActor = blueskyAccounts[0].actor;
     renderBlueskyAccounts();
