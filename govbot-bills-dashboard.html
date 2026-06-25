@@ -137,6 +137,10 @@
       margin-bottom: 16px;
     }
 
+    .bluesky {
+      margin-bottom: 16px;
+    }
+
     section {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -296,6 +300,107 @@
       font-weight: 750;
     }
 
+    .bluesky-grid {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.8fr) minmax(360px, 1.2fr);
+      min-height: 420px;
+    }
+
+    .account-list {
+      border-right: 1px solid var(--line);
+      max-height: 520px;
+      overflow: auto;
+    }
+
+    .account-row {
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .account-row td {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 3px;
+      min-height: 52px;
+      align-content: center;
+    }
+
+    .account-row:hover,
+    .account-row.active {
+      background: #eef6ff;
+    }
+
+    .account-table td:last-child,
+    .account-table th:last-child {
+      text-align: left;
+      font-variant-numeric: normal;
+    }
+
+    .account-title {
+      font-weight: 750;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .account-handle {
+      color: var(--muted);
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .feed-panel {
+      padding: 14px;
+      max-height: 520px;
+      overflow: auto;
+      background: #f8fafc;
+    }
+
+    .feed-status {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .feed-card {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+    }
+
+    .feed-card + .feed-card {
+      margin-top: 10px;
+    }
+
+    .feed-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .feed-text {
+      margin: 0;
+      color: var(--ink);
+      line-height: 1.45;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .feed-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--blue);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
     .bar-row {
       display: grid;
       grid-template-columns: 58px minmax(180px, 1fr) 82px;
@@ -398,6 +503,16 @@
       .layout {
         grid-template-columns: 1fr;
       }
+
+      .bluesky-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .account-list {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        max-height: 260px;
+      }
     }
 
     @media (max-width: 520px) {
@@ -437,6 +552,7 @@
       </div>
     </section>
 
+    <!--
     <section class="trending">
       <div class="section-head">
         <h2>Trending</h2>
@@ -452,6 +568,29 @@
         </div>
       </div>
       <div class="trending-list" id="trendingList"></div>
+    </section>
+    -->
+
+    <section class="bluesky">
+      <div class="section-head">
+        <h2>Bluesky Feeds</h2>
+        <span class="small" id="blueskyLabel">Select an account</span>
+      </div>
+      <div class="bluesky-grid">
+        <div class="account-list">
+          <table class="account-table">
+            <thead>
+              <tr>
+                <th>Account</th>
+              </tr>
+            </thead>
+            <tbody id="accountList"></tbody>
+          </table>
+        </div>
+        <div class="feed-panel" id="feedPanel">
+          <div class="feed-status">Loading accounts...</div>
+        </div>
+      </div>
     </section>
 
     <div class="toolbar">
@@ -579,7 +718,22 @@
     let monthlyData = [];
     let monthlyByState = [];
     let trendingSubjects = [];
+    let selectedBlueskyActor = "";
     const fmt = new Intl.NumberFormat();
+    const blueskyAccounts = [
+      { actor: "did:plc:q2wsq7a6glnhg52d3h7lf6nh", title: "AI/Data Centers", handle: "govbotaidatacenter.bsky.social" },
+      { actor: "did:plc:pjlfamiaublhiumzlw6r7ry7", title: "Criminal/Justice", handle: "govbotcrimejustice.bsky.social" },
+      { actor: "did:plc:luong7vyw6wr3aartzkyrfmv", title: "Education", handle: "govboteducation.bsky.social" },
+      { actor: "did:plc:koq665lnk5ejzcvqq7hnkf3a", title: "Elections/Voting", handle: "govbotelections.bsky.social" },
+      { actor: "did:plc:d23kcocptyonsqpe3hpankcy", title: "Healthcare", handle: "govbothealthcare.bsky.social" },
+      { actor: "did:plc:74ndj3bfkh3rnlgzton2vs3h", title: "Housing", handle: "govbothousing.bsky.social" },
+      { actor: "did:plc:nwwacsiotus5k4mutm2cbmuu", title: "Immigration", handle: "govbotimmigration.bsky.social" },
+      { actor: "did:plc:wb3tsmeh5n6m2yo7ur4cqs43", title: "Labor/Workers' Rights", handle: "govbotlaborrights.bsky.social" },
+      { actor: "did:plc:3cwjgk3p4qc5sksfe23abyro", title: "LGBTQ+", handle: "govbotlgbtq.bsky.social" },
+      { actor: "did:plc:fitjgxxbjabivfgec5rctwa6", title: "Reproductive Rights", handle: "govbotreproductive.bsky.social" },
+      { actor: "did:plc:n7bakpl47cwnbtfuoccneifx", title: "Taxation", handle: "govbottaxation.bsky.social" },
+      { actor: "did:plc:g2xja7ox4rl56i5eopn5eaxz", title: "Transportation", handle: "govbottransport.bsky.social" }
+    ];
 
     const els = {
       metrics: document.getElementById("metrics"),
@@ -591,9 +745,9 @@
       lineChart: document.getElementById("lineChart"),
       lineSvg: document.getElementById("lineSvg"),
       lineTooltip: document.getElementById("lineTooltip"),
-      trendMonth: document.getElementById("trendMonth"),
-      trendSort: document.getElementById("trendSort"),
-      trendingList: document.getElementById("trendingList"),
+      accountList: document.getElementById("accountList"),
+      feedPanel: document.getElementById("feedPanel"),
+      blueskyLabel: document.getElementById("blueskyLabel"),
       tbody: document.getElementById("tbody"),
       chartLabel: document.getElementById("chartLabel"),
       timelineLabel: document.getElementById("timelineLabel"),
@@ -729,6 +883,86 @@
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#39;");
+    }
+
+    function formatPostDate(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "";
+      return date.toLocaleString(undefined, {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "2-digit"
+      });
+    }
+
+    function renderBlueskyAccounts() {
+      els.accountList.innerHTML = blueskyAccounts.map(account => `
+        <tr class="account-row${account.actor === selectedBlueskyActor ? " active" : ""}" data-actor="${account.actor}" tabindex="0">
+          <td>
+            <span class="account-title">${escapeHtml(account.title)}</span>
+            <span class="account-handle">${escapeHtml(account.handle)}</span>
+          </td>
+        </tr>
+      `).join("");
+    }
+
+    async function loadBlueskyProfiles() {
+      const params = new URLSearchParams();
+      blueskyAccounts.forEach(account => params.append("actors", account.actor));
+      try {
+        const response = await fetch(`https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles?${params}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        const profilesByDid = new Map((payload.profiles || []).map(profile => [profile.did, profile]));
+        blueskyAccounts.forEach(account => {
+          const profile = profilesByDid.get(account.actor);
+          if (!profile) return;
+          account.title = profile.displayName || profile.handle || account.title;
+          account.handle = profile.handle || account.handle;
+        });
+      } catch (error) {
+        els.blueskyLabel.textContent = "Account titles unavailable";
+      }
+      renderBlueskyAccounts();
+    }
+
+    function blueskyPostUrl(post) {
+      const rkey = String(post.uri || "").split("/").at(-1);
+      const handle = post.author?.handle || post.author?.did || selectedBlueskyActor;
+      return `https://bsky.app/profile/${handle}/post/${rkey}`;
+    }
+
+    async function loadBlueskyFeed(actor) {
+      selectedBlueskyActor = actor;
+      renderBlueskyAccounts();
+      const account = blueskyAccounts.find(item => item.actor === actor);
+      els.blueskyLabel.textContent = account ? account.title : "Loading feed";
+      els.feedPanel.innerHTML = `<div class="feed-status">Loading feed...</div>`;
+      try {
+        const params = new URLSearchParams({ actor, limit: "12", filter: "posts_no_replies" });
+        const response = await fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?${params}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        const posts = (payload.feed || []).map(item => item.post).filter(Boolean);
+        if (!posts.length) {
+          els.feedPanel.innerHTML = `<div class="feed-status">No posts available for this account.</div>`;
+          return;
+        }
+        els.feedPanel.innerHTML = posts.map(post => `
+          <article class="feed-card">
+            <div class="feed-meta">
+              <span>${escapeHtml(post.author?.displayName || post.author?.handle || "Bluesky")}</span>
+              <span>${escapeHtml(formatPostDate(post.record?.createdAt))}</span>
+            </div>
+            <p class="feed-text">${escapeHtml(post.record?.text || "")}</p>
+            <a class="feed-link" href="${blueskyPostUrl(post)}" target="_blank" rel="noopener noreferrer">Open on Bluesky</a>
+          </article>
+        `).join("");
+      } catch (error) {
+        els.feedPanel.innerHTML = `<div class="feed-status">Unable to load this Bluesky feed right now.</div>`;
+      }
     }
 
     function curvedPath(points) {
@@ -933,7 +1167,6 @@
       const rows = getRows();
       renderMetrics(rows);
       renderLineChart();
-      renderTrending();
       renderChart(rows);
       renderTable(rows);
     }
@@ -969,17 +1202,29 @@
         trendingSubjects = [];
       }
       populateMonthFilter();
-      populateTrendMonthFilter();
       render();
     }
 
     els.search.addEventListener("input", render);
     els.monthFilter.addEventListener("change", render);
-    els.trendMonth.addEventListener("change", render);
-    els.trendSort.addEventListener("change", render);
     els.limit.addEventListener("change", render);
     els.sort.addEventListener("change", render);
     els.export.addEventListener("click", exportCsv);
+    els.accountList.addEventListener("click", event => {
+      const row = event.target.closest("[data-actor]");
+      if (!row) return;
+      loadBlueskyFeed(row.dataset.actor);
+    });
+    els.accountList.addEventListener("keydown", event => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const row = event.target.closest("[data-actor]");
+      if (!row) return;
+      event.preventDefault();
+      loadBlueskyFeed(row.dataset.actor);
+    });
+    selectedBlueskyActor = blueskyAccounts[0].actor;
+    renderBlueskyAccounts();
+    loadBlueskyProfiles().then(() => loadBlueskyFeed(selectedBlueskyActor));
     loadData();
   </script>
 </body>
