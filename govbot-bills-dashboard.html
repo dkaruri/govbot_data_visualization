@@ -133,6 +133,10 @@
       margin-bottom: 16px;
     }
 
+    .trending {
+      margin-bottom: 16px;
+    }
+
     section {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -162,6 +166,19 @@
     .small {
       color: var(--muted);
       font-size: 12px;
+    }
+
+    .section-controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .section-controls select {
+      width: 170px;
+      height: 34px;
+      font-size: 13px;
     }
 
     .line-chart {
@@ -245,6 +262,38 @@
       padding: 14px 18px 18px;
       max-height: 720px;
       overflow: auto;
+    }
+
+    .trending-list {
+      padding: 12px 16px 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+    }
+
+    .trend-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .trend-subject {
+      min-width: 0;
+      font-weight: 650;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .trend-count {
+      font-variant-numeric: tabular-nums;
+      color: var(--blue);
+      font-weight: 750;
     }
 
     .bar-row {
@@ -388,6 +437,23 @@
       </div>
     </section>
 
+    <section class="trending">
+      <div class="section-head">
+        <h2>Trending</h2>
+        <div class="section-controls">
+          <select id="trendMonth">
+            <option value="">Month</option>
+          </select>
+          <select id="trendSort">
+            <option value="hot-desc">Hot topics</option>
+            <option value="hot-asc">Least active</option>
+            <option value="subject-asc">Subject A to Z</option>
+          </select>
+        </div>
+      </div>
+      <div class="trending-list" id="trendingList"></div>
+    </section>
+
     <div class="toolbar">
       <input id="search" type="search" placeholder="Search state or repo" />
       <select id="monthFilter">
@@ -512,6 +578,7 @@
     let data = [];
     let monthlyData = [];
     let monthlyByState = [];
+    let trendingSubjects = [];
     const fmt = new Intl.NumberFormat();
 
     const els = {
@@ -524,6 +591,9 @@
       lineChart: document.getElementById("lineChart"),
       lineSvg: document.getElementById("lineSvg"),
       lineTooltip: document.getElementById("lineTooltip"),
+      trendMonth: document.getElementById("trendMonth"),
+      trendSort: document.getElementById("trendSort"),
+      trendingList: document.getElementById("trendingList"),
       tbody: document.getElementById("tbody"),
       chartLabel: document.getElementById("chartLabel"),
       timelineLabel: document.getElementById("timelineLabel"),
@@ -601,6 +671,17 @@
         .sort((a, b) => a.month.localeCompare(b.month) || a.state.localeCompare(b.state));
     }
 
+    function normalizeTrendingSubjects(rows) {
+      return rows
+        .map(row => ({
+          month: String(row.month || ""),
+          subject: String(row.subject || "").trim(),
+          count: Number(row.count) || 0
+        }))
+        .filter(row => /^\d{4}-\d{2}$/.test(row.month) && row.subject)
+        .sort((a, b) => a.month.localeCompare(b.month) || b.count - a.count || a.subject.localeCompare(b.subject));
+    }
+
     function populateMonthFilter() {
       const current = els.monthFilter.value;
       const months = monthlyData
@@ -610,6 +691,23 @@
         `<option value="${month}">${formatMonth(month)}</option>`
       )).join("");
       if (months.includes(current)) els.monthFilter.value = current;
+    }
+
+    function populateTrendMonthFilter() {
+      const current = els.trendMonth.value;
+      const months = Array.from(new Set(
+        trendingSubjects
+          .filter(row => row.month >= "2024-01")
+          .map(row => row.month)
+      )).sort();
+      els.trendMonth.innerHTML = months.map(month => (
+        `<option value="${month}">${formatMonth(month)}</option>`
+      )).join("");
+      if (months.includes(current)) {
+        els.trendMonth.value = current;
+      } else if (months.length) {
+        els.trendMonth.value = months.at(-1);
+      }
     }
 
     function formatMonth(month) {
@@ -622,6 +720,15 @@
       const [year, monthNumber] = month.split("-").map(Number);
       const date = new Date(Date.UTC(year, monthNumber - 1, 1));
       return date.toLocaleString(undefined, { month: "short", timeZone: "UTC" });
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
     }
 
     function curvedPath(points) {
@@ -785,6 +892,31 @@
       els.timelineLabel.textContent = `${formatMonth(rows[0].month)} to ${formatMonth(rows.at(-1).month)}`;
     }
 
+    function renderTrending() {
+      const month = els.trendMonth.value;
+      const sort = els.trendSort.value;
+      let rows = trendingSubjects.filter(row => row.month === month);
+
+      rows.sort((a, b) => {
+        if (sort === "hot-asc") return a.count - b.count || a.subject.localeCompare(b.subject);
+        if (sort === "subject-asc") return a.subject.localeCompare(b.subject);
+        return b.count - a.count || a.subject.localeCompare(b.subject);
+      });
+
+      rows = rows.slice(0, 12);
+      if (!rows.length) {
+        els.trendingList.innerHTML = `<div class="small">No subject data available for this month.</div>`;
+        return;
+      }
+
+      els.trendingList.innerHTML = rows.map(row => `
+        <div class="trend-row" title="${escapeHtml(row.subject)}: ${fmt.format(row.count)} bills">
+          <div class="trend-subject">${escapeHtml(row.subject)}</div>
+          <div class="trend-count">${fmt.format(row.count)}</div>
+        </div>
+      `).join("");
+    }
+
     function renderTable(rows) {
       els.tbody.innerHTML = rows.map(row => `
         <tr>
@@ -801,6 +933,7 @@
       const rows = getRows();
       renderMetrics(rows);
       renderLineChart();
+      renderTrending();
       renderChart(rows);
       renderTable(rows);
     }
@@ -828,17 +961,22 @@
         data = normalizeRows(payload.rows || []);
         monthlyData = normalizeMonthly(payload.monthly_totals || []);
         monthlyByState = normalizeMonthlyByState(payload.monthly_by_state || []);
+        trendingSubjects = normalizeTrendingSubjects(payload.trending_subjects || []);
       } catch (error) {
         data = normalizeRows(fallbackData);
         monthlyData = [];
         monthlyByState = [];
+        trendingSubjects = [];
       }
       populateMonthFilter();
+      populateTrendMonthFilter();
       render();
     }
 
     els.search.addEventListener("input", render);
     els.monthFilter.addEventListener("change", render);
+    els.trendMonth.addEventListener("change", render);
+    els.trendSort.addEventListener("change", render);
     els.limit.addEventListener("change", render);
     els.sort.addEventListener("change", render);
     els.export.addEventListener("click", exportCsv);

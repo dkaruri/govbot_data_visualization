@@ -51,6 +51,7 @@ def main():
     rows = []
     monthly = Counter()
     monthly_by_state = Counter()
+    trending_subjects = Counter()
 
     for repo in sorted(os.listdir(repos_dir)):
         repo_path = os.path.join(repos_dir, repo)
@@ -72,6 +73,12 @@ def main():
                 state = repo.removesuffix("-legislation").upper()
                 monthly[month] += 1
                 monthly_by_state[(month, repo, state)] += 1
+                subjects = metadata.get("subject") or []
+                if isinstance(subjects, str):
+                    subjects = [subjects]
+                for subject in subjects:
+                    if isinstance(subject, str) and subject.strip():
+                        trending_subjects[(month, subject.strip())] += 1
 
         rows.append({
             "repo": repo,
@@ -90,6 +97,10 @@ def main():
         "monthly_by_state": [
             {"month": month, "repo": repo, "state": state, "count": count}
             for (month, repo, state), count in sorted(monthly_by_state.items())
+        ],
+        "trending_subjects": [
+            {"month": month, "subject": subject, "count": count}
+            for (month, subject), count in sorted(trending_subjects.items())
         ],
     }
 
