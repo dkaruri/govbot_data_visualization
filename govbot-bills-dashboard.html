@@ -218,7 +218,6 @@
     .tooltip {
       position: absolute;
       pointer-events: none;
-      transform: translate(12px, -48px);
       min-width: 132px;
       padding: 8px 10px;
       border-radius: 8px;
@@ -378,6 +377,17 @@
   <main class="wrap">
     <div class="metrics" id="metrics"></div>
 
+    <section class="timeline">
+      <div class="section-head">
+        <h2>Bills By Month</h2>
+        <span class="small" id="timelineLabel"></span>
+      </div>
+      <div class="line-chart" id="lineChart">
+        <svg id="lineSvg" role="img" aria-label="Line graph of total U.S. bills by month and year"></svg>
+        <div class="tooltip" id="lineTooltip"></div>
+      </div>
+    </section>
+
     <div class="toolbar">
       <input id="search" type="search" placeholder="Search state or repo" />
       <select id="monthFilter">
@@ -397,17 +407,6 @@
       </select>
       <button id="export">Export CSV</button>
     </div>
-
-    <section class="timeline">
-      <div class="section-head">
-        <h2>Bills By Month</h2>
-        <span class="small" id="timelineLabel"></span>
-      </div>
-      <div class="line-chart" id="lineChart">
-        <svg id="lineSvg" role="img" aria-label="Line graph of total U.S. bills by month and year"></svg>
-        <div class="tooltip" id="lineTooltip"></div>
-      </div>
-    </section>
 
     <div class="layout">
       <section>
@@ -751,10 +750,13 @@
       const focusDot = els.lineSvg.querySelector("#focusDot");
       const hitArea = els.lineSvg.querySelector("#lineHitArea");
       const pointForEvent = event => {
-        const rect = els.lineSvg.getBoundingClientRect();
-        const svgX = (event.clientX - rect.left) * (width / rect.width);
+        const svgPoint = els.lineSvg.createSVGPoint();
+        svgPoint.x = event.clientX;
+        svgPoint.y = event.clientY;
+        const localPoint = svgPoint.matrixTransform(els.lineSvg.getScreenCTM().inverse());
+        const svgX = Math.max(margin.left, Math.min(width - margin.right, localPoint.x));
         const index = Math.max(0, Math.min(rows.length - 1, Math.round((svgX - margin.left) / xStep)));
-        return { index, x: xFor(index), y: yFor(rows[index].count), row: rows[index] };
+        return { index, x: xFor(index), y: yFor(rows[index].count), pointerX: localPoint.x, pointerY: localPoint.y, row: rows[index] };
       };
 
       hitArea.addEventListener("pointermove", event => {
@@ -767,9 +769,8 @@
         focusDot.style.opacity = "1";
         els.lineTooltip.innerHTML = `<strong>${formatMonth(point.row.month)}</strong><span>${fmt.format(point.row.count)} bills</span>`;
         const chartRect = els.lineChart.getBoundingClientRect();
-        const svgRect = els.lineSvg.getBoundingClientRect();
-        const tooltipX = svgRect.left - chartRect.left + point.x * (svgRect.width / width);
-        const tooltipY = svgRect.top - chartRect.top + point.y * (svgRect.height / height);
+        const tooltipX = Math.min(event.clientX - chartRect.left + 14, chartRect.width - 156);
+        const tooltipY = Math.max(event.clientY - chartRect.top - 12, 46);
         els.lineTooltip.style.left = `${tooltipX}px`;
         els.lineTooltip.style.top = `${tooltipY}px`;
         els.lineTooltip.style.opacity = "1";
