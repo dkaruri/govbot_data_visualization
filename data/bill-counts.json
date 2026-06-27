@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T12:00:53Z",
+  "generated_at": "2026-06-27T11:10:06Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -20,7 +20,7 @@
     {
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 5008
+      "count": 5010
     },
     {
       "repo": "co-legislation",
@@ -30,7 +30,7 @@
     {
       "repo": "de-legislation",
       "state": "DE",
-      "count": 1281
+      "count": 1284
     },
     {
       "repo": "fl-legislation",
@@ -195,7 +195,7 @@
     {
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 5015
+      "count": 5027
     },
     {
       "repo": "ri-legislation",
@@ -325,7 +325,7 @@
     },
     {
       "month": "2025-01",
-      "count": 34304
+      "count": 34303
     },
     {
       "month": "2025-02",
@@ -337,7 +337,7 @@
     },
     {
       "month": "2025-04",
-      "count": 8353
+      "count": 8354
     },
     {
       "month": "2025-05",
@@ -349,11 +349,11 @@
     },
     {
       "month": "2025-07",
-      "count": 2169
+      "count": 2168
     },
     {
       "month": "2025-08",
-      "count": 1521
+      "count": 1522
     },
     {
       "month": "2025-09",
@@ -381,7 +381,7 @@
     },
     {
       "month": "2026-03",
-      "count": 4278
+      "count": 4279
     },
     {
       "month": "2026-04",
@@ -389,11 +389,11 @@
     },
     {
       "month": "2026-05",
-      "count": 684
+      "count": 683
     },
     {
       "month": "2026-06",
-      "count": 572
+      "count": 589
     }
   ],
   "monthly_by_state": [
@@ -749,7 +749,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -1415,7 +1415,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1877,7 +1877,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 27
+      "count": 26
     },
     {
       "month": "2025-07",
@@ -1997,7 +1997,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -2819,7 +2819,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 9
+      "count": 10
     },
     {
       "month": "2026-03",
@@ -2969,7 +2969,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2026-05",
@@ -2999,13 +2999,13 @@
       "month": "2026-06",
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 38
+      "count": 40
     },
     {
       "month": "2026-06",
       "repo": "de-legislation",
       "state": "DE",
-      "count": 137
+      "count": 140
     },
     {
       "month": "2026-06",
@@ -3023,7 +3023,7 @@
       "month": "2026-06",
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 148
+      "count": 160
     },
     {
       "month": "2026-06",
@@ -87680,6 +87680,11 @@
     },
     {
       "month": "2025-02",
+      "subject": "resiliencyplanning",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
       "subject": "resolutions",
       "count": 30
     },
@@ -89165,7 +89170,7 @@
     },
     {
       "month": "2025-02",
-      "subject": "takeofspecies",
+      "subject": "takeofspeciesproposedforlisting",
       "count": 1
     },
     {
@@ -161825,7 +161830,7 @@
     },
     {
       "month": "2026-01",
-      "subject": "Recoveryresidences",
+      "subject": "Recoveryhousing",
       "count": 1
     },
     {
@@ -170140,6 +170145,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "woodproducts",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "work release",
       "count": 1
     },
@@ -173146,7 +173156,7 @@
     {
       "month": "2026-02",
       "subject": "Electricalcorporations",
-      "count": 9
+      "count": 8
     },
     {
       "month": "2026-02",
@@ -173212,11 +173222,6 @@
       "month": "2026-02",
       "subject": "Emergency and 911 Services",
       "count": 11
-    },
-    {
-      "month": "2026-02",
-      "subject": "EmergencyMedicalServicesAct",
-      "count": 1
     },
     {
       "month": "2026-02",
@@ -173312,6 +173317,11 @@
       "month": "2026-02",
       "subject": "Energy",
       "count": 55
+    },
+    {
+      "month": "2026-02",
+      "subject": "Energyefficiency",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -174630,11 +174640,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "IndustrialDecarbonizationandEnergyEfficiencyProgram",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "Industrialcities",
       "count": 1
     },
@@ -175487,6 +175492,11 @@
       "month": "2026-02",
       "subject": "Mental Health and Related Conditions",
       "count": 5
+    },
+    {
+      "month": "2026-02",
+      "subject": "Mentalhealth",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -179485,6 +179495,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "agencyresponsetime",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "agerestriction",
       "count": 1
     },
@@ -179926,7 +179941,7 @@
     {
       "month": "2026-02",
       "subject": "assessment",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -181810,6 +181825,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "customagriculturalandindustrialefficiencyprojects",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "customarymaintenance",
       "count": 1
     },
@@ -183452,6 +183472,11 @@
       "month": "2026-02",
       "subject": "financing",
       "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "financingoptions",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -185575,11 +185600,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "localgovernmentcoordination",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "localgovernments",
       "count": 1
     },
@@ -186016,11 +186036,6 @@
     {
       "month": "2026-02",
       "subject": "methanereduction",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
-      "subject": "methodsofsubmission,fees,andagencyresponsetime",
       "count": 1
     },
     {
@@ -197175,6 +197190,11 @@
     },
     {
       "month": "2026-06",
+      "subject": "Localtaxes",
+      "count": 1
+    },
+    {
+      "month": "2026-06",
       "subject": "PUBLIC OFFICERS AND EMPLOYEES",
       "count": 3
     },
@@ -197230,6 +197250,11 @@
     },
     {
       "month": "2026-06",
+      "subject": "WithdrawalofAssemblyConstitutionalAmendmentNo13ofthe2023\u201324RegularSession",
+      "count": 1
+    },
+    {
+      "month": "2026-06",
       "subject": "concurrent)",
       "count": 2
     },
@@ -197237,6 +197262,11 @@
       "month": "2026-06",
       "subject": "constitutional amendments",
       "count": 2
+    },
+    {
+      "month": "2026-06",
+      "subject": "limitation",
+      "count": 1
     },
     {
       "month": "2026-06",
