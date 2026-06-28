@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T11:10:06Z",
+  "generated_at": "2026-06-28T11:21:35Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -120,7 +120,7 @@
     {
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 301
+      "count": 302
     },
     {
       "repo": "ms-legislation",
@@ -215,7 +215,7 @@
     {
       "repo": "tn-legislation",
       "state": "TN",
-      "count": 6117
+      "count": 6118
     },
     {
       "repo": "usa-legislation",
@@ -325,7 +325,7 @@
     },
     {
       "month": "2025-01",
-      "count": 34303
+      "count": 34305
     },
     {
       "month": "2025-02",
@@ -337,7 +337,7 @@
     },
     {
       "month": "2025-04",
-      "count": 8354
+      "count": 8353
     },
     {
       "month": "2025-05",
@@ -349,11 +349,11 @@
     },
     {
       "month": "2025-07",
-      "count": 2168
+      "count": 2169
     },
     {
       "month": "2025-08",
-      "count": 1522
+      "count": 1521
     },
     {
       "month": "2025-09",
@@ -369,7 +369,7 @@
     },
     {
       "month": "2025-12",
-      "count": 3731
+      "count": 3732
     },
     {
       "month": "2026-01",
@@ -389,7 +389,7 @@
     },
     {
       "month": "2026-05",
-      "count": 683
+      "count": 684
     },
     {
       "month": "2026-06",
@@ -749,7 +749,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 12
+      "count": 13
     },
     {
       "month": "2025-01",
@@ -833,7 +833,7 @@
       "month": "2025-01",
       "repo": "tn-legislation",
       "state": "TN",
-      "count": 1406
+      "count": 1407
     },
     {
       "month": "2025-01",
@@ -1415,7 +1415,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 17
+      "count": 16
     },
     {
       "month": "2025-04",
@@ -1877,7 +1877,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 26
+      "count": 27
     },
     {
       "month": "2025-07",
@@ -1997,7 +1997,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 22
+      "count": 21
     },
     {
       "month": "2025-08",
@@ -2441,7 +2441,7 @@
       "month": "2025-12",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 1788
+      "count": 1789
     },
     {
       "month": "2025-12",
@@ -2969,7 +2969,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-05",
@@ -18096,16 +18096,21 @@
     {
       "month": "2025-01",
       "subject": "BudgetActof2025",
-      "count": 143
+      "count": 105
     },
     {
       "month": "2025-01",
       "subject": "BudgetActof2026",
-      "count": 4
+      "count": 6
     },
     {
       "month": "2025-01",
       "subject": "BudgetActsof2021,2023,2024,and2025",
+      "count": 2
+    },
+    {
+      "month": "2025-01",
+      "subject": "BudgetActsof2022,2023,2024,and2025",
       "count": 2
     },
     {
@@ -22271,7 +22276,7 @@
     {
       "month": "2025-01",
       "subject": "Courts",
-      "count": 45
+      "count": 47
     },
     {
       "month": "2025-01",
@@ -23886,7 +23891,7 @@
     {
       "month": "2025-01",
       "subject": "Developmentalservices",
-      "count": 3
+      "count": 5
     },
     {
       "month": "2025-01",
@@ -25120,6 +25125,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "Earlycareandeducation",
+      "count": 2
+    },
+    {
+      "month": "2025-01",
       "subject": "Earlychildhoodeducationandchildcare",
       "count": 4
     },
@@ -25285,6 +25295,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "EducationCommissioner",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
       "subject": "Educational Pathway",
       "count": 2
     },
@@ -25306,7 +25321,12 @@
     {
       "month": "2025-01",
       "subject": "Educationfinance",
-      "count": 4
+      "count": 6
+    },
+    {
+      "month": "2025-01",
+      "subject": "Educationgovernance",
+      "count": 1
     },
     {
       "month": "2025-01",
@@ -28935,6 +28955,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "Governor'sReorganizationPlanNo1of2025",
+      "count": 2
+    },
+    {
+      "month": "2025-01",
       "subject": "Graduate Outcomes",
       "count": 2
     },
@@ -30566,7 +30591,7 @@
     {
       "month": "2025-01",
       "subject": "Health",
-      "count": 50
+      "count": 52
     },
     {
       "month": "2025-01",
@@ -31011,7 +31036,7 @@
     {
       "month": "2025-01",
       "subject": "Highereducationbudgettrailerbill",
-      "count": 4
+      "count": 6
     },
     {
       "month": "2025-01",
@@ -31496,7 +31521,7 @@
     {
       "month": "2025-01",
       "subject": "Housing",
-      "count": 96
+      "count": 98
     },
     {
       "month": "2025-01",
@@ -31626,7 +31651,7 @@
     {
       "month": "2025-01",
       "subject": "Humanservices",
-      "count": 4
+      "count": 6
     },
     {
       "month": "2025-01",
@@ -33801,7 +33826,7 @@
     {
       "month": "2025-01",
       "subject": "Labor",
-      "count": 28
+      "count": 30
     },
     {
       "month": "2025-01",
@@ -37835,6 +37860,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "November3,2026,statewidegeneralelection",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
       "subject": "Nuclear Energy Task Force",
       "count": 4
     },
@@ -41846,7 +41876,7 @@
     {
       "month": "2025-01",
       "subject": "PublicResources",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2025-01",
@@ -41876,7 +41906,7 @@
     {
       "month": "2025-01",
       "subject": "Publicresourcestrailerbill",
-      "count": 4
+      "count": 6
     },
     {
       "month": "2025-01",
@@ -46070,6 +46100,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "Skillednursingfacilities",
+      "count": 2
+    },
+    {
+      "month": "2025-01",
       "subject": "Skills-Based Hiring",
       "count": 1
     },
@@ -47420,6 +47455,16 @@
     },
     {
       "month": "2025-01",
+      "subject": "StateBoardofEducation",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
+      "subject": "StateDepartmentofEducation",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
       "subject": "StateDepartmentofHealthCareServices",
       "count": 1
     },
@@ -47446,7 +47491,7 @@
     {
       "month": "2025-01",
       "subject": "Stategovernment",
-      "count": 3
+      "count": 5
     },
     {
       "month": "2025-01",
@@ -47937,6 +47982,11 @@
       "month": "2025-01",
       "subject": "Super PACs",
       "count": 2
+    },
+    {
+      "month": "2025-01",
+      "subject": "SuperintendentofPublicInstruction",
+      "count": 1
     },
     {
       "month": "2025-01",
@@ -48595,6 +48645,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "Taxationtrailerbill",
+      "count": 2
+    },
+    {
+      "month": "2025-01",
       "subject": "Taxes",
       "count": 75
     },
@@ -48841,7 +48896,7 @@
     {
       "month": "2025-01",
       "subject": "Tennessee Emergency Management Agency (TEMA)",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2025-01",
@@ -49546,7 +49601,7 @@
     {
       "month": "2025-01",
       "subject": "Transportationbudgettrailerbill",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2025-01",
@@ -52225,6 +52280,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "ballotmeasures",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
       "subject": "ballots",
       "count": 11
     },
@@ -52622,6 +52682,11 @@
       "month": "2025-01",
       "subject": "codeinterpretations",
       "count": 1
+    },
+    {
+      "month": "2025-01",
+      "subject": "codification",
+      "count": 2
     },
     {
       "month": "2025-01",
@@ -53336,7 +53401,7 @@
     {
       "month": "2025-01",
       "subject": "educationomnibustrailerbill",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2025-01",
@@ -55730,6 +55795,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "reimbursementrates",
+      "count": 2
+    },
+    {
+      "month": "2025-01",
       "subject": "relief",
       "count": 2
     },
@@ -56641,6 +56711,11 @@
     {
       "month": "2025-01",
       "subject": "trails",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
+      "subject": "transferofduties",
       "count": 1
     },
     {
@@ -171855,11 +171930,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "CityofLongBeachPacificCoastHighwayspeedsafetysystems",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "CityofMartinez",
       "count": 1
     },
@@ -177736,6 +177806,11 @@
     {
       "month": "2026-02",
       "subject": "Speech-languagepathologists,audiologists,andhearingaiddispensers",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Speedsafetysystems",
       "count": 1
     },
     {
