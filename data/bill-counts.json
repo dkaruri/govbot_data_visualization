@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T11:21:35Z",
+  "generated_at": "2026-06-29T13:20:53Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -150,7 +150,7 @@
     {
       "repo": "nh-legislation",
       "state": "NH",
-      "count": 2448
+      "count": 2465
     },
     {
       "repo": "nj-legislation",
@@ -325,7 +325,7 @@
     },
     {
       "month": "2025-01",
-      "count": 34305
+      "count": 34304
     },
     {
       "month": "2025-02",
@@ -337,7 +337,7 @@
     },
     {
       "month": "2025-04",
-      "count": 8353
+      "count": 8354
     },
     {
       "month": "2025-05",
@@ -349,11 +349,11 @@
     },
     {
       "month": "2025-07",
-      "count": 2169
+      "count": 2168
     },
     {
       "month": "2025-08",
-      "count": 1521
+      "count": 1522
     },
     {
       "month": "2025-09",
@@ -377,11 +377,11 @@
     },
     {
       "month": "2026-02",
-      "count": 10466
+      "count": 10483
     },
     {
       "month": "2026-03",
-      "count": 4279
+      "count": 4280
     },
     {
       "month": "2026-04",
@@ -389,7 +389,7 @@
     },
     {
       "month": "2026-05",
-      "count": 684
+      "count": 683
     },
     {
       "month": "2026-06",
@@ -749,7 +749,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -1415,7 +1415,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1877,7 +1877,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 27
+      "count": 26
     },
     {
       "month": "2025-07",
@@ -1997,7 +1997,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -2727,6 +2727,12 @@
     },
     {
       "month": "2026-02",
+      "repo": "nh-legislation",
+      "state": "NH",
+      "count": 17
+    },
+    {
+      "month": "2026-02",
       "repo": "ok-legislation",
       "state": "OK",
       "count": 2504
@@ -2819,7 +2825,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 11
     },
     {
       "month": "2026-03",
@@ -2969,7 +2975,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2026-05",
