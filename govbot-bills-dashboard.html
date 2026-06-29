@@ -1039,7 +1039,7 @@
     function postMatchesState(post, stateCode) {
       if (!stateCode) return true;
       const text = String(post.record?.text || "");
-      const billPrefix = new RegExp(`\\b${stateCode}\\s+[A-Z]{1,6}\\s*\\d+`, "i");
+      const billPrefix = new RegExp(`\\b${stateCode}\\s+(?:[A-Z]{1,8}\\s*){1,5}\\d+`);
       return billPrefix.test(text);
     }
 
