@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T13:20:53Z",
+  "generated_at": "2026-06-30T11:59:03Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -195,7 +195,7 @@
     {
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 5027
+      "count": 5029
     },
     {
       "repo": "ri-legislation",
@@ -325,7 +325,7 @@
     },
     {
       "month": "2025-01",
-      "count": 34304
+      "count": 34305
     },
     {
       "month": "2025-02",
@@ -337,7 +337,7 @@
     },
     {
       "month": "2025-04",
-      "count": 8354
+      "count": 8353
     },
     {
       "month": "2025-05",
@@ -349,11 +349,11 @@
     },
     {
       "month": "2025-07",
-      "count": 2168
+      "count": 2169
     },
     {
       "month": "2025-08",
-      "count": 1522
+      "count": 1521
     },
     {
       "month": "2025-09",
@@ -381,7 +381,7 @@
     },
     {
       "month": "2026-03",
-      "count": 4280
+      "count": 4279
     },
     {
       "month": "2026-04",
@@ -389,11 +389,11 @@
     },
     {
       "month": "2026-05",
-      "count": 683
+      "count": 684
     },
     {
       "month": "2026-06",
-      "count": 589
+      "count": 591
     }
   ],
   "monthly_by_state": [
@@ -749,7 +749,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 12
+      "count": 13
     },
     {
       "month": "2025-01",
@@ -1415,7 +1415,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 17
+      "count": 16
     },
     {
       "month": "2025-04",
@@ -1877,7 +1877,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 26
+      "count": 27
     },
     {
       "month": "2025-07",
@@ -1997,7 +1997,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 22
+      "count": 21
     },
     {
       "month": "2025-08",
@@ -2825,7 +2825,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 11
+      "count": 10
     },
     {
       "month": "2026-03",
@@ -2975,7 +2975,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-05",
@@ -3029,7 +3029,7 @@
       "month": "2026-06",
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 160
+      "count": 162
     },
     {
       "month": "2026-06",
