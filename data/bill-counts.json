@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T11:59:03Z",
+  "generated_at": "2026-07-01T12:22:47Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -20,7 +20,7 @@
     {
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 5010
+      "count": 5011
     },
     {
       "repo": "co-legislation",
@@ -30,7 +30,7 @@
     {
       "repo": "de-legislation",
       "state": "DE",
-      "count": 1284
+      "count": 1287
     },
     {
       "repo": "fl-legislation",
@@ -195,7 +195,7 @@
     {
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 5029
+      "count": 5069
     },
     {
       "repo": "ri-legislation",
@@ -325,7 +325,7 @@
     },
     {
       "month": "2025-01",
-      "count": 34305
+      "count": 34304
     },
     {
       "month": "2025-02",
@@ -337,7 +337,7 @@
     },
     {
       "month": "2025-04",
-      "count": 8353
+      "count": 8354
     },
     {
       "month": "2025-05",
@@ -349,11 +349,11 @@
     },
     {
       "month": "2025-07",
-      "count": 2169
+      "count": 2168
     },
     {
       "month": "2025-08",
-      "count": 1521
+      "count": 1522
     },
     {
       "month": "2025-09",
@@ -369,7 +369,7 @@
     },
     {
       "month": "2025-12",
-      "count": 3732
+      "count": 3731
     },
     {
       "month": "2026-01",
@@ -381,7 +381,7 @@
     },
     {
       "month": "2026-03",
-      "count": 4279
+      "count": 4280
     },
     {
       "month": "2026-04",
@@ -389,11 +389,11 @@
     },
     {
       "month": "2026-05",
-      "count": 684
+      "count": 683
     },
     {
       "month": "2026-06",
-      "count": 591
+      "count": 635
     }
   ],
   "monthly_by_state": [
@@ -749,7 +749,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -1415,7 +1415,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1877,7 +1877,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 27
+      "count": 26
     },
     {
       "month": "2025-07",
@@ -1997,7 +1997,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -2441,7 +2441,7 @@
       "month": "2025-12",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 1789
+      "count": 1788
     },
     {
       "month": "2025-12",
@@ -2825,7 +2825,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 11
     },
     {
       "month": "2026-03",
@@ -2975,7 +2975,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2026-05",
@@ -3005,13 +3005,13 @@
       "month": "2026-06",
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 40
+      "count": 41
     },
     {
       "month": "2026-06",
       "repo": "de-legislation",
       "state": "DE",
-      "count": 140
+      "count": 143
     },
     {
       "month": "2026-06",
@@ -3029,7 +3029,7 @@
       "month": "2026-06",
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 162
+      "count": 202
     },
     {
       "month": "2026-06",
@@ -82113,11 +82113,6 @@
       "month": "2025-02",
       "subject": "family planning",
       "count": 2
-    },
-    {
-      "month": "2025-02",
-      "subject": "familydaycarehome",
-      "count": 1
     },
     {
       "month": "2025-02",
@@ -165566,7 +165561,7 @@
     },
     {
       "month": "2026-01",
-      "subject": "aggregateddistributedcapacityresources",
+      "subject": "aggregateddistributedenergyresources",
       "count": 1
     },
     {
@@ -170427,7 +170422,7 @@
     {
       "month": "2026-02",
       "subject": "Accessorydwellingunitsandjunioraccessorydwellingunits",
-      "count": 2
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -174786,11 +174781,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "InteragencyWorkingGrouponTransportationFuelsTransitionStrategy",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "Intercityrailandcommuterrail",
       "count": 1
     },
@@ -177741,6 +177731,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Smallenergizationprojects",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Smogcheck",
       "count": 1
     },
@@ -177927,6 +177922,11 @@
     {
       "month": "2026-02",
       "subject": "StateCouncilonDevelopmentalDisabilities",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "StateEnergyResourcesConservationandDevelopmentCommission",
       "count": 1
     },
     {
@@ -179628,6 +179628,11 @@
       "month": "2026-02",
       "subject": "air quality",
       "count": 5
+    },
+    {
+      "month": "2026-02",
+      "subject": "airdistrictsandlocalgovernments",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -182436,7 +182441,7 @@
     },
     {
       "month": "2026-02",
-      "subject": "distributedenergystoragesystemsandnonwirealternatives",
+      "subject": "distributedenergystoragesystems",
       "count": 1
     },
     {
@@ -186037,6 +186042,11 @@
     {
       "month": "2026-02",
       "subject": "memecoins",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "memorandaofunderstanding",
       "count": 1
     },
     {
@@ -190432,6 +190442,11 @@
     {
       "month": "2026-02",
       "subject": "transportationfuelsassessment",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "transportationfuelsrefiningfacilities",
       "count": 1
     },
     {
