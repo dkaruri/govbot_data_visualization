@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T12:22:47Z",
+  "generated_at": "2026-07-02T11:48:05Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -20,7 +20,7 @@
     {
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 5011
+      "count": 5012
     },
     {
       "repo": "co-legislation",
@@ -30,7 +30,7 @@
     {
       "repo": "de-legislation",
       "state": "DE",
-      "count": 1287
+      "count": 1294
     },
     {
       "repo": "fl-legislation",
@@ -90,7 +90,7 @@
     {
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 8975
+      "count": 11076
     },
     {
       "repo": "md-legislation",
@@ -195,7 +195,7 @@
     {
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 5069
+      "count": 5078
     },
     {
       "repo": "ri-legislation",
@@ -325,7 +325,7 @@
     },
     {
       "month": "2025-01",
-      "count": 34304
+      "count": 34305
     },
     {
       "month": "2025-02",
@@ -333,15 +333,15 @@
     },
     {
       "month": "2025-03",
-      "count": 16756
+      "count": 16761
     },
     {
       "month": "2025-04",
-      "count": 8354
+      "count": 8353
     },
     {
       "month": "2025-05",
-      "count": 6504
+      "count": 6508
     },
     {
       "month": "2025-06",
@@ -349,51 +349,55 @@
     },
     {
       "month": "2025-07",
-      "count": 2168
+      "count": 2170
     },
     {
       "month": "2025-08",
-      "count": 1522
+      "count": 1524
     },
     {
       "month": "2025-09",
-      "count": 2914
+      "count": 2919
     },
     {
       "month": "2025-10",
-      "count": 3188
+      "count": 3198
     },
     {
       "month": "2025-11",
-      "count": 2861
+      "count": 2877
     },
     {
       "month": "2025-12",
-      "count": 3731
+      "count": 4098
     },
     {
       "month": "2026-01",
-      "count": 19435
+      "count": 19758
     },
     {
       "month": "2026-02",
-      "count": 10483
+      "count": 10778
     },
     {
       "month": "2026-03",
-      "count": 4280
+      "count": 4611
     },
     {
       "month": "2026-04",
-      "count": 955
+      "count": 1184
     },
     {
       "month": "2026-05",
-      "count": 683
+      "count": 904
     },
     {
       "month": "2026-06",
-      "count": 635
+      "count": 906
+    },
+    {
+      "month": "2026-07",
+      "count": 15
     }
   ],
   "monthly_by_state": [
@@ -749,7 +753,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 12
+      "count": 13
     },
     {
       "month": "2025-01",
@@ -1169,7 +1173,7 @@
       "month": "2025-03",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 298
+      "count": 303
     },
     {
       "month": "2025-03",
@@ -1415,7 +1419,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 17
+      "count": 16
     },
     {
       "month": "2025-04",
@@ -1571,7 +1575,7 @@
       "month": "2025-05",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 307
+      "count": 311
     },
     {
       "month": "2025-05",
@@ -1859,7 +1863,7 @@
       "month": "2025-07",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 253
+      "count": 254
     },
     {
       "month": "2025-07",
@@ -1877,7 +1881,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 26
+      "count": 27
     },
     {
       "month": "2025-07",
@@ -1979,7 +1983,7 @@
       "month": "2025-08",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 213
+      "count": 216
     },
     {
       "month": "2025-08",
@@ -1997,7 +2001,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 22
+      "count": 21
     },
     {
       "month": "2025-08",
@@ -2087,7 +2091,7 @@
       "month": "2025-09",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 258
+      "count": 263
     },
     {
       "month": "2025-09",
@@ -2201,7 +2205,7 @@
       "month": "2025-10",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 265
+      "count": 275
     },
     {
       "month": "2025-10",
@@ -2315,7 +2319,7 @@
       "month": "2025-11",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 277
+      "count": 293
     },
     {
       "month": "2025-11",
@@ -2429,7 +2433,7 @@
       "month": "2025-12",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 7
+      "count": 373
     },
     {
       "month": "2025-12",
@@ -2441,7 +2445,7 @@
       "month": "2025-12",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 1788
+      "count": 1789
     },
     {
       "month": "2025-12",
@@ -2571,6 +2575,12 @@
     },
     {
       "month": "2026-01",
+      "repo": "ma-legislation",
+      "state": "MA",
+      "count": 323
+    },
+    {
+      "month": "2026-01",
       "repo": "me-legislation",
       "state": "ME",
       "count": 4
@@ -2693,7 +2703,7 @@
       "month": "2026-02",
       "repo": "ma-legislation",
       "state": "MA",
-      "count": 1
+      "count": 296
     },
     {
       "month": "2026-02",
@@ -2805,6 +2815,12 @@
     },
     {
       "month": "2026-03",
+      "repo": "ma-legislation",
+      "state": "MA",
+      "count": 332
+    },
+    {
+      "month": "2026-03",
       "repo": "me-legislation",
       "state": "ME",
       "count": 8
@@ -2825,7 +2841,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 11
+      "count": 10
     },
     {
       "month": "2026-03",
@@ -2901,6 +2917,12 @@
     },
     {
       "month": "2026-04",
+      "repo": "ma-legislation",
+      "state": "MA",
+      "count": 229
+    },
+    {
+      "month": "2026-04",
       "repo": "me-legislation",
       "state": "ME",
       "count": 6
@@ -2967,6 +2989,12 @@
     },
     {
       "month": "2026-05",
+      "repo": "ma-legislation",
+      "state": "MA",
+      "count": 220
+    },
+    {
+      "month": "2026-05",
       "repo": "mo-legislation",
       "state": "MO",
       "count": 1
@@ -2975,7 +3003,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-05",
@@ -3005,13 +3033,13 @@
       "month": "2026-06",
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 41
+      "count": 42
     },
     {
       "month": "2026-06",
       "repo": "de-legislation",
       "state": "DE",
-      "count": 143
+      "count": 150
     },
     {
       "month": "2026-06",
@@ -3027,15 +3055,27 @@
     },
     {
       "month": "2026-06",
+      "repo": "ma-legislation",
+      "state": "MA",
+      "count": 254
+    },
+    {
+      "month": "2026-06",
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 202
+      "count": 211
     },
     {
       "month": "2026-06",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 70
+    },
+    {
+      "month": "2026-07",
+      "repo": "ma-legislation",
+      "state": "MA",
+      "count": 15
     }
   ],
   "trending_subjects": [
@@ -86732,7 +86772,12 @@
     {
       "month": "2025-02",
       "subject": "prohibition",
-      "count": 5
+      "count": 4
+    },
+    {
+      "month": "2025-02",
+      "subject": "prohibitionandpenalties",
+      "count": 1
     },
     {
       "month": "2025-02",
@@ -180691,6 +180736,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "careertechnicaleducationpublicsafetycourses",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "caregiversuccession",
       "count": 1
     },
@@ -183616,11 +183666,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "firefightingeducation,lawenforcementeducation,andmodernpolicingdegreeprogramcourses",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "firehazardseverityzones",
       "count": 1
     },
@@ -184682,11 +184727,6 @@
     {
       "month": "2026-02",
       "subject": "in-custodyreports",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
-      "subject": "inappropriatecostrecovery",
       "count": 1
     },
     {
@@ -187577,6 +187617,11 @@
     {
       "month": "2026-02",
       "subject": "programsofprofessionalpreparation",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "prohibitedcostrecovery",
       "count": 1
     },
     {
@@ -197217,6 +197262,11 @@
     {
       "month": "2026-06",
       "subject": "CaliforniaBBQMonth",
+      "count": 1
+    },
+    {
+      "month": "2026-06",
+      "subject": "CaliforniaFirefighterAppreciationMonthandCaliforniaFirefightersMemorialDay",
       "count": 1
     },
     {
