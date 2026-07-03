@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T11:48:05Z",
+  "generated_at": "2026-07-03T11:48:26Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -20,7 +20,7 @@
     {
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 5012
+      "count": 5013
     },
     {
       "repo": "co-legislation",
@@ -195,7 +195,7 @@
     {
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 5078
+      "count": 5098
     },
     {
       "repo": "ri-legislation",
@@ -210,12 +210,12 @@
     {
       "repo": "sd-legislation",
       "state": "SD",
-      "count": 43
+      "count": 668
     },
     {
       "repo": "tn-legislation",
       "state": "TN",
-      "count": 6118
+      "count": 9112
     },
     {
       "repo": "usa-legislation",
@@ -325,7 +325,7 @@
     },
     {
       "month": "2025-01",
-      "count": 34305
+      "count": 34304
     },
     {
       "month": "2025-02",
@@ -337,7 +337,7 @@
     },
     {
       "month": "2025-04",
-      "count": 8353
+      "count": 8354
     },
     {
       "month": "2025-05",
@@ -349,11 +349,11 @@
     },
     {
       "month": "2025-07",
-      "count": 2170
+      "count": 2169
     },
     {
       "month": "2025-08",
-      "count": 1524
+      "count": 1525
     },
     {
       "month": "2025-09",
@@ -373,31 +373,31 @@
     },
     {
       "month": "2026-01",
-      "count": 19758
+      "count": 20205
     },
     {
       "month": "2026-02",
-      "count": 10778
+      "count": 12605
     },
     {
       "month": "2026-03",
-      "count": 4611
+      "count": 5103
     },
     {
       "month": "2026-04",
-      "count": 1184
+      "count": 2038
     },
     {
       "month": "2026-05",
-      "count": 904
+      "count": 903
     },
     {
       "month": "2026-06",
-      "count": 906
+      "count": 926
     },
     {
       "month": "2026-07",
-      "count": 15
+      "count": 16
     }
   ],
   "monthly_by_state": [
@@ -753,7 +753,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -1419,7 +1419,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1881,7 +1881,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 27
+      "count": 26
     },
     {
       "month": "2025-07",
@@ -2001,7 +2001,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -2635,6 +2635,12 @@
     },
     {
       "month": "2026-01",
+      "repo": "sd-legislation",
+      "state": "SD",
+      "count": 447
+    },
+    {
+      "month": "2026-01",
       "repo": "tn-legislation",
       "state": "TN",
       "count": 1478
@@ -2761,6 +2767,18 @@
     },
     {
       "month": "2026-02",
+      "repo": "sd-legislation",
+      "state": "SD",
+      "count": 145
+    },
+    {
+      "month": "2026-02",
+      "repo": "tn-legislation",
+      "state": "TN",
+      "count": 1682
+    },
+    {
+      "month": "2026-02",
       "repo": "wa-legislation",
       "state": "WA",
       "count": 109
@@ -2841,7 +2859,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 11
     },
     {
       "month": "2026-03",
@@ -2860,6 +2878,18 @@
       "repo": "ri-legislation",
       "state": "RI",
       "count": 583
+    },
+    {
+      "month": "2026-03",
+      "repo": "sd-legislation",
+      "state": "SD",
+      "count": 33
+    },
+    {
+      "month": "2026-03",
+      "repo": "tn-legislation",
+      "state": "TN",
+      "count": 458
     },
     {
       "month": "2026-03",
@@ -2958,6 +2988,12 @@
       "count": 181
     },
     {
+      "month": "2026-04",
+      "repo": "tn-legislation",
+      "state": "TN",
+      "count": 854
+    },
+    {
       "month": "2026-05",
       "repo": "ca-legislation",
       "state": "CA",
@@ -3003,7 +3039,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2026-05",
@@ -3063,13 +3099,19 @@
       "month": "2026-06",
       "repo": "pr-legislation",
       "state": "PR",
-      "count": 211
+      "count": 231
     },
     {
       "month": "2026-06",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 70
+    },
+    {
+      "month": "2026-07",
+      "repo": "ca-legislation",
+      "state": "CA",
+      "count": 1
     },
     {
       "month": "2026-07",
@@ -11962,7 +12004,7 @@
     {
       "month": "2024-12",
       "subject": "Education",
-      "count": 6
+      "count": 8
     },
     {
       "month": "2024-12",
@@ -12507,7 +12549,7 @@
     {
       "month": "2024-12",
       "subject": "Local Education Agencies",
-      "count": 4
+      "count": 2
     },
     {
       "month": "2024-12",
@@ -19801,11 +19843,6 @@
     },
     {
       "month": "2025-01",
-      "subject": "Charter",
-      "count": 1
-    },
-    {
-      "month": "2025-01",
       "subject": "Charter County Government",
       "count": 3
     },
@@ -21937,7 +21974,7 @@
     {
       "month": "2025-01",
       "subject": "Correction",
-      "count": 8
+      "count": 6
     },
     {
       "month": "2025-01",
@@ -22537,7 +22574,7 @@
     {
       "month": "2025-01",
       "subject": "Criminal Offenses",
-      "count": 119
+      "count": 121
     },
     {
       "month": "2025-01",
@@ -22547,7 +22584,7 @@
     {
       "month": "2025-01",
       "subject": "Criminal Procedure",
-      "count": 36
+      "count": 38
     },
     {
       "month": "2025-01",
@@ -23352,7 +23389,7 @@
     {
       "month": "2025-01",
       "subject": "Death",
-      "count": 35
+      "count": 37
     },
     {
       "month": "2025-01",
@@ -23802,7 +23839,7 @@
     {
       "month": "2025-01",
       "subject": "Dept. of",
-      "count": 54
+      "count": 50
     },
     {
       "month": "2025-01",
@@ -24587,7 +24624,7 @@
     {
       "month": "2025-01",
       "subject": "Driver Licenses",
-      "count": 7
+      "count": 5
     },
     {
       "month": "2025-01",
@@ -31677,7 +31714,7 @@
     {
       "month": "2025-01",
       "subject": "Human Services",
-      "count": 16
+      "count": 14
     },
     {
       "month": "2025-01",
@@ -40851,6 +40888,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "Principals and School Personnel",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
       "subject": "Print Disabilities",
       "count": 3
     },
@@ -41602,7 +41644,7 @@
     {
       "month": "2025-01",
       "subject": "Public Health",
-      "count": 30
+      "count": 28
     },
     {
       "month": "2025-01",
@@ -42687,7 +42729,7 @@
     {
       "month": "2025-01",
       "subject": "Real Property",
-      "count": 42
+      "count": 44
     },
     {
       "month": "2025-01",
@@ -45527,7 +45569,7 @@
     {
       "month": "2025-01",
       "subject": "Schools",
-      "count": 34
+      "count": 33
     },
     {
       "month": "2025-01",
@@ -45872,7 +45914,7 @@
     {
       "month": "2025-01",
       "subject": "Sewage",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2025-01",
@@ -48787,7 +48829,7 @@
     {
       "month": "2025-01",
       "subject": "Teachers",
-      "count": 27
+      "count": 28
     },
     {
       "month": "2025-01",
@@ -48937,7 +48979,7 @@
     {
       "month": "2025-01",
       "subject": "Tennessee Bureau of Investigation",
-      "count": 3
+      "count": 5
     },
     {
       "month": "2025-01",
@@ -51247,7 +51289,7 @@
     {
       "month": "2025-01",
       "subject": "Water",
-      "count": 24
+      "count": 23
     },
     {
       "month": "2025-01",
@@ -62057,7 +62099,7 @@
     {
       "month": "2025-02",
       "subject": "Charter",
-      "count": 9
+      "count": 8
     },
     {
       "month": "2025-02",
@@ -62132,7 +62174,7 @@
     {
       "month": "2025-02",
       "subject": "Children",
-      "count": 24
+      "count": 26
     },
     {
       "month": "2025-02",
@@ -62157,7 +62199,7 @@
     {
       "month": "2025-02",
       "subject": "Children's Services",
-      "count": 8
+      "count": 6
     },
     {
       "month": "2025-02",
@@ -63007,12 +63049,7 @@
     {
       "month": "2025-02",
       "subject": "Correction",
-      "count": 10
-    },
-    {
-      "month": "2025-02",
-      "subject": "Correctional Programs",
-      "count": 2
+      "count": 12
     },
     {
       "month": "2025-02",
@@ -63302,7 +63339,7 @@
     {
       "month": "2025-02",
       "subject": "Courts",
-      "count": 126
+      "count": 130
     },
     {
       "month": "2025-02",
@@ -65257,7 +65294,7 @@
     {
       "month": "2025-02",
       "subject": "Employees",
-      "count": 16
+      "count": 18
     },
     {
       "month": "2025-02",
@@ -65277,7 +65314,7 @@
     {
       "month": "2025-02",
       "subject": "Employers",
-      "count": 14
+      "count": 16
     },
     {
       "month": "2025-02",
@@ -65512,7 +65549,7 @@
     {
       "month": "2025-02",
       "subject": "Expunction",
-      "count": 14
+      "count": 12
     },
     {
       "month": "2025-02",
@@ -67892,7 +67929,7 @@
     {
       "month": "2025-02",
       "subject": "Human Services",
-      "count": 30
+      "count": 32
     },
     {
       "month": "2025-02",
@@ -69127,7 +69164,7 @@
     {
       "month": "2025-02",
       "subject": "Labor and Workforce Development",
-      "count": 4
+      "count": 2
     },
     {
       "month": "2025-02",
@@ -72377,7 +72414,7 @@
     {
       "month": "2025-02",
       "subject": "Principals and School Personnel",
-      "count": 9
+      "count": 10
     },
     {
       "month": "2025-02",
@@ -74937,7 +74974,7 @@
     {
       "month": "2025-02",
       "subject": "Schools",
-      "count": 38
+      "count": 37
     },
     {
       "month": "2025-02",
@@ -75022,7 +75059,7 @@
     {
       "month": "2025-02",
       "subject": "Sewage",
-      "count": 5
+      "count": 6
     },
     {
       "month": "2025-02",
@@ -76237,7 +76274,7 @@
     {
       "month": "2025-02",
       "subject": "Teachers",
-      "count": 53
+      "count": 54
     },
     {
       "month": "2025-02",
@@ -76292,7 +76329,7 @@
     {
       "month": "2025-02",
       "subject": "Tennessee Bureau of Investigation",
-      "count": 9
+      "count": 7
     },
     {
       "month": "2025-02",
@@ -77397,7 +77434,7 @@
     {
       "month": "2025-02",
       "subject": "Water",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-02",
@@ -77517,7 +77554,7 @@
     {
       "month": "2025-02",
       "subject": "Welfare",
-      "count": 4
+      "count": 2
     },
     {
       "month": "2025-02",
@@ -147877,7 +147914,7 @@
     {
       "month": "2025-12",
       "subject": "Computers and Electronic Processing",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2025-12",
@@ -147957,7 +147994,7 @@
     {
       "month": "2025-12",
       "subject": "Criminal Offenses",
-      "count": 3
+      "count": 1
     },
     {
       "month": "2025-12",
@@ -148021,12 +148058,12 @@
     },
     {
       "month": "2025-12",
-      "subject": "Death",
+      "subject": "Data Centers",
       "count": 1
     },
     {
       "month": "2025-12",
-      "subject": "Delayed Effective Date",
+      "subject": "Death",
       "count": 1
     },
     {
@@ -148431,6 +148468,11 @@
     },
     {
       "month": "2025-12",
+      "subject": "Future Fund",
+      "count": 1
+    },
+    {
+      "month": "2025-12",
       "subject": "GAMBLING",
       "count": 6
     },
@@ -148621,6 +148663,16 @@
     },
     {
       "month": "2025-12",
+      "subject": "Hoghouse-Vehicle Bill",
+      "count": 1
+    },
+    {
+      "month": "2025-12",
+      "subject": "House Concurrent Resolution",
+      "count": 2
+    },
+    {
+      "month": "2025-12",
       "subject": "Human Resources",
       "count": 1
     },
@@ -148722,7 +148774,7 @@
     {
       "month": "2025-12",
       "subject": "Indian Tribes",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2025-12",
@@ -148732,7 +148784,7 @@
     {
       "month": "2025-12",
       "subject": "Interim Legislative Committee Bill",
-      "count": 3
+      "count": 4
     },
     {
       "month": "2025-12",
@@ -148937,7 +148989,7 @@
     {
       "month": "2025-12",
       "subject": "Law Enforcement",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2025-12",
@@ -149522,7 +149574,7 @@
     {
       "month": "2025-12",
       "subject": "Public Construction",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2025-12",
@@ -150757,11 +150809,16 @@
     {
       "month": "2026-01",
       "subject": "Abortion",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-01",
       "subject": "Absentee Owners and Landlords",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Absentee Voting",
       "count": 1
     },
     {
@@ -150813,6 +150870,11 @@
       "month": "2026-01",
       "subject": "Accountability, Efficiency, Transparency",
       "count": 146
+    },
+    {
+      "month": "2026-01",
+      "subject": "Accountants",
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -150896,6 +150958,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Administrative Procedure",
+      "count": 37
+    },
+    {
+      "month": "2026-01",
       "subject": "Administrative Procedure (UAPA)",
       "count": 4
     },
@@ -150903,6 +150970,11 @@
       "month": "2026-01",
       "subject": "Administrative Regulations And Proceedings",
       "count": 6
+    },
+    {
+      "month": "2026-01",
+      "subject": "Administrative Rule Revision",
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -150922,7 +150994,7 @@
     {
       "month": "2026-01",
       "subject": "Adoption",
-      "count": 8
+      "count": 9
     },
     {
       "month": "2026-01",
@@ -150986,6 +151058,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Aeronautics Commission",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
       "subject": "Affirmative Defense",
       "count": 1
     },
@@ -151028,6 +151105,11 @@
       "month": "2026-01",
       "subject": "Agencies",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Agency",
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -151101,6 +151183,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Agricultural Land",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Agricultural Land Conversion Fee",
       "count": 1
     },
@@ -151166,6 +151253,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Agriculture and Horticulture",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Agrivoltaics",
       "count": 1
     },
@@ -151212,7 +151304,7 @@
     {
       "month": "2026-01",
       "subject": "Alcoholic Beverages",
-      "count": 11
+      "count": 16
     },
     {
       "month": "2026-01",
@@ -151311,6 +151403,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Animals and Livestock",
+      "count": 7
+    },
+    {
+      "month": "2026-01",
       "subject": "Annual Audit",
       "count": 1
     },
@@ -151392,7 +151489,7 @@
     {
       "month": "2026-01",
       "subject": "Appointments",
-      "count": 1
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -151402,7 +151499,7 @@
     {
       "month": "2026-01",
       "subject": "Appropriation",
-      "count": 5
+      "count": 50
     },
     {
       "month": "2026-01",
@@ -151482,7 +151579,7 @@
     {
       "month": "2026-01",
       "subject": "Artificial Intelligence",
-      "count": 5
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -151492,7 +151589,7 @@
     {
       "month": "2026-01",
       "subject": "Assault",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -151531,6 +151628,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Athletics",
+      "count": 9
+    },
+    {
+      "month": "2026-01",
       "subject": "Atmospheric Carbon and Greenhouse Gas Emissions",
       "count": 2
     },
@@ -151543,6 +151645,11 @@
       "month": "2026-01",
       "subject": "Attorney General",
       "count": 13
+    },
+    {
+      "month": "2026-01",
+      "subject": "Attorney's Fees",
+      "count": 10
     },
     {
       "month": "2026-01",
@@ -151628,6 +151735,11 @@
       "month": "2026-01",
       "subject": "Autopsies",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Aviation",
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -151756,6 +151868,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Ballot Measures",
+      "count": 9
+    },
+    {
+      "month": "2026-01",
       "subject": "Ballot Placement",
       "count": 1
     },
@@ -151791,6 +151908,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Banks and Banking",
+      "count": 4
+    },
+    {
+      "month": "2026-01",
       "subject": "Banks and Financial Institutions",
       "count": 6
     },
@@ -151798,6 +151920,11 @@
       "month": "2026-01",
       "subject": "Banyan Drive",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Barbers and Cosmetology",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -151957,11 +152084,16 @@
     {
       "month": "2026-01",
       "subject": "Boards and Commissions",
-      "count": 16
+      "count": 23
     },
     {
       "month": "2026-01",
       "subject": "Boards of Directors",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Boards of School Districts",
       "count": 1
     },
     {
@@ -151972,7 +152104,7 @@
     {
       "month": "2026-01",
       "subject": "Boating",
-      "count": 4
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -152037,6 +152169,11 @@
     {
       "month": "2026-01",
       "subject": "Brief Cognitive Assessments",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Broadband",
       "count": 1
     },
     {
@@ -152167,7 +152304,7 @@
     {
       "month": "2026-01",
       "subject": "Business Organizations",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -152471,6 +152608,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "COVID-19",
+      "count": 3
+    },
+    {
+      "month": "2026-01",
       "subject": "CREDIT UNIONS",
       "count": 1
     },
@@ -152622,7 +152764,7 @@
     {
       "month": "2026-01",
       "subject": "Campaign Finance",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -152847,7 +152989,7 @@
     {
       "month": "2026-01",
       "subject": "Charter",
-      "count": 3
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -152871,7 +153013,22 @@
     },
     {
       "month": "2026-01",
+      "subject": "Child Abuse",
+      "count": 3
+    },
+    {
+      "month": "2026-01",
+      "subject": "Child Care",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Child Care Subsidies",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Child Custody",
       "count": 2
     },
     {
@@ -152883,6 +153040,11 @@
       "month": "2026-01",
       "subject": "Child Labor",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Child Support",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -152912,7 +153074,7 @@
     {
       "month": "2026-01",
       "subject": "Children",
-      "count": 19
+      "count": 18
     },
     {
       "month": "2026-01",
@@ -152937,7 +153099,7 @@
     {
       "month": "2026-01",
       "subject": "Children's Services",
-      "count": 8
+      "count": 9
     },
     {
       "month": "2026-01",
@@ -152981,6 +153143,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Civil Forfeiture",
+      "count": 3
+    },
+    {
+      "month": "2026-01",
       "subject": "Civil Identification Card",
       "count": 1
     },
@@ -152997,7 +153164,7 @@
     {
       "month": "2026-01",
       "subject": "Civil Procedure",
-      "count": 10
+      "count": 17
     },
     {
       "month": "2026-01",
@@ -153131,6 +153298,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Code Commission",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Code Compliance Review of Plans",
       "count": 1
     },
@@ -153152,7 +153324,7 @@
     {
       "month": "2026-01",
       "subject": "Collective Bargaining",
-      "count": 7
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -153213,6 +153385,11 @@
       "month": "2026-01",
       "subject": "Commercial Feed",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Commercial Trucking",
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -153296,6 +153473,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Community-Based Providers",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "CommunityImpactsMitigationProgram",
       "count": 1
     },
@@ -153307,7 +153489,7 @@
     {
       "month": "2026-01",
       "subject": "Compacts",
-      "count": 3
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -153366,6 +153548,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Concealed Identity",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Concessions",
       "count": 2
     },
@@ -153411,6 +153598,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Confidential Information",
+      "count": 4
+    },
+    {
+      "month": "2026-01",
       "subject": "Confidentiality",
       "count": 1
     },
@@ -153423,6 +153615,11 @@
       "month": "2026-01",
       "subject": "Confirmed Release",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Conflict of Interest",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -153502,7 +153699,7 @@
     {
       "month": "2026-01",
       "subject": "Constitutional Amendments",
-      "count": 14
+      "count": 19
     },
     {
       "month": "2026-01",
@@ -153532,6 +153729,11 @@
     {
       "month": "2026-01",
       "subject": "Constitutional Repeal",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Construction Standards",
       "count": 1
     },
     {
@@ -153587,7 +153789,7 @@
     {
       "month": "2026-01",
       "subject": "Contracts",
-      "count": 1
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -153602,7 +153804,7 @@
     {
       "month": "2026-01",
       "subject": "Controlled Substances",
-      "count": 7
+      "count": 21
     },
     {
       "month": "2026-01",
@@ -153612,6 +153814,11 @@
     {
       "month": "2026-01",
       "subject": "Convention Center Enterprise Special Fund",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Convention of States",
       "count": 2
     },
     {
@@ -153667,7 +153874,7 @@
     {
       "month": "2026-01",
       "subject": "Corporations",
-      "count": 4
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -153677,7 +153884,12 @@
     {
       "month": "2026-01",
       "subject": "Correction",
-      "count": 10
+      "count": 14
+    },
+    {
+      "month": "2026-01",
+      "subject": "Correctional Facilities and Parole",
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -153712,7 +153924,7 @@
     {
       "month": "2026-01",
       "subject": "Counties",
-      "count": 66
+      "count": 78
     },
     {
       "month": "2026-01",
@@ -153767,7 +153979,7 @@
     {
       "month": "2026-01",
       "subject": "County Government",
-      "count": 6
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -153852,7 +154064,7 @@
     {
       "month": "2026-01",
       "subject": "Court Costs",
-      "count": 1
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -153878,6 +154090,11 @@
       "month": "2026-01",
       "subject": "Courts & Judicial",
       "count": 13
+    },
+    {
+      "month": "2026-01",
+      "subject": "Courts and Judiciary",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -153917,7 +154134,7 @@
     {
       "month": "2026-01",
       "subject": "Crimes",
-      "count": 2
+      "count": 25
     },
     {
       "month": "2026-01",
@@ -153946,6 +154163,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Criminal Background Investigation",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Criminal Offense",
       "count": 4
     },
@@ -153957,7 +154179,7 @@
     {
       "month": "2026-01",
       "subject": "Criminal Procedure",
-      "count": 24
+      "count": 30
     },
     {
       "month": "2026-01",
@@ -154013,6 +154235,11 @@
       "month": "2026-01",
       "subject": "Customerservicechatbots",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Cyber Security",
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -154211,6 +154438,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Data Centers",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Data Protection",
       "count": 1
     },
@@ -154263,6 +154495,11 @@
       "month": "2026-01",
       "subject": "Debt Collection",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Debtor and Creditor",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -154328,6 +154565,11 @@
       "month": "2026-01",
       "subject": "Definitions",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Delayed Effective Date",
+      "count": 17
     },
     {
       "month": "2026-01",
@@ -154517,7 +154759,7 @@
     {
       "month": "2026-01",
       "subject": "Dept. of",
-      "count": 68
+      "count": 71
     },
     {
       "month": "2026-01",
@@ -154557,6 +154799,11 @@
     {
       "month": "2026-01",
       "subject": "Developmental Disabilities Division",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Developmentally Disabled Persons",
       "count": 1
     },
     {
@@ -154857,12 +155104,12 @@
     {
       "month": "2026-01",
       "subject": "Domestic Abuse",
-      "count": 1
+      "count": 6
     },
     {
       "month": "2026-01",
       "subject": "Domestic Relations",
-      "count": 1
+      "count": 11
     },
     {
       "month": "2026-01",
@@ -154906,8 +155153,13 @@
     },
     {
       "month": "2026-01",
+      "subject": "Driver License",
+      "count": 4
+    },
+    {
+      "month": "2026-01",
       "subject": "Driver Licenses",
-      "count": 8
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -154936,6 +155188,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Drones",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
       "subject": "Drug Paraphernalia",
       "count": 4
     },
@@ -154957,7 +155214,7 @@
     {
       "month": "2026-01",
       "subject": "Drugs",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -155187,7 +155444,7 @@
     {
       "month": "2026-01",
       "subject": "Economic Development",
-      "count": 37
+      "count": 49
     },
     {
       "month": "2026-01",
@@ -155197,7 +155454,7 @@
     {
       "month": "2026-01",
       "subject": "Education",
-      "count": 433
+      "count": 471
     },
     {
       "month": "2026-01",
@@ -155296,8 +155553,13 @@
     },
     {
       "month": "2026-01",
+      "subject": "Election Verification",
+      "count": 9
+    },
+    {
+      "month": "2026-01",
       "subject": "Elections",
-      "count": 114
+      "count": 141
     },
     {
       "month": "2026-01",
@@ -155356,6 +155618,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Electricians",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
       "subject": "Electricity",
       "count": 2
     },
@@ -155387,7 +155654,7 @@
     {
       "month": "2026-01",
       "subject": "Electronic Smoking Devices",
-      "count": 2
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -155421,6 +155688,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Ellsworth Air Force Base",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Emblems",
       "count": 1
     },
@@ -155441,6 +155713,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Emergency Clause",
+      "count": 35
+    },
+    {
+      "month": "2026-01",
       "subject": "Emergency Communications",
       "count": 1
     },
@@ -155452,12 +155729,12 @@
     {
       "month": "2026-01",
       "subject": "Emergency Management",
-      "count": 1
+      "count": 4
     },
     {
       "month": "2026-01",
       "subject": "Emergency Medical Services",
-      "count": 2
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -155497,7 +155774,7 @@
     {
       "month": "2026-01",
       "subject": "Eminent Domain",
-      "count": 3
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -155611,13 +155888,18 @@
     },
     {
       "month": "2026-01",
+      "subject": "Environmental Cleanup",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Environmental Impact Statement",
       "count": 2
     },
     {
       "month": "2026-01",
       "subject": "Environmental Protection",
-      "count": 5
+      "count": 11
     },
     {
       "month": "2026-01",
@@ -155731,8 +156013,13 @@
     },
     {
       "month": "2026-01",
+      "subject": "Eviction",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Evidence",
-      "count": 6
+      "count": 9
     },
     {
       "month": "2026-01",
@@ -155813,6 +156100,11 @@
       "month": "2026-01",
       "subject": "Executive office on Aging",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Executive/Judiciary Request",
+      "count": 74
     },
     {
       "month": "2026-01",
@@ -156082,7 +156374,7 @@
     {
       "month": "2026-01",
       "subject": "Fees",
-      "count": 5
+      "count": 35
     },
     {
       "month": "2026-01",
@@ -156107,6 +156399,11 @@
     {
       "month": "2026-01",
       "subject": "Fiduciaries",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Fiduciaries and Trusts",
       "count": 1
     },
     {
@@ -156172,7 +156469,7 @@
     {
       "month": "2026-01",
       "subject": "Fire Prevention and Investigation",
-      "count": 4
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -156187,7 +156484,7 @@
     {
       "month": "2026-01",
       "subject": "Firearms",
-      "count": 8
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -156202,7 +156499,7 @@
     {
       "month": "2026-01",
       "subject": "Firefighters",
-      "count": 3
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -156246,6 +156543,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Fishing",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Fitness Proceed",
       "count": 1
     },
@@ -156271,8 +156573,13 @@
     },
     {
       "month": "2026-01",
+      "subject": "Food and Drugs",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Food and Food Products",
-      "count": 4
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -156288,6 +156595,11 @@
       "month": "2026-01",
       "subject": "For-Sale Housing",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Foreign Persons",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -156381,6 +156693,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Fund",
+      "count": 34
+    },
+    {
+      "month": "2026-01",
       "subject": "FundingofProposition36Act",
       "count": 1
     },
@@ -156393,6 +156710,11 @@
       "month": "2026-01",
       "subject": "Fusionenergy",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Future Fund",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -156452,7 +156774,7 @@
     {
       "month": "2026-01",
       "subject": "Gambling",
-      "count": 4
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -156463,6 +156785,11 @@
       "month": "2026-01",
       "subject": "Game and Fish Laws",
       "count": 4
+    },
+    {
+      "month": "2026-01",
+      "subject": "Game, Fish, Parks and Forestry",
+      "count": 12
     },
     {
       "month": "2026-01",
@@ -156477,7 +156804,7 @@
     {
       "month": "2026-01",
       "subject": "General",
-      "count": 12
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -156627,7 +156954,7 @@
     {
       "month": "2026-01",
       "subject": "Grants",
-      "count": 1
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -157192,7 +157519,7 @@
     {
       "month": "2026-01",
       "subject": "Health",
-      "count": 74
+      "count": 72
     },
     {
       "month": "2026-01",
@@ -157212,7 +157539,7 @@
     {
       "month": "2026-01",
       "subject": "Health Care",
-      "count": 26
+      "count": 50
     },
     {
       "month": "2026-01",
@@ -157262,7 +157589,7 @@
     {
       "month": "2026-01",
       "subject": "Health Maintenance Organizations",
-      "count": 3
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -157392,7 +157719,7 @@
     {
       "month": "2026-01",
       "subject": "Higher Education",
-      "count": 7
+      "count": 17
     },
     {
       "month": "2026-01",
@@ -157413,6 +157740,11 @@
       "month": "2026-01",
       "subject": "Highways",
       "count": 10
+    },
+    {
+      "month": "2026-01",
+      "subject": "Highways and Bridges",
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -157453,6 +157785,11 @@
       "month": "2026-01",
       "subject": "Historical Sites and Preservation",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Hoghouse-Vehicle Bill",
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -157567,7 +157904,7 @@
     {
       "month": "2026-01",
       "subject": "Hospitals and Health Care Facilities",
-      "count": 7
+      "count": 9
     },
     {
       "month": "2026-01",
@@ -157578,6 +157915,26 @@
       "month": "2026-01",
       "subject": "Hours",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "House Commemoration",
+      "count": 4
+    },
+    {
+      "month": "2026-01",
+      "subject": "House Concurrent Resolution",
+      "count": 9
+    },
+    {
+      "month": "2026-01",
+      "subject": "House Joint Resolution",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "House Resolution",
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -157647,7 +158004,7 @@
     {
       "month": "2026-01",
       "subject": "Human Rights",
-      "count": 8
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -157682,7 +158039,7 @@
     {
       "month": "2026-01",
       "subject": "Hunting",
-      "count": 1
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -157778,6 +158135,11 @@
       "month": "2026-01",
       "subject": "Immigration Enforcement",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Immunization",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -157906,6 +158268,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Indian Tribes",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Indianlands",
       "count": 1
     },
@@ -157933,6 +158300,11 @@
       "month": "2026-01",
       "subject": "Industrial Development",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Industrial Hemp",
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -158002,7 +158374,7 @@
     {
       "month": "2026-01",
       "subject": "Insurance",
-      "count": 165
+      "count": 171
     },
     {
       "month": "2026-01",
@@ -158043,6 +158415,11 @@
       "month": "2026-01",
       "subject": "Interest of Justice",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Interim Legislative Committee Bill",
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -158206,6 +158583,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Judicial Remedies",
+      "count": 3
+    },
+    {
+      "month": "2026-01",
       "subject": "Judicial Warrants",
       "count": 1
     },
@@ -158262,7 +158644,7 @@
     {
       "month": "2026-01",
       "subject": "Juvenile Justice",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -158497,7 +158879,7 @@
     {
       "month": "2026-01",
       "subject": "Labor and Employment",
-      "count": 3
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -158527,6 +158909,11 @@
     {
       "month": "2026-01",
       "subject": "Land Reclassification",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Land Records",
       "count": 1
     },
     {
@@ -158592,7 +158979,7 @@
     {
       "month": "2026-01",
       "subject": "Law Enforcement",
-      "count": 14
+      "count": 23
     },
     {
       "month": "2026-01",
@@ -158622,6 +159009,11 @@
     {
       "month": "2026-01",
       "subject": "Lease Extensions",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Leased Property",
       "count": 1
     },
     {
@@ -158656,13 +159048,33 @@
     },
     {
       "month": "2026-01",
+      "subject": "Legislative Documents",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Legislative Oversight",
+      "count": 8
+    },
+    {
+      "month": "2026-01",
       "subject": "Legislative Research Commission",
       "count": 3
     },
     {
       "month": "2026-01",
+      "subject": "Legislative Study",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Legislature",
       "count": 36
+    },
+    {
+      "month": "2026-01",
+      "subject": "Legislature and Statutes",
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -158677,7 +159089,7 @@
     {
       "month": "2026-01",
       "subject": "Liability",
-      "count": 4
+      "count": 24
     },
     {
       "month": "2026-01",
@@ -158692,7 +159104,7 @@
     {
       "month": "2026-01",
       "subject": "License Plates",
-      "count": 1
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -158732,7 +159144,7 @@
     {
       "month": "2026-01",
       "subject": "Licensure",
-      "count": 2
+      "count": 29
     },
     {
       "month": "2026-01",
@@ -158747,7 +159159,7 @@
     {
       "month": "2026-01",
       "subject": "Liens",
-      "count": 1
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -158816,6 +159228,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Litigation",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Live-Event Tickets",
       "count": 1
     },
@@ -158857,12 +159274,17 @@
     {
       "month": "2026-01",
       "subject": "Local Education Agencies",
-      "count": 39
+      "count": 35
     },
     {
       "month": "2026-01",
       "subject": "Local Government",
-      "count": 31
+      "count": 33
+    },
+    {
+      "month": "2026-01",
+      "subject": "Local Government Generally",
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -158922,7 +159344,7 @@
     {
       "month": "2026-01",
       "subject": "Lottery",
-      "count": 6
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -159222,7 +159644,7 @@
     {
       "month": "2026-01",
       "subject": "Marriage",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -159296,6 +159718,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Meat and Meat Products",
+      "count": 5
+    },
+    {
+      "month": "2026-01",
       "subject": "Med-QUEST",
       "count": 1
     },
@@ -159332,7 +159759,7 @@
     {
       "month": "2026-01",
       "subject": "Medical Cannabis",
-      "count": 6
+      "count": 16
     },
     {
       "month": "2026-01",
@@ -159457,7 +159884,7 @@
     {
       "month": "2026-01",
       "subject": "Mental Health & Substance Abuse Services",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -159477,11 +159904,16 @@
     {
       "month": "2026-01",
       "subject": "Mental Illness",
-      "count": 2
+      "count": 1
     },
     {
       "month": "2026-01",
       "subject": "Mentalhealthprofessionals",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Mentally Ill Persons",
       "count": 1
     },
     {
@@ -159532,7 +159964,7 @@
     {
       "month": "2026-01",
       "subject": "Military Affairs",
-      "count": 9
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -159543,6 +159975,11 @@
       "month": "2026-01",
       "subject": "Military and Veterans",
       "count": 5
+    },
+    {
+      "month": "2026-01",
+      "subject": "Minerals",
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -159571,13 +160008,18 @@
     },
     {
       "month": "2026-01",
+      "subject": "Mining, Oil and Gas",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Minor Defendants",
       "count": 1
     },
     {
       "month": "2026-01",
       "subject": "Minors",
-      "count": 3
+      "count": 11
     },
     {
       "month": "2026-01",
@@ -159677,7 +160119,7 @@
     {
       "month": "2026-01",
       "subject": "Motor Vehicles",
-      "count": 61
+      "count": 88
     },
     {
       "month": "2026-01",
@@ -159687,7 +160129,7 @@
     {
       "month": "2026-01",
       "subject": "Motorcycles",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -159707,7 +160149,7 @@
     {
       "month": "2026-01",
       "subject": "Municipal Government",
-      "count": 2
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -159768,6 +160210,11 @@
       "month": "2026-01",
       "subject": "Naming and Designating",
       "count": 12
+    },
+    {
+      "month": "2026-01",
+      "subject": "National Guard",
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -159977,7 +160424,7 @@
     {
       "month": "2026-01",
       "subject": "Nonprofit Corporations",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -160013,6 +160460,11 @@
       "month": "2026-01",
       "subject": "Notice",
       "count": 4
+    },
+    {
+      "month": "2026-01",
+      "subject": "Notice and Publication",
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -160207,7 +160659,7 @@
     {
       "month": "2026-01",
       "subject": "Open Meetings",
-      "count": 6
+      "count": 11
     },
     {
       "month": "2026-01",
@@ -160237,7 +160689,7 @@
     {
       "month": "2026-01",
       "subject": "Opioids",
-      "count": 6
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -160268,6 +160720,11 @@
       "month": "2026-01",
       "subject": "Ordinances",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Organ Donation",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -160591,6 +161048,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Parental Control",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Parental Rights",
       "count": 2
     },
@@ -160617,6 +161079,11 @@
     {
       "month": "2026-01",
       "subject": "Parole",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Partnerships",
       "count": 1
     },
     {
@@ -160692,7 +161159,7 @@
     {
       "month": "2026-01",
       "subject": "Penalty",
-      "count": 4
+      "count": 55
     },
     {
       "month": "2026-01",
@@ -160771,6 +161238,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Personal Rights and Obligations",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
       "subject": "Personal Use",
       "count": 1
     },
@@ -160823,6 +161295,11 @@
       "month": "2026-01",
       "subject": "Petition Process",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Petitions",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -160901,6 +161378,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Pipelines",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
       "subject": "Pitdewatering",
       "count": 1
     },
@@ -160923,6 +161405,11 @@
       "month": "2026-01",
       "subject": "Planning And Zoning",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Planning, Zoning and Housing Programs",
+      "count": 20
     },
     {
       "month": "2026-01",
@@ -161002,7 +161489,7 @@
     {
       "month": "2026-01",
       "subject": "Political Parties",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -161102,7 +161589,7 @@
     {
       "month": "2026-01",
       "subject": "Prescription",
-      "count": 5
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -161147,7 +161634,7 @@
     {
       "month": "2026-01",
       "subject": "Principals and School Personnel",
-      "count": 12
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -161183,6 +161670,11 @@
       "month": "2026-01",
       "subject": "Private Covenants",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Private Education",
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -161227,7 +161719,7 @@
     {
       "month": "2026-01",
       "subject": "Probation",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -161248,6 +161740,11 @@
       "month": "2026-01",
       "subject": "Procurement Standards",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Procurement of Public Improvements",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -161282,7 +161779,7 @@
     {
       "month": "2026-01",
       "subject": "Professions and Occupations",
-      "count": 13
+      "count": 32
     },
     {
       "month": "2026-01",
@@ -161351,18 +161848,28 @@
     },
     {
       "month": "2026-01",
+      "subject": "Promulgation of Rules",
+      "count": 34
+    },
+    {
+      "month": "2026-01",
       "subject": "Proof of Sterilization",
       "count": 1
     },
     {
       "month": "2026-01",
       "subject": "Property",
-      "count": 4
+      "count": 11
     },
     {
       "month": "2026-01",
       "subject": "Property & Estates",
       "count": 11
+    },
+    {
+      "month": "2026-01",
+      "subject": "Property Assessment or Valuation",
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -161373,6 +161880,11 @@
       "month": "2026-01",
       "subject": "Property Insurance",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Property Tax",
+      "count": 28
     },
     {
       "month": "2026-01",
@@ -161397,6 +161909,11 @@
     {
       "month": "2026-01",
       "subject": "Prosthetic Devices",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Protection Order",
       "count": 1
     },
     {
@@ -161461,6 +161978,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Public Construction",
+      "count": 12
+    },
+    {
+      "month": "2026-01",
       "subject": "Public Contracts",
       "count": 5
     },
@@ -161491,6 +162013,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Public Fiscal Administration",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
       "subject": "Public Funds and Financing",
       "count": 11
     },
@@ -161508,6 +162035,11 @@
       "month": "2026-01",
       "subject": "Public Health and Human Services",
       "count": 206
+    },
+    {
+      "month": "2026-01",
+      "subject": "Public Health and Safety",
+      "count": 39
     },
     {
       "month": "2026-01",
@@ -161547,7 +162079,7 @@
     {
       "month": "2026-01",
       "subject": "Public Officers and Employees",
-      "count": 2
+      "count": 14
     },
     {
       "month": "2026-01",
@@ -161571,6 +162103,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Public Property, Purchases and Contracts",
+      "count": 5
+    },
+    {
+      "month": "2026-01",
       "subject": "Public Protection",
       "count": 2
     },
@@ -161583,6 +162120,11 @@
       "month": "2026-01",
       "subject": "Public Records And Reports",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Public Records and Files",
+      "count": 12
     },
     {
       "month": "2026-01",
@@ -161636,6 +162178,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Public Utilities and Carriers",
+      "count": 10
+    },
+    {
+      "month": "2026-01",
       "subject": "Public Utility Commission",
       "count": 2
     },
@@ -161643,6 +162190,11 @@
       "month": "2026-01",
       "subject": "Public Water Supply",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Public Welfare and Assistance",
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -161862,7 +162414,7 @@
     {
       "month": "2026-01",
       "subject": "Railroads",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -161956,6 +162508,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Recreation and Sports",
+      "count": 3
+    },
+    {
+      "month": "2026-01",
       "subject": "Recreational Areas",
       "count": 4
     },
@@ -162003,6 +162560,11 @@
       "month": "2026-01",
       "subject": "Reductions",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Reemployment Assistance",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -162097,7 +162659,7 @@
     {
       "month": "2026-01",
       "subject": "Religion",
-      "count": 1
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -162247,7 +162809,7 @@
     {
       "month": "2026-01",
       "subject": "Reports",
-      "count": 34
+      "count": 57
     },
     {
       "month": "2026-01",
@@ -162298,6 +162860,11 @@
       "month": "2026-01",
       "subject": "Resale Transactions",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Residency",
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -162451,6 +163018,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Retail Sales and Service Tax",
+      "count": 10
+    },
+    {
+      "month": "2026-01",
       "subject": "Retailers",
       "count": 3
     },
@@ -162473,6 +163045,11 @@
       "month": "2026-01",
       "subject": "Retirement Benefits",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Retirement System",
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -162986,6 +163563,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Sale or Transfer of Public Real Property",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Sales",
       "count": 18
     },
@@ -163012,7 +163594,7 @@
     {
       "month": "2026-01",
       "subject": "Scholarships",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -163056,6 +163638,16 @@
     },
     {
       "month": "2026-01",
+      "subject": "School Curriculum",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "School Districts",
+      "count": 16
+    },
+    {
+      "month": "2026-01",
       "subject": "School Facilities Authority",
       "count": 1
     },
@@ -163092,7 +163684,7 @@
     {
       "month": "2026-01",
       "subject": "Schools",
-      "count": 42
+      "count": 45
     },
     {
       "month": "2026-01",
@@ -163142,7 +163734,7 @@
     {
       "month": "2026-01",
       "subject": "Secretary of State",
-      "count": 7
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -163171,7 +163763,27 @@
     },
     {
       "month": "2026-01",
+      "subject": "Senate Commemoration",
+      "count": 4
+    },
+    {
+      "month": "2026-01",
+      "subject": "Senate Concurrent Resolution",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Senate District 19",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Senate Joint Resolution",
+      "count": 4
+    },
+    {
+      "month": "2026-01",
+      "subject": "Senate Resolution",
       "count": 1
     },
     {
@@ -163211,6 +163823,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Session Laws",
+      "count": 4
+    },
+    {
+      "month": "2026-01",
       "subject": "Severance",
       "count": 2
     },
@@ -163228,6 +163845,11 @@
       "month": "2026-01",
       "subject": "Sex Discrimination",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Sex Offenses",
+      "count": 6
     },
     {
       "month": "2026-01",
@@ -163371,8 +163993,13 @@
     },
     {
       "month": "2026-01",
+      "subject": "Social Media",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Social Workers",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -163461,8 +164088,18 @@
     },
     {
       "month": "2026-01",
+      "subject": "Specialty License Plates",
+      "count": 3
+    },
+    {
+      "month": "2026-01",
       "subject": "Speech",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Speech and Expression",
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -163551,8 +164188,18 @@
     },
     {
       "month": "2026-01",
+      "subject": "State Affairs and Government",
+      "count": 31
+    },
+    {
+      "month": "2026-01",
       "subject": "State Agencies",
       "count": 31
+    },
+    {
+      "month": "2026-01",
+      "subject": "State Aid to Education",
+      "count": 13
     },
     {
       "month": "2026-01",
@@ -163621,13 +164268,18 @@
     },
     {
       "month": "2026-01",
+      "subject": "State Emblems",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "State Employee Health Plan Mandate",
       "count": 4
     },
     {
       "month": "2026-01",
       "subject": "State Employees",
-      "count": 14
+      "count": 17
     },
     {
       "month": "2026-01",
@@ -163667,7 +164319,7 @@
     {
       "month": "2026-01",
       "subject": "State Government",
-      "count": 30
+      "count": 32
     },
     {
       "month": "2026-01",
@@ -163687,7 +164339,7 @@
     {
       "month": "2026-01",
       "subject": "State Inmates",
-      "count": 3
+      "count": 1
     },
     {
       "month": "2026-01",
@@ -163717,6 +164369,11 @@
     {
       "month": "2026-01",
       "subject": "State Librarian",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "State Parks",
       "count": 1
     },
     {
@@ -163972,7 +164629,7 @@
     {
       "month": "2026-01",
       "subject": "Students",
-      "count": 4
+      "count": 13
     },
     {
       "month": "2026-01",
@@ -164028,6 +164685,11 @@
       "month": "2026-01",
       "subject": "Sunset",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Sunset Clause",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -164256,8 +164918,18 @@
     },
     {
       "month": "2026-01",
+      "subject": "Tax Exemptions and Refunds",
+      "count": 12
+    },
+    {
+      "month": "2026-01",
+      "subject": "Tax Increment Financing Districts",
+      "count": 8
+    },
+    {
+      "month": "2026-01",
       "subject": "Taxation",
-      "count": 101
+      "count": 144
     },
     {
       "month": "2026-01",
@@ -164307,7 +164979,7 @@
     {
       "month": "2026-01",
       "subject": "Teachers",
-      "count": 18
+      "count": 23
     },
     {
       "month": "2026-01",
@@ -164322,7 +164994,7 @@
     {
       "month": "2026-01",
       "subject": "Technology",
-      "count": 24
+      "count": 34
     },
     {
       "month": "2026-01",
@@ -164332,7 +165004,7 @@
     {
       "month": "2026-01",
       "subject": "Telecommunications",
-      "count": 4
+      "count": 13
     },
     {
       "month": "2026-01",
@@ -164352,7 +165024,7 @@
     {
       "month": "2026-01",
       "subject": "TennCare",
-      "count": 13
+      "count": 11
     },
     {
       "month": "2026-01",
@@ -164416,6 +165088,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Therapists and Counselors",
+      "count": 3
+    },
+    {
+      "month": "2026-01",
       "subject": "Third-Party Websites",
       "count": 1
     },
@@ -164462,7 +165139,7 @@
     {
       "month": "2026-01",
       "subject": "Tobacco",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-01",
@@ -164511,13 +165188,18 @@
     },
     {
       "month": "2026-01",
+      "subject": "Trade",
+      "count": 5
+    },
+    {
+      "month": "2026-01",
       "subject": "Trade Practices And Retailing",
       "count": 2
     },
     {
       "month": "2026-01",
       "subject": "Trade Regulation",
-      "count": 1
+      "count": 7
     },
     {
       "month": "2026-01",
@@ -164543,6 +165225,11 @@
       "month": "2026-01",
       "subject": "Traffic Fines",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Traffic Laws",
+      "count": 4
     },
     {
       "month": "2026-01",
@@ -164577,7 +165264,7 @@
     {
       "month": "2026-01",
       "subject": "Transfer of Moneys",
-      "count": 1
+      "count": 10
     },
     {
       "month": "2026-01",
@@ -164677,7 +165364,7 @@
     {
       "month": "2026-01",
       "subject": "Trespass",
-      "count": 2
+      "count": 5
     },
     {
       "month": "2026-01",
@@ -164693,6 +165380,11 @@
       "month": "2026-01",
       "subject": "Trial de Novo",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Trigger Law",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -164763,6 +165455,11 @@
       "month": "2026-01",
       "subject": "Unclaimed Property",
       "count": 2
+    },
+    {
+      "month": "2026-01",
+      "subject": "Uncodified Acts",
+      "count": 49
     },
     {
       "month": "2026-01",
@@ -165001,6 +165698,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Veterans Affairs",
+      "count": 8
+    },
+    {
+      "month": "2026-01",
       "subject": "Veterans and Military Affairs",
       "count": 12
     },
@@ -165051,6 +165753,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Virtual Currency",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
       "subject": "Visible Identification",
       "count": 1
     },
@@ -165098,6 +165805,11 @@
       "month": "2026-01",
       "subject": "Votes (ConAm)",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Voting",
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -165286,6 +165998,11 @@
     },
     {
       "month": "2026-01",
+      "subject": "Water Management",
+      "count": 6
+    },
+    {
+      "month": "2026-01",
       "subject": "Water Pollution",
       "count": 3
     },
@@ -165298,6 +166015,11 @@
       "month": "2026-01",
       "subject": "Water Retention",
       "count": 1
+    },
+    {
+      "month": "2026-01",
+      "subject": "Water Rights",
+      "count": 3
     },
     {
       "month": "2026-01",
@@ -165432,7 +166154,7 @@
     {
       "month": "2026-01",
       "subject": "Workers' Compensation",
-      "count": 7
+      "count": 8
     },
     {
       "month": "2026-01",
@@ -170442,12 +171164,22 @@
     {
       "month": "2026-02",
       "subject": "Abortion",
-      "count": 5
+      "count": 12
     },
     {
       "month": "2026-02",
       "subject": "Abortionorgender-affirminghealthcareservices",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Absentee Voting",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Academic Achievement",
+      "count": 29
     },
     {
       "month": "2026-02",
@@ -170476,6 +171208,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Accident",
+      "count": 15
+    },
+    {
+      "month": "2026-02",
       "subject": "Acidifiedfoodsandlow-acidfoods",
       "count": 1
     },
@@ -170488,6 +171225,16 @@
       "month": "2026-02",
       "subject": "Acupuncture",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Ad Valorem",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
+      "subject": "Adamsville",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -170511,6 +171258,21 @@
     },
     {
       "month": "2026-02",
+      "subject": "Administrative Office of the",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Administrative Procedure",
+      "count": 22
+    },
+    {
+      "month": "2026-02",
+      "subject": "Administrative Procedure (UAPA)",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "AdministrativeProcedureAct",
       "count": 2
     },
@@ -170523,6 +171285,11 @@
       "month": "2026-02",
       "subject": "Administrativeregulations",
       "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Admission",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -170576,6 +171343,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Aeronautics Commission",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Affordabilityandcostofliving",
       "count": 1
     },
@@ -170601,12 +171373,22 @@
     },
     {
       "month": "2026-02",
+      "subject": "Agents",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Ageverificationsignals",
       "count": 1
     },
     {
       "month": "2026-02",
       "subject": "AgingandDisabilityResourceConnectionprogram",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Agricultural Land",
       "count": 1
     },
     {
@@ -170622,7 +171404,7 @@
     {
       "month": "2026-02",
       "subject": "Agriculture",
-      "count": 16
+      "count": 30
     },
     {
       "month": "2026-02",
@@ -170633,6 +171415,11 @@
       "month": "2026-02",
       "subject": "Agriculture and Agriculture Department",
       "count": 42
+    },
+    {
+      "month": "2026-02",
+      "subject": "Agriculture and Horticulture",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -170676,8 +171463,13 @@
     },
     {
       "month": "2026-02",
+      "subject": "Alcoholic Beverage Commission",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
       "subject": "Alcoholic Beverages",
-      "count": 3
+      "count": 10
     },
     {
       "month": "2026-02",
@@ -170721,7 +171513,17 @@
     },
     {
       "month": "2026-02",
+      "subject": "Anatomical Gifts",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "AngelStadium",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Animal Cruelty and Abuse",
       "count": 1
     },
     {
@@ -170736,13 +171538,33 @@
     },
     {
       "month": "2026-02",
+      "subject": "Animals and Livestock",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Animals and Pets",
       "count": 6
     },
     {
       "month": "2026-02",
+      "subject": "Annexation",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Annulment and Alimony",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Appropriation",
+      "count": 13
+    },
+    {
+      "month": "2026-02",
       "subject": "Appropriations",
-      "count": 261
+      "count": 265
     },
     {
       "month": "2026-02",
@@ -170796,6 +171618,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Athens",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Athletics",
       "count": 8
     },
@@ -170803,6 +171630,11 @@
       "month": "2026-02",
       "subject": "Attorney General",
       "count": 11
+    },
+    {
+      "month": "2026-02",
+      "subject": "Attorney's Fees",
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -170841,13 +171673,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Autopsies",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Averagedailyattendance",
       "count": 1
     },
     {
       "month": "2026-02",
       "subject": "Aviation",
-      "count": 1
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -170896,6 +171733,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Bail",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Bail Bonds",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "BailConsumerProtectionAct",
       "count": 1
     },
@@ -170906,13 +171753,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Ballot Measures",
+      "count": 9
+    },
+    {
+      "month": "2026-02",
       "subject": "BankingLaw",
       "count": 1
     },
     {
       "month": "2026-02",
       "subject": "Banks and Financial Institutions",
-      "count": 8
+      "count": 11
     },
     {
       "month": "2026-02",
@@ -171011,8 +171863,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Boards and Commissions",
+      "count": 18
+    },
+    {
+      "month": "2026-02",
       "subject": "Boards, Commissions and Task Forces",
       "count": 17
+    },
+    {
+      "month": "2026-02",
+      "subject": "Boating",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Boats",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -171026,6 +171893,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Bond Issues",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Bonds",
       "count": 105
     },
@@ -171036,6 +171908,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Bristol",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Brokers",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "BroomrapeProgram",
       "count": 1
     },
@@ -171043,6 +171925,11 @@
       "month": "2026-02",
       "subject": "BruceLeeDay",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Budget Procedures",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -171088,6 +171975,16 @@
       "month": "2026-02",
       "subject": "Business & Economic Development",
       "count": 17
+    },
+    {
+      "month": "2026-02",
+      "subject": "Business Organizations",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Business and Commerce",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -171726,7 +172623,17 @@
     },
     {
       "month": "2026-02",
+      "subject": "Campaign Finance",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Campaignfunds",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Campaigns and Campaign Finance",
       "count": 1
     },
     {
@@ -171756,6 +172663,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Capital Punishment",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "CareerTechnicalEducationTechnicalAssistanceandEquityPilotProgramAct",
       "count": 1
     },
@@ -171777,7 +172689,7 @@
     {
       "month": "2026-02",
       "subject": "Cemeteries",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -171816,13 +172728,53 @@
     },
     {
       "month": "2026-02",
+      "subject": "Charitable Solicitations",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Charlotte",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Charter",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
+      "subject": "Charter Schools",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "CharterSchoolFacilitiesProgram",
       "count": 1
     },
     {
       "month": "2026-02",
+      "subject": "Cheatham County",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Chemical Dependency",
       "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Child Abuse",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Child Custody",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Child Custody and Support",
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -171857,7 +172809,7 @@
     {
       "month": "2026-02",
       "subject": "Children",
-      "count": 1
+      "count": 18
     },
     {
       "month": "2026-02",
@@ -171883,6 +172835,11 @@
       "month": "2026-02",
       "subject": "Children and families and Children, Youth and Families Department",
       "count": 19
+    },
+    {
+      "month": "2026-02",
+      "subject": "Children's Services",
+      "count": 13
     },
     {
       "month": "2026-02",
@@ -172006,13 +172963,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Civil Emergencies",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Civil Forfeiture",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Civil Law",
       "count": 6
     },
     {
       "month": "2026-02",
       "subject": "Civil Procedure",
-      "count": 2
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -172126,6 +173093,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Codes",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "CollegeandCareerAccessPathwayspartnerships",
       "count": 1
     },
@@ -172143,6 +173115,11 @@
       "month": "2026-02",
       "subject": "Commerce and Commerce Department",
       "count": 37
+    },
+    {
+      "month": "2026-02",
+      "subject": "Commerce and Insurance",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -172198,6 +173175,11 @@
       "month": "2026-02",
       "subject": "Communications",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Community-Based Providers",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -172266,13 +173248,53 @@
     },
     {
       "month": "2026-02",
+      "subject": "Comptroller",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Computers and Electronic Processing",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Confidential Information",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Confidentiality",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Confirmation of Appointment",
+      "count": 58
+    },
+    {
+      "month": "2026-02",
+      "subject": "Conflict of Interest",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Congratulations",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Congress",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Conservation & Natural Resources",
       "count": 3
     },
     {
       "month": "2026-02",
       "subject": "Constitutional Amendments",
-      "count": 5
+      "count": 9
     },
     {
       "month": "2026-02",
@@ -172283,6 +173305,11 @@
       "month": "2026-02",
       "subject": "Constitutional Amendments Statewide",
       "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Construction Standards",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -172297,7 +173324,7 @@
     {
       "month": "2026-02",
       "subject": "Consumer Protection",
-      "count": 28
+      "count": 46
     },
     {
       "month": "2026-02",
@@ -172337,7 +173364,7 @@
     {
       "month": "2026-02",
       "subject": "Contractors",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -172348,6 +173375,11 @@
       "month": "2026-02",
       "subject": "Contracts and Contractors",
       "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Controlled Substances",
+      "count": 9
     },
     {
       "month": "2026-02",
@@ -172386,6 +173418,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Corporations",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Corporations and Business Entities",
       "count": 2
     },
@@ -172398,6 +173435,21 @@
       "month": "2026-02",
       "subject": "CorporationsTaxLaw",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Correction",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Correctional Facilities and Parole",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Correctional Programs",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -172437,7 +173489,7 @@
     {
       "month": "2026-02",
       "subject": "Counties",
-      "count": 15
+      "count": 20
     },
     {
       "month": "2026-02",
@@ -172457,6 +173509,21 @@
     {
       "month": "2026-02",
       "subject": "CountiesofLosAngeles,SanBernardino,andSanDiego",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "County Boundaries",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "County Government",
+      "count": 16
+    },
+    {
+      "month": "2026-02",
+      "subject": "County Officers",
       "count": 1
     },
     {
@@ -172536,6 +173603,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Court Costs",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Court Rules",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Courtesysigns",
       "count": 1
     },
@@ -172547,7 +173624,7 @@
     {
       "month": "2026-02",
       "subject": "Courts",
-      "count": 29
+      "count": 36
     },
     {
       "month": "2026-02",
@@ -172558,6 +173635,11 @@
       "month": "2026-02",
       "subject": "Courts & Judicial",
       "count": 18
+    },
+    {
+      "month": "2026-02",
+      "subject": "Courts and Judiciary",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -172602,7 +173684,7 @@
     {
       "month": "2026-02",
       "subject": "Crimes",
-      "count": 16
+      "count": 21
     },
     {
       "month": "2026-02",
@@ -172636,8 +173718,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Criminal Background Investigation",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Criminal Defense",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Criminal Offenses",
+      "count": 55
+    },
+    {
+      "month": "2026-02",
       "subject": "Criminal Procedure",
-      "count": 11
+      "count": 23
     },
     {
       "month": "2026-02",
@@ -172661,7 +173758,17 @@
     },
     {
       "month": "2026-02",
+      "subject": "Curriculum",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Curriculumframeworks",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Custody and Investment of State Funds",
       "count": 1
     },
     {
@@ -172691,6 +173798,21 @@
     },
     {
       "month": "2026-02",
+      "subject": "DUI Offenses",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Damages",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Data Centers",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Data Practices and Privacy",
       "count": 26
     },
@@ -172712,7 +173834,7 @@
     {
       "month": "2026-02",
       "subject": "Death",
-      "count": 6
+      "count": 66
     },
     {
       "month": "2026-02",
@@ -172751,6 +173873,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Delayed Effective Date",
+      "count": 11
+    },
+    {
+      "month": "2026-02",
       "subject": "DentalPracticeAct",
       "count": 1
     },
@@ -172763,6 +173890,16 @@
       "month": "2026-02",
       "subject": "Dentistry",
       "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Dentists and Dentistry",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Department of",
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -172831,6 +173968,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Dept. Of",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Dept. of",
+      "count": 80
+    },
+    {
+      "month": "2026-02",
       "subject": "DesignationofCaliforniaAsianAmerican-andNativeHawaiianPacificIslander-ServingInstitutions",
       "count": 1
     },
@@ -172852,6 +173999,11 @@
     {
       "month": "2026-02",
       "subject": "Dietarysupplementsforweightlossandover-the-counterdietpills",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Dieticians and Nutritionists",
       "count": 1
     },
     {
@@ -172896,6 +174048,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Disability and Aging",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Disabilitybenefits",
       "count": 1
     },
@@ -172936,6 +174093,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "District Attorneys",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
       "subject": "Districtagriculturalassociations",
       "count": 2
     },
@@ -172946,8 +174108,28 @@
     },
     {
       "month": "2026-02",
+      "subject": "Divorce",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "DoctorsfromElSalvadorProgram",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Domestic Abuse",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Domestic Relations",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Domestic Violence",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -172976,6 +174158,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Driver Licenses",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Driver'slicenses",
       "count": 2
     },
@@ -173001,8 +174188,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Drones",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Drugformularies",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Drugs",
+      "count": 7
     },
     {
       "month": "2026-02",
@@ -173146,13 +174343,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Easements",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Easements and Conveyances",
       "count": 1
     },
     {
       "month": "2026-02",
       "subject": "Economic Development",
-      "count": 12
+      "count": 16
+    },
+    {
+      "month": "2026-02",
+      "subject": "Economic and Community Development",
+      "count": 7
     },
     {
       "month": "2026-02",
@@ -173162,7 +174369,7 @@
     {
       "month": "2026-02",
       "subject": "Education",
-      "count": 10
+      "count": 105
     },
     {
       "month": "2026-02",
@@ -173241,6 +174448,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Elder Abuse",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Elderly & Disabled Persons",
       "count": 3
     },
@@ -173251,8 +174463,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Election Laws",
+      "count": 19
+    },
+    {
+      "month": "2026-02",
+      "subject": "Election Verification",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Elections",
-      "count": 49
+      "count": 58
     },
     {
       "month": "2026-02",
@@ -173311,6 +174533,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Electronic Smoking Devices",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "ElectronicWasteRecyclingActof2003",
       "count": 1
     },
@@ -173332,6 +174559,21 @@
     {
       "month": "2026-02",
       "subject": "Emergencies and Disasters",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Emergency Clause",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
+      "subject": "Emergency Management",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Emergency Medical Services",
       "count": 1
     },
     {
@@ -173367,7 +174609,7 @@
     {
       "month": "2026-02",
       "subject": "Eminent Domain",
-      "count": 2
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -173382,12 +174624,17 @@
     {
       "month": "2026-02",
       "subject": "Employees",
-      "count": 3
+      "count": 7
     },
     {
       "month": "2026-02",
       "subject": "EmployerResponsibilityforMedi-CalTrustFund",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Employers",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -173432,7 +174679,7 @@
     {
       "month": "2026-02",
       "subject": "Energy",
-      "count": 55
+      "count": 61
     },
     {
       "month": "2026-02",
@@ -173476,6 +174723,21 @@
     },
     {
       "month": "2026-02",
+      "subject": "Environment and Conservation",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
+      "subject": "Environmental Preservation",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Environmental Protection",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Environmentaladvertising",
       "count": 1
     },
@@ -173506,8 +174768,13 @@
     },
     {
       "month": "2026-02",
+      "subject": "Estates",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Ethics",
-      "count": 1
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -173521,8 +174788,18 @@
     },
     {
       "month": "2026-02",
-      "subject": "Evidence",
+      "subject": "Eviction",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Evidence",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Exemption and Credits",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -173548,6 +174825,11 @@
       "month": "2026-02",
       "subject": "ExperiencedMentorTeacherStipendProgram",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Expunction",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -173686,6 +174968,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Federal Aid",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "FederalHomeLoanBanks",
       "count": 1
     },
@@ -173706,13 +174993,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Fees",
+      "count": 9
+    },
+    {
+      "month": "2026-02",
       "subject": "Fertilizers and Pesticides",
       "count": 2
     },
     {
       "month": "2026-02",
+      "subject": "Finance and Administration",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Financial Institutions",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -173728,6 +175025,11 @@
       "month": "2026-02",
       "subject": "Financingstatements",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Fire Prevention and Investigation",
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -173756,6 +175058,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Firearms and Ammunition",
+      "count": 14
+    },
+    {
+      "month": "2026-02",
       "subject": "Firearms and Dangerous Weapons",
       "count": 22
     },
@@ -173768,6 +175075,11 @@
       "month": "2026-02",
       "subject": "Firefighterpostpartumandrecoveryleave",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Firefighters",
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -173786,8 +175098,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Fireworks",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Fiscal Policy & Taxes",
       "count": 18
+    },
+    {
+      "month": "2026-02",
+      "subject": "Fiscal Review Committee",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -173803,6 +175125,16 @@
       "month": "2026-02",
       "subject": "Fishingandhunting",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Food Tax",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Food and Food Products",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -173826,6 +175158,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Foreign Persons",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Foreigndriver'slicenses",
       "count": 1
     },
@@ -173846,6 +175183,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Foster Care",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Fostercare",
       "count": 1
     },
@@ -173857,6 +175199,11 @@
     {
       "month": "2026-02",
       "subject": "FourthAmendmenttraining",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Franchise",
       "count": 1
     },
     {
@@ -173876,8 +175223,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Fund",
+      "count": 16
+    },
+    {
+      "month": "2026-02",
       "subject": "Funds",
       "count": 18
+    },
+    {
+      "month": "2026-02",
+      "subject": "Funeral Directors and Embalmers",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -173887,6 +175244,11 @@
     {
       "month": "2026-02",
       "subject": "Fusioncenters",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Future Fund",
       "count": 1
     },
     {
@@ -173927,7 +175289,7 @@
     {
       "month": "2026-02",
       "subject": "Gambling",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -173951,8 +175313,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Game and Fish Laws",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Game, Fish, Parks and Forestry",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Gaming",
-      "count": 4
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -173966,6 +175338,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Gas",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Gascorporations",
       "count": 1
     },
@@ -173976,8 +175353,13 @@
     },
     {
       "month": "2026-02",
+      "subject": "General",
+      "count": 17
+    },
+    {
+      "month": "2026-02",
       "subject": "General Assembly",
-      "count": 21
+      "count": 96
     },
     {
       "month": "2026-02",
@@ -174067,7 +175449,7 @@
     {
       "month": "2026-02",
       "subject": "Governor",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -174091,6 +175473,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Grants",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "GrasslandEcologicalAreaConservancy",
       "count": 1
     },
@@ -174103,6 +175490,11 @@
       "month": "2026-02",
       "subject": "GreenGlobescertification",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Greenbrier",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -174251,6 +175643,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Hamblen County",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
       "subject": "Hazardous Substances",
       "count": 1
     },
@@ -174272,12 +175669,22 @@
     {
       "month": "2026-02",
       "subject": "Health",
-      "count": 5
+      "count": 33
+    },
+    {
+      "month": "2026-02",
+      "subject": "Health Care",
+      "count": 32
     },
     {
       "month": "2026-02",
       "subject": "Health Care & Health Insurance",
       "count": 26
+    },
+    {
+      "month": "2026-02",
+      "subject": "Health Maintenance Organizations",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -174397,7 +175804,7 @@
     {
       "month": "2026-02",
       "subject": "Henry County",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -174421,8 +175828,13 @@
     },
     {
       "month": "2026-02",
+      "subject": "Higher",
+      "count": 10
+    },
+    {
+      "month": "2026-02",
       "subject": "Higher Education",
-      "count": 5
+      "count": 8
     },
     {
       "month": "2026-02",
@@ -174436,8 +175848,18 @@
     },
     {
       "month": "2026-02",
-      "subject": "Highways",
+      "subject": "Highway Signs",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Highways",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
+      "subject": "Highways and Bridges",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -174456,8 +175878,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Hoghouse-Vehicle Bill",
+      "count": 9
+    },
+    {
+      "month": "2026-02",
       "subject": "Holidays",
       "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Holidays and Days of Special Observance",
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -174492,7 +175924,7 @@
     {
       "month": "2026-02",
       "subject": "Hospitals and Health Care Facilities",
-      "count": 11
+      "count": 21
     },
     {
       "month": "2026-02",
@@ -174501,8 +175933,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Hotels and Restaurants",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "House Commemoration",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "House Concurrent Resolution",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
       "subject": "Housing",
-      "count": 21
+      "count": 25
     },
     {
       "month": "2026-02",
@@ -174551,6 +175998,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Human Resources",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Human Rights",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Human Rights and Human Rights Department",
       "count": 16
     },
@@ -174577,6 +176034,11 @@
     {
       "month": "2026-02",
       "subject": "Humantraffickingvictimsupportcoordinator",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Hunting",
       "count": 1
     },
     {
@@ -174662,7 +176124,7 @@
     {
       "month": "2026-02",
       "subject": "Immigration",
-      "count": 9
+      "count": 15
     },
     {
       "month": "2026-02",
@@ -174736,6 +176198,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Indian Tribes",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Indianchildren",
       "count": 1
     },
@@ -174752,6 +176219,11 @@
     {
       "month": "2026-02",
       "subject": "Individualswithdisabilities",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Industrial Development",
       "count": 1
     },
     {
@@ -174797,7 +176269,12 @@
     {
       "month": "2026-02",
       "subject": "Insurance",
-      "count": 43
+      "count": 64
+    },
+    {
+      "month": "2026-02",
+      "subject": "Insurance Companies",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -174856,8 +176333,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Interns",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Interscholasticathletics",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Interstate Compacts",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -174906,6 +176393,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Jails",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "JapanCup",
       "count": 1
     },
@@ -174946,13 +176438,28 @@
     },
     {
       "month": "2026-02",
+      "subject": "Jonesborough",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Judges",
       "count": 3
     },
     {
       "month": "2026-02",
+      "subject": "Judges and Chancellors",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Judges'RetirementSystemII",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Judicial Districts",
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -174978,6 +176485,21 @@
       "month": "2026-02",
       "subject": "JusticeRuthBaderGinsburgDay",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Juvenile",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Juvenile Justice",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Juvenile Offenders",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -175111,6 +176633,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Labor and Workforce Development",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Labor, Employment, and Labor and Industry Department",
       "count": 19
     },
@@ -175177,7 +176704,7 @@
     {
       "month": "2026-02",
       "subject": "Law Enforcement",
-      "count": 39
+      "count": 46
     },
     {
       "month": "2026-02",
@@ -175206,6 +176733,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Legislative Oversight",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Legislative Study",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "LegislativeAnalyst'sOffice",
       "count": 1
     },
@@ -175222,12 +176759,12 @@
     {
       "month": "2026-02",
       "subject": "Liability",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-02",
       "subject": "Libraries",
-      "count": 4
+      "count": 8
     },
     {
       "month": "2026-02",
@@ -175277,7 +176814,7 @@
     {
       "month": "2026-02",
       "subject": "Licensure",
-      "count": 1
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -175306,7 +176843,17 @@
     },
     {
       "month": "2026-02",
+      "subject": "Livestock",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Load-servingentities",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Lobbying",
       "count": 1
     },
     {
@@ -175316,13 +176863,28 @@
     },
     {
       "month": "2026-02",
+      "subject": "Lobbyists",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Lobbyisttraining",
       "count": 1
     },
     {
       "month": "2026-02",
+      "subject": "Local Education Agencies",
+      "count": 24
+    },
+    {
+      "month": "2026-02",
       "subject": "Local Government",
-      "count": 23
+      "count": 40
+    },
+    {
+      "month": "2026-02",
+      "subject": "Local Loc",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -175402,6 +176964,11 @@
     {
       "month": "2026-02",
       "subject": "Long-termhealthcarefacilities",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Lottery",
       "count": 1
     },
     {
@@ -175536,6 +177103,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Managed Care Organizations",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Manufacturedhousing",
       "count": 1
     },
@@ -175557,6 +177129,26 @@
     {
       "month": "2026-02",
       "subject": "Marshall County",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Martin",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Mass Transit",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Massage Therapy",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Meat and Meat Products",
       "count": 1
     },
     {
@@ -175586,6 +177178,21 @@
     },
     {
       "month": "2026-02",
+      "subject": "Medical Cannabis",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Medical Occupations",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Medical Records",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "MedicalDebtReliefActof2026",
       "count": 1
     },
@@ -175596,8 +177203,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Memorials",
+      "count": 487
+    },
+    {
+      "month": "2026-02",
       "subject": "Mental Health",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Mental Health & Substance Abuse Services",
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -175617,6 +177234,11 @@
     {
       "month": "2026-02",
       "subject": "Mentalhealthservices",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Mentally Ill Persons",
       "count": 1
     },
     {
@@ -175662,7 +177284,7 @@
     {
       "month": "2026-02",
       "subject": "Military",
-      "count": 9
+      "count": 10
     },
     {
       "month": "2026-02",
@@ -175671,13 +177293,28 @@
     },
     {
       "month": "2026-02",
+      "subject": "Military Affairs",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Militaryoroverseasvoters",
       "count": 1
     },
     {
       "month": "2026-02",
+      "subject": "Millington",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Mines and Mining",
       "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Mining, Oil and Gas",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -175687,6 +177324,11 @@
     {
       "month": "2026-02",
       "subject": "Minnesota State Colleges and Universities",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Minors",
       "count": 3
     },
     {
@@ -175761,6 +177403,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Morristown",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Mortgageapplicants",
       "count": 1
     },
@@ -175777,7 +177424,7 @@
     {
       "month": "2026-02",
       "subject": "Mortgages",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -175787,7 +177434,7 @@
     {
       "month": "2026-02",
       "subject": "Motor Vehicles",
-      "count": 28
+      "count": 51
     },
     {
       "month": "2026-02",
@@ -175846,6 +177493,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Municipal Government",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Municipalgolfcourses",
       "count": 1
     },
@@ -175891,6 +177543,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Naming and Designating",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
       "subject": "NationalCRNAWeek",
       "count": 1
     },
@@ -175913,6 +177570,11 @@
       "month": "2026-02",
       "subject": "NativeAmericanDay",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Natural Disasters",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -175976,6 +177638,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Newspapers and Publications",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "NitrogenPollutionReductionAct",
       "count": 1
     },
@@ -176021,6 +177688,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Not for Profit",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Notariespublic",
       "count": 1
     },
@@ -176041,8 +177713,13 @@
     },
     {
       "month": "2026-02",
+      "subject": "Nurses",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
       "subject": "Nursing",
-      "count": 1
+      "count": 7
     },
     {
       "month": "2026-02",
@@ -176058,6 +177735,11 @@
       "month": "2026-02",
       "subject": "Nutritionbenefits",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Obscenity and Pornography",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -176162,7 +177844,7 @@
     {
       "month": "2026-02",
       "subject": "Open Meetings",
-      "count": 2
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -176186,7 +177868,17 @@
     },
     {
       "month": "2026-02",
+      "subject": "Opioids",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Organicwaste",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Organization of the Legislature",
       "count": 1
     },
     {
@@ -176218,6 +177910,11 @@
       "month": "2026-02",
       "subject": "Outdoorrecreation",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Over the Counter",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -176346,6 +178043,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Parental Control",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Parentalcommunication",
       "count": 1
     },
@@ -176401,6 +178103,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Penalty",
+      "count": 11
+    },
+    {
+      "month": "2026-02",
+      "subject": "Pensions and Retirement Benefits",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
       "subject": "Peptides",
       "count": 1
     },
@@ -176412,6 +178124,26 @@
     {
       "month": "2026-02",
       "subject": "Perry County",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Personal Achievement",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Personal Occasion",
+      "count": 10
+    },
+    {
+      "month": "2026-02",
+      "subject": "Personal Property",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Personal Rights and Obligations",
       "count": 1
     },
     {
@@ -176451,6 +178183,16 @@
     },
     {
       "month": "2026-02",
+      "subject": "Petitions",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Petroleum Products",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Pets",
       "count": 1
     },
@@ -176466,13 +178208,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Pharmacists",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Pharmacists and Pharmacy",
       "count": 5
     },
     {
       "month": "2026-02",
       "subject": "Pharmacy",
-      "count": 1
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -176501,6 +178248,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Physicians and Surgeons",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Physiciansandsurgeons",
       "count": 1
     },
@@ -176513,6 +178265,16 @@
       "month": "2026-02",
       "subject": "Placesofreligiousworship",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Planning",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
+      "subject": "Planning, Zoning and Housing Programs",
+      "count": 8
     },
     {
       "month": "2026-02",
@@ -176541,8 +178303,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Podiatrists",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Police and Peace Officers",
       "count": 6
+    },
+    {
+      "month": "2026-02",
+      "subject": "Policies",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Political Committees",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -176596,6 +178373,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Prescription",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
       "subject": "Prescriptiondrugcostsharing",
       "count": 1
     },
@@ -176631,17 +178413,42 @@
     },
     {
       "month": "2026-02",
+      "subject": "Principals and School Personnel",
+      "count": 8
+    },
+    {
+      "month": "2026-02",
       "subject": "Prisons",
       "count": 4
     },
     {
       "month": "2026-02",
+      "subject": "Prisons and Reformatory Institutions",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Privacy",
-      "count": 3
+      "count": 7
     },
     {
       "month": "2026-02",
       "subject": "Privacyforimmigrationsupportservicesproviders",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Private",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Private Education",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Private Protective Services",
       "count": 1
     },
     {
@@ -176656,7 +178463,17 @@
     },
     {
       "month": "2026-02",
+      "subject": "Privilege",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Probate",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Probate Law",
       "count": 2
     },
     {
@@ -176671,8 +178488,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Probation and Parole",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Probationofficers",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Professional Achievement",
+      "count": 60
     },
     {
       "month": "2026-02",
@@ -176691,6 +178518,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Professions and Occupations",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
       "subject": "ProgramofAll-InclusiveCarefortheElderly",
       "count": 1
     },
@@ -176701,13 +178533,28 @@
     },
     {
       "month": "2026-02",
+      "subject": "Promulgation of Rules",
+      "count": 13
+    },
+    {
+      "month": "2026-02",
       "subject": "Property",
-      "count": 1
+      "count": 5
     },
     {
       "month": "2026-02",
       "subject": "Property & Estates",
       "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Property Assessment or Valuation",
+      "count": 8
+    },
+    {
+      "month": "2026-02",
+      "subject": "Property Tax",
+      "count": 22
     },
     {
       "month": "2026-02",
@@ -176741,6 +178588,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Protection Order",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Protectiveorders",
       "count": 3
     },
@@ -176756,18 +178608,83 @@
     },
     {
       "month": "2026-02",
+      "subject": "Psychologists",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Construction",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Contracts",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Defenders",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Employees",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
       "subject": "Public Facilities Authority",
       "count": 16
     },
     {
       "month": "2026-02",
+      "subject": "Public Fiscal Administration",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Funds and Financing",
+      "count": 16
+    },
+    {
+      "month": "2026-02",
       "subject": "Public Health",
-      "count": 11
+      "count": 14
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Health and Safety",
+      "count": 5
     },
     {
       "month": "2026-02",
       "subject": "Public Officers and Employees",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Officials",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Property, Purchases and Contracts",
       "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Records",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Records and Files",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -176786,8 +178703,33 @@
     },
     {
       "month": "2026-02",
+      "subject": "Public Service",
+      "count": 14
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Transit",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Utilities",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Public Utilities and Public Utilities Commission",
       "count": 10
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Utility Commission",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Public Welfare and Assistance",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -177017,7 +178959,7 @@
     {
       "month": "2026-02",
       "subject": "Railroads",
-      "count": 4
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -177048,6 +178990,11 @@
       "month": "2026-02",
       "subject": "Real Estate",
       "count": 26
+    },
+    {
+      "month": "2026-02",
+      "subject": "Real Property",
+      "count": 18
     },
     {
       "month": "2026-02",
@@ -177096,8 +179043,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Recess & Reconvene",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "ReclaimAct",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Recognition",
+      "count": 130
     },
     {
       "month": "2026-02",
@@ -177116,7 +179073,22 @@
     },
     {
       "month": "2026-02",
+      "subject": "Recreational Areas",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Recycling",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Redevelopment",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Reemployment Assistance",
       "count": 1
     },
     {
@@ -177133,6 +179105,11 @@
       "month": "2026-02",
       "subject": "Refusalofregistration",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Regional Authorities and Special Districts",
+      "count": 12
     },
     {
       "month": "2026-02",
@@ -177171,6 +179148,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Registers of Deeds",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Reimbursementforpharmacistservices",
       "count": 1
     },
@@ -177193,6 +179175,11 @@
       "month": "2026-02",
       "subject": "Reportingmechanism",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Reports",
+      "count": 10
     },
     {
       "month": "2026-02",
@@ -177256,8 +179243,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Retail Sales and Service Tax",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
       "subject": "Retirement",
-      "count": 8
+      "count": 31
+    },
+    {
+      "month": "2026-02",
+      "subject": "Retirement System",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -177286,7 +179283,22 @@
     },
     {
       "month": "2026-02",
+      "subject": "Review Or Ratification of Rules",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Roads and Bridges",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
       "subject": "Roads and Highways",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Roane County",
       "count": 1
     },
     {
@@ -177457,12 +179469,22 @@
     {
       "month": "2026-02",
       "subject": "Safety",
-      "count": 11
+      "count": 21
+    },
+    {
+      "month": "2026-02",
+      "subject": "Salaries and Benefits",
+      "count": 4
     },
     {
       "month": "2026-02",
       "subject": "Saleofgasoline",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Sales",
+      "count": 19
     },
     {
       "month": "2026-02",
@@ -177546,6 +179568,36 @@
     },
     {
       "month": "2026-02",
+      "subject": "Scholarships",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Scholarships and Financial Aid",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "School Curriculum",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "School Districts",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
+      "subject": "School Transportation",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "School Vouchers",
+      "count": 8
+    },
+    {
+      "month": "2026-02",
       "subject": "School report card",
       "count": 1
     },
@@ -177597,7 +179649,7 @@
     {
       "month": "2026-02",
       "subject": "Schools",
-      "count": 23
+      "count": 29
     },
     {
       "month": "2026-02",
@@ -177627,7 +179679,7 @@
     {
       "month": "2026-02",
       "subject": "Secretary of State",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -177671,13 +179723,28 @@
     },
     {
       "month": "2026-02",
+      "subject": "Senate Commemoration",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Senate Concurrent Resolution",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Senate Joint Resolution",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Senior Citizens",
       "count": 3
     },
     {
       "month": "2026-02",
       "subject": "Sentencing",
-      "count": 1
+      "count": 11
     },
     {
       "month": "2026-02",
@@ -177686,8 +179753,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Service of Process",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Session Laws",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Settlementagreements",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Sewage",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -177706,6 +179788,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Sexual Offenses",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Sexualbattery",
       "count": 1
     },
@@ -177718,6 +179805,11 @@
       "month": "2026-02",
       "subject": "Shelby County",
       "count": 6
+    },
+    {
+      "month": "2026-02",
+      "subject": "Shelbyville",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -177816,6 +179908,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Solid Waste Disposal",
+      "count": 8
+    },
+    {
+      "month": "2026-02",
       "subject": "Solidwaste",
       "count": 6
     },
@@ -177823,6 +179920,11 @@
       "month": "2026-02",
       "subject": "Solidwastehandlingservices",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "South Pittsburg",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -177851,6 +179953,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Speech and Expression",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Speech-languagepathologists,audiologists,andhearingaiddispensers",
       "count": 1
     },
@@ -177858,6 +179965,16 @@
       "month": "2026-02",
       "subject": "Speedsafetysystems",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Sports",
+      "count": 154
+    },
+    {
+      "month": "2026-02",
+      "subject": "Springfield",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -177871,8 +179988,23 @@
     },
     {
       "month": "2026-02",
+      "subject": "Stanton",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "State",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "State & State Officers",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "State Affairs and Government",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -177886,6 +180018,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "State Aid to Education",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
       "subject": "State Boards",
       "count": 2
     },
@@ -177896,17 +180033,27 @@
     },
     {
       "month": "2026-02",
+      "subject": "State Employees",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
       "subject": "State Fair",
       "count": 1
     },
     {
       "month": "2026-02",
       "subject": "State Government",
-      "count": 37
+      "count": 53
     },
     {
       "month": "2026-02",
       "subject": "State Governmental Ethics",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "State Inmates",
       "count": 1
     },
     {
@@ -177923,6 +180070,11 @@
       "month": "2026-02",
       "subject": "State Revenue & Budget",
       "count": 28
+    },
+    {
+      "month": "2026-02",
+      "subject": "State Symbols",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -178131,6 +180283,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Statement of Intent or Position",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
       "subject": "Stateofemergency",
       "count": 2
     },
@@ -178186,6 +180343,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Statutes of Limitations and Repose",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Statutoryformpowerofattorney",
       "count": 1
     },
@@ -178237,7 +180399,7 @@
     {
       "month": "2026-02",
       "subject": "Students",
-      "count": 5
+      "count": 9
     },
     {
       "month": "2026-02",
@@ -178272,6 +180434,11 @@
     {
       "month": "2026-02",
       "subject": "Suicideprevention",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Sunset Clause",
       "count": 1
     },
     {
@@ -178406,8 +180573,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Tax Exemptions and Refunds",
+      "count": 7
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tax Increment Financing Districts",
+      "count": 5
+    },
+    {
+      "month": "2026-02",
       "subject": "Taxation",
-      "count": 91
+      "count": 118
     },
     {
       "month": "2026-02",
@@ -178446,13 +180623,18 @@
     },
     {
       "month": "2026-02",
+      "subject": "Taxes",
+      "count": 50
+    },
+    {
+      "month": "2026-02",
       "subject": "Teachercredentialing",
       "count": 6
     },
     {
       "month": "2026-02",
       "subject": "Teachers",
-      "count": 9
+      "count": 19
     },
     {
       "month": "2026-02",
@@ -178461,8 +180643,13 @@
     },
     {
       "month": "2026-02",
+      "subject": "Technology",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
       "subject": "Telecommunications",
-      "count": 3
+      "count": 7
     },
     {
       "month": "2026-02",
@@ -178498,6 +180685,36 @@
       "month": "2026-02",
       "subject": "TenantProtectionsforImmigrantFamiliesActof2026",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "TennCare",
+      "count": 15
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tennessee Arts Commission",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tennessee Bureau of Investigation",
+      "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tennessee Fish & Wildlife Commission",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tennessee Housing Development Agency",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tennessee Investment in Student Achievement (TISA)",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -178576,6 +180793,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Tickets",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Ticketsellers",
       "count": 1
     },
@@ -178591,6 +180813,21 @@
     },
     {
       "month": "2026-02",
+      "subject": "Titling and Registration",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tobacco",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tobacco Products",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "TolowaDee-ni'Nation",
       "count": 1
     },
@@ -178601,7 +180838,27 @@
     },
     {
       "month": "2026-02",
+      "subject": "Tort Liability and Reform",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Tourism",
+      "count": 8
+    },
+    {
+      "month": "2026-02",
+      "subject": "Tourist Development",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Townships",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Trade",
       "count": 2
     },
     {
@@ -178611,13 +180868,28 @@
     },
     {
       "month": "2026-02",
+      "subject": "Trade Regulation",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Traffic Regulations",
       "count": 8
     },
     {
       "month": "2026-02",
+      "subject": "Traffic Safety",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
       "subject": "Transactionsandusetaxes",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Transfer of Moneys",
+      "count": 9
     },
     {
       "month": "2026-02",
@@ -178642,7 +180914,7 @@
     {
       "month": "2026-02",
       "subject": "Transportation",
-      "count": 4
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -178686,6 +180958,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Trespass",
+      "count": 3
+    },
+    {
+      "month": "2026-02",
       "subject": "Tribal-stategamingcompacts",
       "count": 1
     },
@@ -178702,7 +180979,7 @@
     {
       "month": "2026-02",
       "subject": "Trusts",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -178731,6 +181008,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Unclaimed Property",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Unclaimedpersonalproperty",
       "count": 1
     },
@@ -178738,6 +181020,16 @@
       "month": "2026-02",
       "subject": "Unclaimedproperty",
       "count": 3
+    },
+    {
+      "month": "2026-02",
+      "subject": "Uncodified Acts",
+      "count": 11
+    },
+    {
+      "month": "2026-02",
+      "subject": "Unemployment Compensation",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -178763,6 +181055,11 @@
       "month": "2026-02",
       "subject": "Uniform Acts",
       "count": 4
+    },
+    {
+      "month": "2026-02",
+      "subject": "Uniform Commercial Code",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -178817,7 +181114,12 @@
     {
       "month": "2026-02",
       "subject": "Utilities",
-      "count": 5
+      "count": 18
+    },
+    {
+      "month": "2026-02",
+      "subject": "Utility Districts",
+      "count": 13
     },
     {
       "month": "2026-02",
@@ -178852,6 +181154,11 @@
     {
       "month": "2026-02",
       "subject": "Vapeproducts",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Vehicle Dealers",
       "count": 1
     },
     {
@@ -178897,6 +181204,16 @@
     {
       "month": "2026-02",
       "subject": "Veterans",
+      "count": 6
+    },
+    {
+      "month": "2026-02",
+      "subject": "Veterans Affairs",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Veterans Services",
       "count": 4
     },
     {
@@ -178921,6 +181238,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Victims' Rights",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Videoimagingofparkingviolations",
       "count": 2
     },
@@ -178933,6 +181255,11 @@
       "month": "2026-02",
       "subject": "Vocationalnursing",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Volatile Oils",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -178968,6 +181295,11 @@
       "month": "2026-02",
       "subject": "Voterregistrationinformation",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Voting",
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -179037,7 +181369,12 @@
     {
       "month": "2026-02",
       "subject": "Water",
-      "count": 7
+      "count": 11
+    },
+    {
+      "month": "2026-02",
+      "subject": "Water Management",
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -179126,6 +181463,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "Weakley County",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
       "subject": "Weighingandmeasuringdevices",
       "count": 1
     },
@@ -179138,6 +181480,11 @@
       "month": "2026-02",
       "subject": "Weightsandmeasures",
       "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Welfare",
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -179221,6 +181568,21 @@
     },
     {
       "month": "2026-02",
+      "subject": "Williamson County",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Winchester",
+      "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Wind Energy",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Women",
       "count": 1
     },
@@ -179247,7 +181609,7 @@
     {
       "month": "2026-02",
       "subject": "Workers Compensation",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -179313,6 +181675,11 @@
       "month": "2026-02",
       "subject": "Zones and Zoning",
       "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "Zoning",
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -189371,7 +191738,7 @@
     },
     {
       "month": "2026-02",
-      "subject": "softwareapplicationsandonlineservices",
+      "subject": "softwareapplications",
       "count": 1
     },
     {
@@ -189776,17 +192143,17 @@
     },
     {
       "month": "2026-02",
-      "subject": "studentorientationandtraining",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "students",
       "count": 52
     },
     {
       "month": "2026-02",
       "subject": "studentswithdisabilities",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "subject": "studenttraining",
       "count": 1
     },
     {
@@ -191351,6 +193718,11 @@
     },
     {
       "month": "2026-03",
+      "subject": "Academic Achievement",
+      "count": 70
+    },
+    {
+      "month": "2026-03",
       "subject": "Administration Department",
       "count": 6
     },
@@ -191372,7 +193744,7 @@
     {
       "month": "2026-03",
       "subject": "Agriculture",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-03",
@@ -191438,6 +193810,11 @@
       "month": "2026-03",
       "subject": "ArtsEducationMonth",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Ashland City",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -191518,6 +193895,11 @@
       "month": "2026-03",
       "subject": "Bonds",
       "count": 54
+    },
+    {
+      "month": "2026-03",
+      "subject": "Bristol",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -191716,6 +194098,21 @@
     },
     {
       "month": "2026-03",
+      "subject": "Confirmation of Appointment",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Congratulations",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Congress",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
       "subject": "CongressmanDougLaMalfaMemorialHighway",
       "count": 1
     },
@@ -191857,7 +194254,7 @@
     {
       "month": "2026-03",
       "subject": "Death",
-      "count": 3
+      "count": 43
     },
     {
       "month": "2026-03",
@@ -192156,17 +194553,27 @@
     },
     {
       "month": "2026-03",
+      "subject": "Gaming",
+      "count": 2
+    },
+    {
+      "month": "2026-03",
       "subject": "Gaming, Lottery, & Racing",
       "count": 1
     },
     {
       "month": "2026-03",
       "subject": "General Assembly",
-      "count": 10
+      "count": 13
     },
     {
       "month": "2026-03",
       "subject": "Government Administration",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Government Officials",
       "count": 1
     },
     {
@@ -192211,6 +194618,11 @@
     },
     {
       "month": "2026-03",
+      "subject": "Grand Junction",
+      "count": 2
+    },
+    {
+      "month": "2026-03",
       "subject": "Gravity-BasedEnergyStorageWellPilotProgram",
       "count": 1
     },
@@ -192238,6 +194650,11 @@
       "month": "2026-03",
       "subject": "HOUSING",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Haywood County",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -192411,6 +194828,11 @@
     },
     {
       "month": "2026-03",
+      "subject": "Interns",
+      "count": 25
+    },
+    {
+      "month": "2026-03",
       "subject": "IrishAmericanHeritageMonth",
       "count": 1
     },
@@ -192421,8 +194843,18 @@
     },
     {
       "month": "2026-03",
+      "subject": "Joint Conventions",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
       "subject": "Judiciaryomnibus",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Kingsport",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -192448,6 +194880,11 @@
       "month": "2026-03",
       "subject": "Labor, Employment, and Labor and Industry Department",
       "count": 8
+    },
+    {
+      "month": "2026-03",
+      "subject": "Lafayette",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -192498,6 +194935,11 @@
       "month": "2026-03",
       "subject": "Legislature",
       "count": 15
+    },
+    {
+      "month": "2026-03",
+      "subject": "Lexington",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -192591,8 +195033,18 @@
     },
     {
       "month": "2026-03",
+      "subject": "Martin",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
       "subject": "Mediation",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Memorials",
+      "count": 416
     },
     {
       "month": "2026-03",
@@ -192706,6 +195158,11 @@
     },
     {
       "month": "2026-03",
+      "subject": "Naming and Designating",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
       "subject": "NationalDayofPlay",
       "count": 1
     },
@@ -192756,6 +195213,11 @@
     },
     {
       "month": "2026-03",
+      "subject": "Niota",
+      "count": 2
+    },
+    {
+      "month": "2026-03",
       "subject": "Nonprofit and Charitable Organizations",
       "count": 3
     },
@@ -192763,6 +195225,16 @@
       "month": "2026-03",
       "subject": "Nursing Homes and Care Facilities",
       "count": 4
+    },
+    {
+      "month": "2026-03",
+      "subject": "Oakland",
+      "count": 2
+    },
+    {
+      "month": "2026-03",
+      "subject": "Obion County",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -192831,6 +195303,16 @@
     },
     {
       "month": "2026-03",
+      "subject": "Personal Achievement",
+      "count": 2
+    },
+    {
+      "month": "2026-03",
+      "subject": "Personal Occasion",
+      "count": 7
+    },
+    {
+      "month": "2026-03",
       "subject": "PersonalIncomeTaxLawandCorporationTaxLaw",
       "count": 1
     },
@@ -192858,6 +195340,11 @@
       "month": "2026-03",
       "subject": "Postsecondaryeducation",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Professional Achievement",
+      "count": 25
     },
     {
       "month": "2026-03",
@@ -192893,6 +195380,11 @@
       "month": "2026-03",
       "subject": "Public Safety and Public Safety Department",
       "count": 42
+    },
+    {
+      "month": "2026-03",
+      "subject": "Public Service",
+      "count": 4
     },
     {
       "month": "2026-03",
@@ -192961,6 +195453,11 @@
     },
     {
       "month": "2026-03",
+      "subject": "Recognition",
+      "count": 163
+    },
+    {
+      "month": "2026-03",
       "subject": "Recreation",
       "count": 2
     },
@@ -192982,7 +195479,7 @@
     {
       "month": "2026-03",
       "subject": "Retirement",
-      "count": 8
+      "count": 32
     },
     {
       "month": "2026-03",
@@ -192998,6 +195495,11 @@
       "month": "2026-03",
       "subject": "Rules and Regulations, Administrative",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Rutherford County",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -193023,6 +195525,11 @@
       "month": "2026-03",
       "subject": "Safety",
       "count": 3
+    },
+    {
+      "month": "2026-03",
+      "subject": "Sardis",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -193053,6 +195560,16 @@
       "month": "2026-03",
       "subject": "SpecialDistrictsWeek",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Sports",
+      "count": 53
+    },
+    {
+      "month": "2026-03",
+      "subject": "Stanton",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -193102,6 +195619,11 @@
     {
       "month": "2026-03",
       "subject": "StateBarofCalifornia",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Statement of Intent or Position",
       "count": 1
     },
     {
@@ -193241,8 +195763,18 @@
     },
     {
       "month": "2026-03",
+      "subject": "Tullahoma",
+      "count": 2
+    },
+    {
+      "month": "2026-03",
       "subject": "Unemployment Insurance",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "Unicoi County",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -193331,6 +195863,11 @@
     },
     {
       "month": "2026-03",
+      "subject": "Weakley County",
+      "count": 2
+    },
+    {
+      "month": "2026-03",
       "subject": "Weights and Measures",
       "count": 1
     },
@@ -193338,6 +195875,11 @@
       "month": "2026-03",
       "subject": "Wetlands and Natural Habitat",
       "count": 1
+    },
+    {
+      "month": "2026-03",
+      "subject": "White Bluff",
+      "count": 2
     },
     {
       "month": "2026-03",
@@ -194391,6 +196933,16 @@
     },
     {
       "month": "2026-04",
+      "subject": "Academic Achievement",
+      "count": 380
+    },
+    {
+      "month": "2026-04",
+      "subject": "Adjournment",
+      "count": 1
+    },
+    {
+      "month": "2026-04",
       "subject": "Agriculture & Forestry",
       "count": 1
     },
@@ -194408,6 +196960,11 @@
       "month": "2026-04",
       "subject": "AsthmaandAllergyAwarenessMonth",
       "count": 1
+    },
+    {
+      "month": "2026-04",
+      "subject": "Benton County",
+      "count": 2
     },
     {
       "month": "2026-04",
@@ -194526,6 +197083,11 @@
     },
     {
       "month": "2026-04",
+      "subject": "Death",
+      "count": 39
+    },
+    {
+      "month": "2026-04",
       "subject": "Education & School Finance (Pre & K-12)",
       "count": 18
     },
@@ -194561,13 +197123,23 @@
     },
     {
       "month": "2026-04",
+      "subject": "Gaming",
+      "count": 2
+    },
+    {
+      "month": "2026-04",
       "subject": "Gaming, Lottery, & Racing",
       "count": 2
     },
     {
       "month": "2026-04",
       "subject": "General Assembly",
-      "count": 18
+      "count": 20
+    },
+    {
+      "month": "2026-04",
+      "subject": "Gleason",
+      "count": 2
     },
     {
       "month": "2026-04",
@@ -194576,8 +197148,18 @@
     },
     {
       "month": "2026-04",
+      "subject": "Grundy County",
+      "count": 2
+    },
+    {
+      "month": "2026-04",
       "subject": "Health Care & Health Insurance",
       "count": 15
+    },
+    {
+      "month": "2026-04",
+      "subject": "Heroism",
+      "count": 9
     },
     {
       "month": "2026-04",
@@ -194598,6 +197180,21 @@
       "month": "2026-04",
       "subject": "Insurance",
       "count": 2
+    },
+    {
+      "month": "2026-04",
+      "subject": "Interns",
+      "count": 38
+    },
+    {
+      "month": "2026-04",
+      "subject": "Jellico",
+      "count": 1
+    },
+    {
+      "month": "2026-04",
+      "subject": "Joint Conventions",
+      "count": 1
     },
     {
       "month": "2026-04",
@@ -194626,6 +197223,11 @@
     },
     {
       "month": "2026-04",
+      "subject": "Memorials",
+      "count": 839
+    },
+    {
+      "month": "2026-04",
       "subject": "Men'sMentalHealthMonth",
       "count": 1
     },
@@ -194633,6 +197235,11 @@
       "month": "2026-04",
       "subject": "Military & Veterans",
       "count": 1
+    },
+    {
+      "month": "2026-04",
+      "subject": "Monterey",
+      "count": 2
     },
     {
       "month": "2026-04",
@@ -194686,8 +197293,23 @@
     },
     {
       "month": "2026-04",
+      "subject": "Personal Achievement",
+      "count": 1
+    },
+    {
+      "month": "2026-04",
+      "subject": "Personal Occasion",
+      "count": 17
+    },
+    {
+      "month": "2026-04",
       "subject": "PortugueseHeritageMonth",
       "count": 1
+    },
+    {
+      "month": "2026-04",
+      "subject": "Professional Achievement",
+      "count": 24
     },
     {
       "month": "2026-04",
@@ -194701,8 +197323,23 @@
     },
     {
       "month": "2026-04",
+      "subject": "Public Service",
+      "count": 11
+    },
+    {
+      "month": "2026-04",
+      "subject": "Recognition",
+      "count": 215
+    },
+    {
+      "month": "2026-04",
       "subject": "Resolutions",
       "count": 59
+    },
+    {
+      "month": "2026-04",
+      "subject": "Retirement",
+      "count": 53
     },
     {
       "month": "2026-04",
@@ -194721,6 +197358,11 @@
     },
     {
       "month": "2026-04",
+      "subject": "Shelby County",
+      "count": 2
+    },
+    {
+      "month": "2026-04",
       "subject": "Sisterstate",
       "count": 1
     },
@@ -194728,6 +197370,11 @@
       "month": "2026-04",
       "subject": "SojuDay",
       "count": 1
+    },
+    {
+      "month": "2026-04",
+      "subject": "Sports",
+      "count": 52
     },
     {
       "month": "2026-04",
