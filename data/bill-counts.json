@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T10:58:01Z",
+  "generated_at": "2026-08-02T11:00:03Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -178,6 +178,11 @@
       "count": 2439
     },
     {
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 9267
+    },
+    {
       "repo": "or-legislation",
       "state": "OR",
       "count": 307
@@ -320,23 +325,23 @@
     },
     {
       "month": "2025-01",
-      "count": 34301
+      "count": 34305
     },
     {
       "month": "2025-02",
-      "count": 34077
+      "count": 40301
     },
     {
       "month": "2025-03",
-      "count": 16587
+      "count": 16763
     },
     {
       "month": "2025-04",
-      "count": 8284
+      "count": 8354
     },
     {
       "month": "2025-05",
-      "count": 6476
+      "count": 6510
     },
     {
       "month": "2025-06",
@@ -372,19 +377,19 @@
     },
     {
       "month": "2026-02",
-      "count": 22035
+      "count": 24703
     },
     {
       "month": "2026-03",
-      "count": 11141
+      "count": 11172
     },
     {
       "month": "2026-04",
-      "count": 6697
+      "count": 6743
     },
     {
       "month": "2026-05",
-      "count": 4679
+      "count": 4687
     },
     {
       "month": "2026-06",
@@ -806,6 +811,12 @@
     },
     {
       "month": "2025-01",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 4
+    },
+    {
+      "month": "2025-01",
       "repo": "pa-legislation",
       "state": "PA",
       "count": 568
@@ -1028,6 +1039,12 @@
     },
     {
       "month": "2025-02",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 6224
+    },
+    {
+      "month": "2025-02",
       "repo": "pa-legislation",
       "state": "PA",
       "count": 489
@@ -1244,6 +1261,12 @@
     },
     {
       "month": "2025-03",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 176
+    },
+    {
+      "month": "2025-03",
       "repo": "pa-legislation",
       "state": "PA",
       "count": 585
@@ -1442,6 +1465,12 @@
     },
     {
       "month": "2025-04",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 70
+    },
+    {
+      "month": "2025-04",
       "repo": "pa-legislation",
       "state": "PA",
       "count": 546
@@ -1613,6 +1642,12 @@
       "repo": "oh-legislation",
       "state": "OH",
       "count": 120
+    },
+    {
+      "month": "2025-05",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 34
     },
     {
       "month": "2025-05",
@@ -2942,6 +2977,12 @@
     },
     {
       "month": "2026-02",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 2668
+    },
+    {
+      "month": "2026-02",
       "repo": "or-legislation",
       "state": "OR",
       "count": 300
@@ -3176,6 +3217,12 @@
     },
     {
       "month": "2026-03",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 31
+    },
+    {
+      "month": "2026-03",
       "repo": "or-legislation",
       "state": "OR",
       "count": 4
@@ -3404,6 +3451,12 @@
     },
     {
       "month": "2026-04",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 46
+    },
+    {
+      "month": "2026-04",
       "repo": "pa-legislation",
       "state": "PA",
       "count": 235
@@ -3551,6 +3604,12 @@
       "repo": "oh-legislation",
       "state": "OH",
       "count": 189
+    },
+    {
+      "month": "2026-05",
+      "repo": "ok-legislation",
+      "state": "OK",
+      "count": 8
     },
     {
       "month": "2026-05",
