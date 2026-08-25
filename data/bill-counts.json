@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:26:02Z",
+  "generated_at": "2026-08-25T10:12:45Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -20,7 +20,7 @@
     {
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 5062
+      "count": 5063
     },
     {
       "repo": "co-legislation",
@@ -65,7 +65,7 @@
     {
       "repo": "il-legislation",
       "state": "IL",
-      "count": 12780
+      "count": 12781
     },
     {
       "repo": "in-legislation",
@@ -170,12 +170,12 @@
     {
       "repo": "ny-legislation",
       "state": "NY",
-      "count": 25399
+      "count": 25400
     },
     {
       "repo": "oh-legislation",
       "state": "OH",
-      "count": 2500
+      "count": 2504
     },
     {
       "repo": "ok-legislation",
@@ -186,11 +186,6 @@
       "repo": "or-legislation",
       "state": "OR",
       "count": 304
-    },
-    {
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 4869
     },
     {
       "repo": "ri-legislation",
@@ -274,83 +269,83 @@
     },
     {
       "month": "2025-01",
-      "count": 22541
+      "count": 21974
     },
     {
       "month": "2025-02",
-      "count": 26096
+      "count": 25607
     },
     {
       "month": "2025-03",
-      "count": 9879
+      "count": 9294
     },
     {
       "month": "2025-04",
-      "count": 5646
+      "count": 5099
     },
     {
       "month": "2025-05",
-      "count": 4138
+      "count": 3823
     },
     {
       "month": "2025-06",
-      "count": 2062
+      "count": 1744
     },
     {
       "month": "2025-07",
-      "count": 882
+      "count": 720
     },
     {
       "month": "2025-08",
-      "count": 839
+      "count": 737
     },
     {
       "month": "2025-09",
-      "count": 1604
+      "count": 1433
     },
     {
       "month": "2025-10",
-      "count": 2276
+      "count": 2065
     },
     {
       "month": "2025-11",
-      "count": 1763
+      "count": 1665
     },
     {
       "month": "2025-12",
-      "count": 5449
+      "count": 5352
     },
     {
       "month": "2026-01",
-      "count": 29005
+      "count": 28853
     },
     {
       "month": "2026-02",
-      "count": 22242
+      "count": 22118
     },
     {
       "month": "2026-03",
-      "count": 9625
+      "count": 9403
     },
     {
       "month": "2026-04",
-      "count": 4808
+      "count": 4573
     },
     {
       "month": "2026-05",
-      "count": 4421
+      "count": 4219
     },
     {
       "month": "2026-06",
-      "count": 2115
+      "count": 1891
     },
     {
       "month": "2026-07",
-      "count": 742
+      "count": 699
     },
     {
       "month": "2026-08",
-      "count": 201
+      "count": 208
     }
   ],
   "monthly_by_state": [
@@ -514,7 +509,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 12
+      "count": 13
     },
     {
       "month": "2025-01",
@@ -563,12 +558,6 @@
       "repo": "ok-legislation",
       "state": "OK",
       "count": 2
-    },
-    {
-      "month": "2025-01",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 568
     },
     {
       "month": "2025-01",
@@ -722,12 +711,6 @@
     },
     {
       "month": "2025-02",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 489
-    },
-    {
-      "month": "2025-02",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 337
@@ -866,12 +849,6 @@
     },
     {
       "month": "2025-03",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 585
-    },
-    {
-      "month": "2025-03",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 265
@@ -964,7 +941,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 17
+      "count": 16
     },
     {
       "month": "2025-04",
@@ -1001,12 +978,6 @@
       "repo": "ok-legislation",
       "state": "OK",
       "count": 35
-    },
-    {
-      "month": "2025-04",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 546
     },
     {
       "month": "2025-04",
@@ -1136,12 +1107,6 @@
     },
     {
       "month": "2025-05",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 315
-    },
-    {
-      "month": "2025-05",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 148
@@ -1238,12 +1203,6 @@
     },
     {
       "month": "2025-06",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 318
-    },
-    {
-      "month": "2025-06",
       "repo": "vi-legislation",
       "state": "VI",
       "count": 5
@@ -1306,7 +1265,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 27
+      "count": 26
     },
     {
       "month": "2025-07",
@@ -1325,12 +1284,6 @@
       "repo": "oh-legislation",
       "state": "OH",
       "count": 98
-    },
-    {
-      "month": "2025-07",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 161
     },
     {
       "month": "2025-07",
@@ -1402,7 +1355,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 22
+      "count": 21
     },
     {
       "month": "2025-08",
@@ -1415,12 +1368,6 @@
       "repo": "oh-legislation",
       "state": "OH",
       "count": 57
-    },
-    {
-      "month": "2025-08",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 101
     },
     {
       "month": "2025-08",
@@ -1508,12 +1455,6 @@
     },
     {
       "month": "2025-09",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 171
-    },
-    {
-      "month": "2025-09",
       "repo": "ut-legislation",
       "state": "UT",
       "count": 20
@@ -1583,12 +1524,6 @@
       "repo": "oh-legislation",
       "state": "OH",
       "count": 165
-    },
-    {
-      "month": "2025-10",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 211
     },
     {
       "month": "2025-10",
@@ -1688,12 +1623,6 @@
     },
     {
       "month": "2025-11",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 98
-    },
-    {
-      "month": "2025-11",
       "repo": "ut-legislation",
       "state": "UT",
       "count": 10
@@ -1781,12 +1710,6 @@
       "repo": "oh-legislation",
       "state": "OH",
       "count": 62
-    },
-    {
-      "month": "2025-12",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 97
     },
     {
       "month": "2025-12",
@@ -1994,12 +1917,6 @@
     },
     {
       "month": "2026-01",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 152
-    },
-    {
-      "month": "2026-01",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 894
@@ -2170,7 +2087,7 @@
       "month": "2026-02",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 631
+      "count": 632
     },
     {
       "month": "2026-02",
@@ -2231,12 +2148,6 @@
       "repo": "or-legislation",
       "state": "OR",
       "count": 300
-    },
-    {
-      "month": "2026-02",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 125
     },
     {
       "month": "2026-02",
@@ -2410,7 +2321,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 11
+      "count": 12
     },
     {
       "month": "2026-03",
@@ -2453,12 +2364,6 @@
       "repo": "or-legislation",
       "state": "OR",
       "count": 4
-    },
-    {
-      "month": "2026-03",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 223
     },
     {
       "month": "2026-03",
@@ -2660,12 +2565,6 @@
     },
     {
       "month": "2026-04",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 235
-    },
-    {
-      "month": "2026-04",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 180
@@ -2770,7 +2669,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 8
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -2801,12 +2700,6 @@
       "repo": "ok-legislation",
       "state": "OK",
       "count": 8
-    },
-    {
-      "month": "2026-05",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 203
     },
     {
       "month": "2026-05",
@@ -2924,12 +2817,6 @@
     },
     {
       "month": "2026-06",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 224
-    },
-    {
-      "month": "2026-06",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 70
@@ -3007,22 +2894,16 @@
       "count": 74
     },
     {
-      "month": "2026-07",
-      "repo": "pa-legislation",
-      "state": "PA",
-      "count": 43
-    },
-    {
       "month": "2026-08",
       "repo": "ca-legislation",
       "state": "CA",
-      "count": 43
+      "count": 44
     },
     {
       "month": "2026-08",
       "repo": "il-legislation",
       "state": "IL",
-      "count": 6
+      "count": 7
     },
     {
       "month": "2026-08",
@@ -3046,13 +2927,13 @@
       "month": "2026-08",
       "repo": "ny-legislation",
       "state": "NY",
-      "count": 17
+      "count": 18
     },
     {
       "month": "2026-08",
       "repo": "oh-legislation",
       "state": "OH",
-      "count": 33
+      "count": 37
     },
     {
       "month": "2026-08",
@@ -16050,7 +15931,7 @@
     {
       "month": "2025-01",
       "subject": "Discrimination",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2025-01",
@@ -17130,7 +17011,7 @@
     {
       "month": "2025-01",
       "subject": "Elections",
-      "count": 76
+      "count": 77
     },
     {
       "month": "2025-01",
@@ -42575,7 +42456,7 @@
     {
       "month": "2025-01",
       "subject": "housing",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2025-01",
@@ -44464,6 +44345,11 @@
     },
     {
       "month": "2025-01",
+      "subject": "seizureofelectionmaterials",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
       "subject": "self-defense",
       "count": 1
     },
@@ -44590,11 +44476,6 @@
     {
       "month": "2025-01",
       "subject": "solar energy",
-      "count": 1
-    },
-    {
-      "month": "2025-01",
-      "subject": "sourceofincome",
       "count": 1
     },
     {
@@ -47894,7 +47775,7 @@
     },
     {
       "month": "2025-02",
-      "subject": "Birthdefectsmonitoring",
+      "subject": "Birthconditionsmonitoring",
       "count": 1
     },
     {
@@ -49029,11 +48910,6 @@
     },
     {
       "month": "2025-02",
-      "subject": "CaliforniaArtificialIntelligenceStandardsandSafetyCommission",
-      "count": 1
-    },
-    {
-      "month": "2025-02",
       "subject": "CaliforniaCapitalCityDowntownRevitalizationAct",
       "count": 1
     },
@@ -49950,6 +49826,11 @@
     {
       "month": "2025-02",
       "subject": "Civilactions",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "subject": "Civilactionsandattorneys",
       "count": 1
     },
     {
@@ -54489,6 +54370,11 @@
     },
     {
       "month": "2025-02",
+      "subject": "Independentverificationorganizations",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
       "subject": "Indiantribes",
       "count": 1
     },
@@ -55999,6 +55885,11 @@
     },
     {
       "month": "2025-02",
+      "subject": "Mining",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
       "subject": "Mining and Minerals",
       "count": 1
     },
@@ -56066,11 +55957,6 @@
       "month": "2025-02",
       "subject": "Mortgages and Deeds",
       "count": 2
-    },
-    {
-      "month": "2025-02",
-      "subject": "Motions",
-      "count": 1
     },
     {
       "month": "2025-02",
@@ -59864,7 +59750,7 @@
     },
     {
       "month": "2025-02",
-      "subject": "SmallBusinessResiliencyandInnovationAct",
+      "subject": "SmallBusinessDevelopmentTechnicalAssistance",
       "count": 1
     },
     {
@@ -62149,11 +62035,6 @@
     },
     {
       "month": "2025-02",
-      "subject": "adverseactions",
-      "count": 1
-    },
-    {
-      "month": "2025-02",
       "subject": "advertisements",
       "count": 1
     },
@@ -62490,7 +62371,7 @@
     {
       "month": "2025-02",
       "subject": "area education agencies",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2025-02",
@@ -62511,11 +62392,6 @@
       "month": "2025-02",
       "subject": "artificialintelligence",
       "count": 5
-    },
-    {
-      "month": "2025-02",
-      "subject": "artificialintelligencesafetystandards",
-      "count": 1
     },
     {
       "month": "2025-02",
@@ -66379,11 +66255,6 @@
     },
     {
       "month": "2025-02",
-      "subject": "filingandservicerequirements",
-      "count": 1
-    },
-    {
-      "month": "2025-02",
       "subject": "filingdeadlines",
       "count": 1
     },
@@ -68275,7 +68146,7 @@
     {
       "month": "2025-02",
       "subject": "labor and employment",
-      "count": 83
+      "count": 82
     },
     {
       "month": "2025-02",
@@ -68400,11 +68271,6 @@
     {
       "month": "2025-02",
       "subject": "lawsuitfinanciers",
-      "count": 1
-    },
-    {
-      "month": "2025-02",
-      "subject": "layoffs",
       "count": 1
     },
     {
@@ -69240,6 +69106,11 @@
     {
       "month": "2025-02",
       "subject": "mining",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "subject": "miningoperationsstatus",
       "count": 1
     },
     {
@@ -70745,12 +70616,12 @@
     {
       "month": "2025-02",
       "subject": "private education",
-      "count": 31
+      "count": 32
     },
     {
       "month": "2025-02",
       "subject": "private education student accounts",
-      "count": 4
+      "count": 5
     },
     {
       "month": "2025-02",
@@ -72230,7 +72101,7 @@
     {
       "month": "2025-02",
       "subject": "school aid law",
-      "count": 3
+      "count": 4
     },
     {
       "month": "2025-02",
@@ -72240,7 +72111,7 @@
     {
       "month": "2025-02",
       "subject": "school boards",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2025-02",
@@ -72260,12 +72131,12 @@
     {
       "month": "2025-02",
       "subject": "school districts",
-      "count": 93
+      "count": 94
     },
     {
       "month": "2025-02",
       "subject": "school finance",
-      "count": 17
+      "count": 18
     },
     {
       "month": "2025-02",
@@ -72355,7 +72226,7 @@
     {
       "month": "2025-02",
       "subject": "schools",
-      "count": 82
+      "count": 83
     },
     {
       "month": "2025-02",
@@ -73420,7 +73291,7 @@
     {
       "month": "2025-02",
       "subject": "tax credits",
-      "count": 30
+      "count": 31
     },
     {
       "month": "2025-02",
@@ -74065,7 +73936,7 @@
     {
       "month": "2025-02",
       "subject": "tuition",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2025-02",
@@ -74110,12 +73981,12 @@
     {
       "month": "2025-02",
       "subject": "unemployment",
-      "count": 8
+      "count": 7
     },
     {
       "month": "2025-02",
       "subject": "unemployment compensation",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-02",
@@ -74180,6 +74051,11 @@
     {
       "month": "2025-02",
       "subject": "unlicensedwork",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "subject": "unprofessionalconduct",
       "count": 1
     },
     {
@@ -74825,7 +74701,7 @@
     {
       "month": "2025-02",
       "subject": "workforce development",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2025-02",
@@ -74835,7 +74711,7 @@
     {
       "month": "2025-02",
       "subject": "workforce development department",
-      "count": 7
+      "count": 6
     },
     {
       "month": "2025-02",
@@ -173294,6 +173170,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "CoordinatedEntrySystem",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Coosa County",
       "count": 1
     },
@@ -173490,11 +173371,6 @@
     {
       "month": "2026-02",
       "subject": "Countyauditors",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
-      "subject": "Countyboardofsupervisors",
       "count": 1
     },
     {
@@ -175185,7 +175061,7 @@
     {
       "month": "2026-02",
       "subject": "Elementaryandsecondaryeducation",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -175196,6 +175072,11 @@
       "month": "2026-02",
       "subject": "Elmore County",
       "count": 2
+    },
+    {
+      "month": "2026-02",
+      "subject": "Emergencies",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -175295,7 +175176,7 @@
     {
       "month": "2026-02",
       "subject": "Employment",
-      "count": 11
+      "count": 10
     },
     {
       "month": "2026-02",
@@ -178650,7 +178531,7 @@
     {
       "month": "2026-02",
       "subject": "Lawenforcement",
-      "count": 3
+      "count": 4
     },
     {
       "month": "2026-02",
@@ -183484,6 +183365,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "SeedAdvisoryBoard",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "Self-defense",
       "count": 1
     },
@@ -184489,11 +184375,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "Supportivehousing",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "Surface Mining",
       "count": 2
     },
@@ -184830,7 +184711,7 @@
     {
       "month": "2026-02",
       "subject": "Teachercredentialing",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2026-02",
@@ -187409,11 +187290,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "barrierstoaccess",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "barrierstodownsizing",
       "count": 1
     },
@@ -187934,6 +187810,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "certifications",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "certifiedcommunityconservationcorps",
       "count": 1
     },
@@ -188234,6 +188115,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "coastalresources",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "coldspasandcoldplungetubs",
       "count": 1
     },
@@ -188520,7 +188406,7 @@
     {
       "month": "2026-02",
       "subject": "confidentiality",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2026-02",
@@ -189894,11 +189780,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "electedofficialsandcandidates",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "election misconduct",
       "count": 2
     },
@@ -191049,11 +190930,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "fundingcertifications",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "fundingconditions",
       "count": 1
     },
@@ -192019,6 +191895,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "infrastructureprojectstreamlining",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "injunctions",
       "count": 4
     },
@@ -192056,11 +191937,6 @@
       "month": "2026-02",
       "subject": "inspections, appeals, and licensing department",
       "count": 18
-    },
-    {
-      "month": "2026-02",
-      "subject": "inspectorgeneral",
-      "count": 1
     },
     {
       "month": "2026-02",
@@ -192364,11 +192240,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "judicialstreamlining",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "jurisdiction",
       "count": 10
     },
@@ -192425,12 +192296,7 @@
     {
       "month": "2026-02",
       "subject": "labels,packaging,andadvertising",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
-      "subject": "labels,packaging,andmanufacturing",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -192884,7 +192750,7 @@
     },
     {
       "month": "2026-02",
-      "subject": "localnewsorganizations",
+      "subject": "localnewsoutlets",
       "count": 1
     },
     {
@@ -193335,11 +193201,6 @@
     {
       "month": "2026-02",
       "subject": "military service members",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
-      "subject": "militarydependents",
       "count": 1
     },
     {
@@ -194000,7 +193861,7 @@
     {
       "month": "2026-02",
       "subject": "omnibus",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -194369,6 +194230,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "personnel",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "personnel records",
       "count": 2
     },
@@ -194624,6 +194490,11 @@
     },
     {
       "month": "2026-02",
+      "subject": "prepayoption",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
       "subject": "preschools",
       "count": 11
     },
@@ -194770,7 +194641,7 @@
     {
       "month": "2026-02",
       "subject": "professionalpreparation",
-      "count": 2
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -194870,11 +194741,6 @@
     {
       "month": "2026-02",
       "subject": "prospectivejurors",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
-      "subject": "prospectivetenants",
       "count": 1
     },
     {
@@ -195085,11 +194951,6 @@
     {
       "month": "2026-02",
       "subject": "publicworksprojects",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
-      "subject": "pupilenrollment",
       "count": 1
     },
     {
@@ -195575,7 +195436,7 @@
     {
       "month": "2026-02",
       "subject": "report",
-      "count": 9
+      "count": 8
     },
     {
       "month": "2026-02",
@@ -196955,7 +196816,7 @@
     {
       "month": "2026-02",
       "subject": "study",
-      "count": 6
+      "count": 7
     },
     {
       "month": "2026-02",
@@ -198256,6 +198117,11 @@
       "month": "2026-02",
       "subject": "weapons",
       "count": 9
+    },
+    {
+      "month": "2026-02",
+      "subject": "wearableelectroshockdevices",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -200039,7 +199905,7 @@
     },
     {
       "month": "2026-03",
-      "subject": "CaliforniaTeleconnectFundAdministrativeCommitteeFund",
+      "subject": "CaliforniaTeleconnectFundAdministrativeCommitteeFundprogram",
       "count": 1
     },
     {
@@ -228574,6 +228440,11 @@
     },
     {
       "month": "2026-08",
+      "subject": "Elections",
+      "count": 1
+    },
+    {
+      "month": "2026-08",
       "subject": "EmperorNortonTunnel",
       "count": 1
     },
@@ -228760,6 +228631,11 @@
     {
       "month": "2026-08",
       "subject": "pediatriccancerclusters",
+      "count": 1
+    },
+    {
+      "month": "2026-08",
+      "subject": "prohibitionofexclusionofeligiblevoters",
       "count": 1
     }
   ]
