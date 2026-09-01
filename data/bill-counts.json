@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T17:24:12Z",
+  "generated_at": "2026-09-01T14:28:59Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -65,7 +65,7 @@
     {
       "repo": "il-legislation",
       "state": "IL",
-      "count": 12788
+      "count": 12789
     },
     {
       "repo": "in-legislation",
@@ -120,7 +120,7 @@
     {
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 316
+      "count": 322
     },
     {
       "repo": "ms-legislation",
@@ -170,7 +170,7 @@
     {
       "repo": "ny-legislation",
       "state": "NY",
-      "count": 25402
+      "count": 25408
     },
     {
       "repo": "oh-legislation",
@@ -274,7 +274,7 @@
     },
     {
       "month": "2025-01",
-      "count": 23381
+      "count": 23380
     },
     {
       "month": "2025-02",
@@ -286,7 +286,7 @@
     },
     {
       "month": "2025-04",
-      "count": 5637
+      "count": 5638
     },
     {
       "month": "2025-05",
@@ -298,11 +298,11 @@
     },
     {
       "month": "2025-07",
-      "count": 720
+      "count": 721
     },
     {
       "month": "2025-08",
-      "count": 739
+      "count": 740
     },
     {
       "month": "2025-09",
@@ -330,7 +330,7 @@
     },
     {
       "month": "2026-03",
-      "count": 9861
+      "count": 9860
     },
     {
       "month": "2026-04",
@@ -338,19 +338,19 @@
     },
     {
       "month": "2026-05",
-      "count": 4220
+      "count": 4219
     },
     {
       "month": "2026-06",
-      "count": 1895
+      "count": 1897
     },
     {
       "month": "2026-07",
-      "count": 699
+      "count": 700
     },
     {
       "month": "2026-08",
-      "count": 338
+      "count": 348
     },
     {
       "month": "2026-09",
@@ -530,7 +530,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -980,7 +980,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1316,7 +1316,7 @@
       "month": "2025-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 26
+      "count": 27
     },
     {
       "month": "2025-07",
@@ -1406,7 +1406,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -2414,7 +2414,7 @@
       "month": "2026-03",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 12
+      "count": 11
     },
     {
       "month": "2026-03",
@@ -2774,7 +2774,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -2894,7 +2894,7 @@
       "month": "2026-06",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-06",
@@ -2972,7 +2972,7 @@
       "month": "2026-07",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 5
+      "count": 6
     },
     {
       "month": "2026-07",
@@ -3014,7 +3014,7 @@
       "month": "2026-08",
       "repo": "il-legislation",
       "state": "IL",
-      "count": 14
+      "count": 15
     },
     {
       "month": "2026-08",
@@ -3036,9 +3036,15 @@
     },
     {
       "month": "2026-08",
+      "repo": "mp-legislation",
+      "state": "MP",
+      "count": 3
+    },
+    {
+      "month": "2026-08",
       "repo": "ny-legislation",
       "state": "NY",
-      "count": 20
+      "count": 26
     },
     {
       "month": "2026-08",
@@ -104322,7 +104328,7 @@
     },
     {
       "month": "2025-04",
-      "subject": "STATE BOARD OF; EMERGING TECHNOLOGIES; EMPLOYMENT; HIGHER EDUCATION; ID SYSTEMS; INFORMATION TECHNOLOGY; LICENSES & PERMITS; LOBBYING; LOCAL GOVERNMENT; MORATORIUMS; MOTOR VEHICLES; NOTIFICATION; PACS; PERSONNEL; PILOT PROGRAMS; POLITICAL ACTIVITY; POLITICAL PARTIES; PRESENTED; PUBLIC; PUBLIC OFFICIALS; RATIFIED; REFERENDUM & INITIATIVE; REPORTING; REPORTS; SALARIES & BENEFITS; STEM; SESSION LAWS; STATE AUDITOR; STATE EMPLOYEES; STUDIES; VOTER REGISTRATION; WAKE COUNTY; RECORDS; SUPERIOR COURT; GOVERNMENT EMPLOYEES; PRIMARIES; BALLOTS & BALLOT ISSUES; ARTIFICIAL INTELLIGENCE",
+      "subject": "STATE BOARD OF; EMERGING TECHNOLOGIES; EMPLOYMENT; HIGHER EDUCATION; ID SYSTEMS; INFORMATION TECHNOLOGY; LICENSES & PERMITS; LOBBYING; LOCAL GOVERNMENT; MORATORIUMS; MOTOR VEHICLES; NOTIFICATION; PACS; PERSONNEL; PILOT PROGRAMS; POLITICAL ACTIVITY; POLITICAL PARTIES; PRESENTED; PUBLIC; PUBLIC OFFICIALS; RATIFIED; REFERENDUM & INITIATIVE; REPORTING; REPORTS; SALARIES & BENEFITS; STEM; SESSION LAWS; STATE AUDITOR; STATE EMPLOYEES; STUDIES; VETOED; VOTER REGISTRATION; WAKE COUNTY; RECORDS; SUPERIOR COURT; GOVERNMENT EMPLOYEES; PRIMARIES; BALLOTS & BALLOT ISSUES; ARTIFICIAL INTELLIGENCE",
       "count": 1
     },
     {
