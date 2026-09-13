@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T13:12:44Z",
+  "generated_at": "2026-09-13T14:08:35Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -274,11 +274,11 @@
     },
     {
       "month": "2025-01",
-      "count": 24798
+      "count": 24797
     },
     {
       "month": "2025-02",
-      "count": 29039
+      "count": 29038
     },
     {
       "month": "2025-03",
@@ -286,7 +286,7 @@
     },
     {
       "month": "2025-04",
-      "count": 6719
+      "count": 6720
     },
     {
       "month": "2025-05",
@@ -302,11 +302,11 @@
     },
     {
       "month": "2025-08",
-      "count": 1093
+      "count": 1094
     },
     {
       "month": "2025-09",
-      "count": 2493
+      "count": 2494
     },
     {
       "month": "2025-10",
@@ -322,11 +322,11 @@
     },
     {
       "month": "2026-01",
-      "count": 30438
+      "count": 30439
     },
     {
       "month": "2026-02",
-      "count": 24259
+      "count": 24262
     },
     {
       "month": "2026-03",
@@ -334,11 +334,11 @@
     },
     {
       "month": "2026-04",
-      "count": 6325
+      "count": 6324
     },
     {
       "month": "2026-05",
-      "count": 4965
+      "count": 4964
     },
     {
       "month": "2026-06",
@@ -350,7 +350,7 @@
     },
     {
       "month": "2026-08",
-      "count": 798
+      "count": 797
     },
     {
       "month": "2026-09",
@@ -530,7 +530,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -650,7 +650,7 @@
       "month": "2025-02",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 1114
+      "count": 1113
     },
     {
       "month": "2025-02",
@@ -998,7 +998,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1448,7 +1448,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -1538,7 +1538,7 @@
       "month": "2025-09",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 15
+      "count": 16
     },
     {
       "month": "2025-09",
@@ -1988,7 +1988,7 @@
       "month": "2026-01",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 752
+      "count": 753
     },
     {
       "month": "2026-01",
@@ -2150,7 +2150,7 @@
       "month": "2026-02",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 978
+      "count": 979
     },
     {
       "month": "2026-02",
@@ -2222,7 +2222,7 @@
       "month": "2026-02",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 630
+      "count": 632
     },
     {
       "month": "2026-02",
@@ -2606,7 +2606,7 @@
       "month": "2026-04",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 104
+      "count": 103
     },
     {
       "month": "2026-04",
@@ -2828,7 +2828,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -3110,7 +3110,7 @@
       "month": "2026-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 11
+      "count": 10
     },
     {
       "month": "2026-08",
@@ -64953,7 +64953,7 @@
     {
       "month": "2025-02",
       "subject": "attorney general",
-      "count": 11
+      "count": 10
     },
     {
       "month": "2025-02",
@@ -65933,7 +65933,7 @@
     {
       "month": "2025-02",
       "subject": "clerks of court",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2025-02",
@@ -66738,7 +66738,7 @@
     {
       "month": "2025-02",
       "subject": "county government",
-      "count": 63
+      "count": 62
     },
     {
       "month": "2025-02",
@@ -67633,12 +67633,12 @@
     {
       "month": "2025-02",
       "subject": "domestic abuse",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2025-02",
       "subject": "domestic relations",
-      "count": 12
+      "count": 11
     },
     {
       "month": "2025-02",
@@ -69363,7 +69363,7 @@
     {
       "month": "2025-02",
       "subject": "governor",
-      "count": 7
+      "count": 8
     },
     {
       "month": "2025-02",
@@ -70553,11 +70553,16 @@
     {
       "month": "2025-02",
       "subject": "judicial districts",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2025-02",
       "subject": "judicial magistrates",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "subject": "judicial nominating commissions",
       "count": 1
     },
     {
@@ -71623,7 +71628,7 @@
     {
       "month": "2025-02",
       "subject": "misdemeanors",
-      "count": 39
+      "count": 38
     },
     {
       "month": "2025-02",
@@ -71958,7 +71963,7 @@
     {
       "month": "2025-02",
       "subject": "nominations",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2025-02",
@@ -73338,7 +73343,7 @@
     {
       "month": "2025-02",
       "subject": "protective orders",
-      "count": 2
+      "count": 1
     },
     {
       "month": "2025-02",
@@ -73428,7 +73433,7 @@
     {
       "month": "2025-02",
       "subject": "public improvements",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2025-02",
@@ -74518,7 +74523,7 @@
     {
       "month": "2025-02",
       "subject": "salaries and wages",
-      "count": 41
+      "count": 40
     },
     {
       "month": "2025-02",
@@ -185893,7 +185898,7 @@
     {
       "month": "2026-02",
       "subject": "abortions",
-      "count": 5
+      "count": 6
     },
     {
       "month": "2026-02",
@@ -187613,7 +187618,7 @@
     {
       "month": "2026-02",
       "subject": "civil liability",
-      "count": 15
+      "count": 16
     },
     {
       "month": "2026-02",
@@ -189253,7 +189258,7 @@
     {
       "month": "2026-02",
       "subject": "drugs",
-      "count": 10
+      "count": 11
     },
     {
       "month": "2026-02",
@@ -190878,7 +190883,7 @@
     {
       "month": "2026-02",
       "subject": "health and human services department",
-      "count": 34
+      "count": 35
     },
     {
       "month": "2026-02",
@@ -191483,7 +191488,7 @@
     {
       "month": "2026-02",
       "subject": "informed consent",
-      "count": 15
+      "count": 16
     },
     {
       "month": "2026-02",
@@ -192608,7 +192613,7 @@
     {
       "month": "2026-02",
       "subject": "medical care",
-      "count": 36
+      "count": 37
     },
     {
       "month": "2026-02",
@@ -194103,7 +194108,7 @@
     {
       "month": "2026-02",
       "subject": "prescription drugs",
-      "count": 11
+      "count": 12
     },
     {
       "month": "2026-02",
@@ -195043,7 +195048,7 @@
     {
       "month": "2026-02",
       "subject": "reports",
-      "count": 57
+      "count": 58
     },
     {
       "month": "2026-02",
@@ -218618,7 +218623,7 @@
     {
       "month": "2026-04",
       "subject": "nonprofit entities",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2026-04",
@@ -218713,7 +218718,7 @@
     {
       "month": "2026-04",
       "subject": "property taxes",
-      "count": 5
+      "count": 4
     },
     {
       "month": "2026-04",
@@ -218808,7 +218813,7 @@
     {
       "month": "2026-04",
       "subject": "religious organizations",
-      "count": 2
+      "count": 1
     },
     {
       "month": "2026-04",
@@ -219058,7 +219063,7 @@
     {
       "month": "2026-04",
       "subject": "tax exemptions",
-      "count": 8
+      "count": 7
     },
     {
       "month": "2026-04",
@@ -219083,7 +219088,7 @@
     {
       "month": "2026-04",
       "subject": "taxation",
-      "count": 12
+      "count": 11
     },
     {
       "month": "2026-04",
