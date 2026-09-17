@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:32:20Z",
+  "generated_at": "2026-09-17T14:38:24Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -105,7 +105,7 @@
     {
       "repo": "mi-legislation",
       "state": "MI",
-      "count": 4061
+      "count": 4065
     },
     {
       "repo": "mn-legislation",
@@ -170,12 +170,12 @@
     {
       "repo": "ny-legislation",
       "state": "NY",
-      "count": 25470
+      "count": 25496
     },
     {
       "repo": "oh-legislation",
       "state": "OH",
-      "count": 2540
+      "count": 2545
     },
     {
       "repo": "ok-legislation",
@@ -210,7 +210,7 @@
     {
       "repo": "usa-legislation",
       "state": "USA",
-      "count": 18726
+      "count": 18881
     },
     {
       "repo": "vi-legislation",
@@ -274,19 +274,19 @@
     },
     {
       "month": "2025-01",
-      "count": 24798
+      "count": 24797
     },
     {
       "month": "2025-02",
-      "count": 29038
+      "count": 29040
     },
     {
       "month": "2025-03",
-      "count": 11270
+      "count": 11269
     },
     {
       "month": "2025-04",
-      "count": 6719
+      "count": 6720
     },
     {
       "month": "2025-05",
@@ -302,7 +302,7 @@
     },
     {
       "month": "2025-08",
-      "count": 1093
+      "count": 1094
     },
     {
       "month": "2025-09",
@@ -318,15 +318,15 @@
     },
     {
       "month": "2025-12",
-      "count": 6278
+      "count": 6277
     },
     {
       "month": "2026-01",
-      "count": 30438
+      "count": 30439
     },
     {
       "month": "2026-02",
-      "count": 24259
+      "count": 24262
     },
     {
       "month": "2026-03",
@@ -338,7 +338,7 @@
     },
     {
       "month": "2026-05",
-      "count": 4965
+      "count": 4964
     },
     {
       "month": "2026-06",
@@ -354,7 +354,7 @@
     },
     {
       "month": "2026-09",
-      "count": 546
+      "count": 736
     }
   ],
   "monthly_by_state": [
@@ -530,7 +530,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -650,7 +650,7 @@
       "month": "2025-02",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 1113
+      "count": 1115
     },
     {
       "month": "2025-02",
@@ -806,7 +806,7 @@
       "month": "2025-03",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 506
+      "count": 505
     },
     {
       "month": "2025-03",
@@ -998,7 +998,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1448,7 +1448,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -1808,7 +1808,7 @@
       "month": "2025-12",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 1744
+      "count": 1743
     },
     {
       "month": "2025-12",
@@ -1988,7 +1988,7 @@
       "month": "2026-01",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 752
+      "count": 753
     },
     {
       "month": "2026-01",
@@ -2222,7 +2222,7 @@
       "month": "2026-02",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 629
+      "count": 632
     },
     {
       "month": "2026-02",
@@ -2828,7 +2828,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -3146,7 +3146,7 @@
       "month": "2026-09",
       "repo": "mi-legislation",
       "state": "MI",
-      "count": 49
+      "count": 53
     },
     {
       "month": "2026-09",
@@ -3170,19 +3170,19 @@
       "month": "2026-09",
       "repo": "ny-legislation",
       "state": "NY",
-      "count": 62
+      "count": 88
     },
     {
       "month": "2026-09",
       "repo": "oh-legislation",
       "state": "OH",
-      "count": 31
+      "count": 36
     },
     {
       "month": "2026-09",
       "repo": "usa-legislation",
       "state": "USA",
-      "count": 232
+      "count": 387
     }
   ],
   "trending_subjects": [
@@ -64639,7 +64639,7 @@
     {
       "month": "2025-02",
       "subject": "agriculture and land stewardship department",
-      "count": 8
+      "count": 9
     },
     {
       "month": "2025-02",
@@ -65874,7 +65874,7 @@
     {
       "month": "2025-02",
       "subject": "civil liability",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2025-02",
@@ -66064,7 +66064,7 @@
     {
       "month": "2025-02",
       "subject": "commercial vehicles",
-      "count": 3
+      "count": 4
     },
     {
       "month": "2025-02",
@@ -68984,12 +68984,27 @@
     {
       "month": "2025-02",
       "subject": "food",
-      "count": 9
+      "count": 10
     },
     {
       "month": "2025-02",
       "subject": "food assistance",
-      "count": 3
+      "count": 4
+    },
+    {
+      "month": "2025-02",
+      "subject": "food establishments",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "subject": "food processing plants",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "subject": "food safety",
+      "count": 1
     },
     {
       "month": "2025-02",
@@ -70234,7 +70249,7 @@
     {
       "month": "2025-02",
       "subject": "inspections, appeals, and licensing department",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2025-02",
@@ -73674,7 +73689,7 @@
     {
       "month": "2025-02",
       "subject": "railroads",
-      "count": 6
+      "count": 7
     },
     {
       "month": "2025-02",
@@ -76129,7 +76144,7 @@
     {
       "month": "2025-02",
       "subject": "tort law",
-      "count": 17
+      "count": 18
     },
     {
       "month": "2025-02",
@@ -76279,7 +76294,7 @@
     {
       "month": "2025-02",
       "subject": "transportation",
-      "count": 10
+      "count": 11
     },
     {
       "month": "2025-02",
@@ -77034,7 +77049,7 @@
     {
       "month": "2025-02",
       "subject": "weight and measurement",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2025-02",
@@ -92064,7 +92079,7 @@
     {
       "month": "2025-03",
       "subject": "boats and vessels",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2025-03",
@@ -93294,7 +93309,7 @@
     {
       "month": "2025-03",
       "subject": "fines",
-      "count": 4
+      "count": 3
     },
     {
       "month": "2025-03",
@@ -94384,7 +94399,7 @@
     {
       "month": "2025-03",
       "subject": "misdemeanors",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2025-03",
@@ -94714,11 +94729,6 @@
     {
       "month": "2025-03",
       "subject": "peer review",
-      "count": 1
-    },
-    {
-      "month": "2025-03",
-      "subject": "personal flotation devices",
       "count": 1
     },
     {
@@ -95954,7 +95964,7 @@
     {
       "month": "2025-03",
       "subject": "water",
-      "count": 6
+      "count": 5
     },
     {
       "month": "2025-03",
@@ -228688,6 +228698,11 @@
     },
     {
       "month": "2026-09",
+      "subject": "Aging",
+      "count": 1
+    },
+    {
+      "month": "2026-09",
       "subject": "Agriculture",
       "count": 1
     },
@@ -228799,7 +228814,7 @@
     {
       "month": "2026-09",
       "subject": "Commerce",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-09",
@@ -228824,12 +228839,12 @@
     {
       "month": "2026-09",
       "subject": "Courts",
-      "count": 2
+      "count": 4
     },
     {
       "month": "2026-09",
       "subject": "Courts and Civil Law",
-      "count": 3
+      "count": 5
     },
     {
       "month": "2026-09",
@@ -228849,12 +228864,12 @@
     {
       "month": "2026-09",
       "subject": "Crime and Punishment",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-09",
       "subject": "Crimes, Corrections, and Law Enforcement",
-      "count": 1
+      "count": 4
     },
     {
       "month": "2026-09",
@@ -229079,7 +229094,7 @@
     {
       "month": "2026-09",
       "subject": "Health and Human Services",
-      "count": 4
+      "count": 5
     },
     {
       "month": "2026-09",
@@ -229184,7 +229199,7 @@
     {
       "month": "2026-09",
       "subject": "Law Enforcement",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-09",
@@ -229199,7 +229214,7 @@
     {
       "month": "2026-09",
       "subject": "Local Government",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-09",
@@ -229239,7 +229254,7 @@
     {
       "month": "2026-09",
       "subject": "Medicaid",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-09",
@@ -229264,7 +229279,7 @@
     {
       "month": "2026-09",
       "subject": "Motor Vehicles",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-09",
@@ -229348,13 +229363,18 @@
     },
     {
       "month": "2026-09",
-      "subject": "Public Records",
+      "subject": "Public Officials and Employees",
       "count": 1
     },
     {
       "month": "2026-09",
+      "subject": "Public Records",
+      "count": 2
+    },
+    {
+      "month": "2026-09",
       "subject": "Public Safety",
-      "count": 3
+      "count": 6
     },
     {
       "month": "2026-09",
@@ -229453,6 +229473,11 @@
     },
     {
       "month": "2026-09",
+      "subject": "State Government",
+      "count": 1
+    },
+    {
+      "month": "2026-09",
       "subject": "State agencies (existing): insurance and financial services",
       "count": 2
     },
@@ -229464,7 +229489,7 @@
     {
       "month": "2026-09",
       "subject": "State agencies (existing): state",
-      "count": 1
+      "count": 5
     },
     {
       "month": "2026-09",
@@ -229489,7 +229514,12 @@
     {
       "month": "2026-09",
       "subject": "State and Local Government",
-      "count": 3
+      "count": 6
+    },
+    {
+      "month": "2026-09",
+      "subject": "State: identification cards",
+      "count": 2
     },
     {
       "month": "2026-09",
@@ -229508,6 +229538,11 @@
     },
     {
       "month": "2026-09",
+      "subject": "Technology",
+      "count": 1
+    },
+    {
+      "month": "2026-09",
       "subject": "Trade: consumer goods and services",
       "count": 1
     },
@@ -229519,17 +229554,17 @@
     {
       "month": "2026-09",
       "subject": "Traffic Offenses",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-09",
       "subject": "Traffic control: driver license",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-09",
       "subject": "Transportation",
-      "count": 3
+      "count": 5
     },
     {
       "month": "2026-09",
@@ -229544,6 +229579,11 @@
     {
       "month": "2026-09",
       "subject": "Vehicles: bicycles",
+      "count": 1
+    },
+    {
+      "month": "2026-09",
+      "subject": "Vehicles: registration plates",
       "count": 1
     },
     {
