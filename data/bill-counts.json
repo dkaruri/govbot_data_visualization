@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T14:17:38Z",
+  "generated_at": "2026-09-27T15:03:17Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -110,7 +110,7 @@
     {
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 3159
+      "count": 3161
     },
     {
       "repo": "mp-legislation",
@@ -183,11 +183,6 @@
       "count": 304
     },
     {
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 5538
-    },
-    {
       "repo": "ri-legislation",
       "state": "RI",
       "count": 3011
@@ -206,11 +201,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 9112
-    },
-    {
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 19161
     },
     {
       "repo": "ut-legislation",
@@ -250,23 +240,7 @@
   ],
   "monthly_totals": [
     {
-      "month": "2005-01",
-      "count": 1
-    },
-    {
       "month": "2015-11",
-      "count": 1
-    },
-    {
-      "month": "2021-02",
-      "count": 1
-    },
-    {
-      "month": "2021-10",
-      "count": 1
-    },
-    {
-      "month": "2024-02",
       "count": 1
     },
     {
@@ -295,118 +269,94 @@
     },
     {
       "month": "2025-01",
-      "count": 25485
+      "count": 23202
     },
     {
       "month": "2025-02",
-      "count": 22904
+      "count": 21043
     },
     {
       "month": "2025-03",
-      "count": 11324
+      "count": 9603
     },
     {
       "month": "2025-04",
-      "count": 6919
+      "count": 5452
     },
     {
       "month": "2025-05",
-      "count": 4992
+      "count": 3516
     },
     {
       "month": "2025-06",
-      "count": 2806
+      "count": 1535
     },
     {
       "month": "2025-07",
-      "count": 1613
+      "count": 468
     },
     {
       "month": "2025-08",
-      "count": 1170
+      "count": 527
     },
     {
       "month": "2025-09",
-      "count": 2489
+      "count": 1178
     },
     {
       "month": "2025-10",
-      "count": 2597
+      "count": 1808
     },
     {
       "month": "2025-11",
-      "count": 2233
+      "count": 1395
     },
     {
       "month": "2025-12",
-      "count": 6152
+      "count": 5032
     },
     {
       "month": "2026-01",
-      "count": 31035
+      "count": 30009
     },
     {
       "month": "2026-02",
-      "count": 24532
+      "count": 23504
     },
     {
       "month": "2026-03",
-      "count": 10650
+      "count": 9527
     },
     {
       "month": "2026-04",
-      "count": 6260
+      "count": 5194
     },
     {
       "month": "2026-05",
-      "count": 4982
+      "count": 3994
     },
     {
       "month": "2026-06",
-      "count": 2812
+      "count": 1640
     },
     {
       "month": "2026-07",
-      "count": 1268
+      "count": 434
     },
     {
       "month": "2026-08",
-      "count": 1030
+      "count": 333
     },
     {
       "month": "2026-09",
-      "count": 1399
+      "count": 581
     }
   ],
   "monthly_by_state": [
     {
-      "month": "2005-01",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 1
-    },
-    {
       "month": "2015-11",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 1
-    },
-    {
-      "month": "2021-02",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 1
-    },
-    {
-      "month": "2021-10",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 1
-    },
-    {
-      "month": "2024-02",
-      "repo": "pr-legislation",
-      "state": "PR",
       "count": 1
     },
     {
@@ -569,7 +519,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -621,12 +571,6 @@
     },
     {
       "month": "2025-01",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 865
-    },
-    {
-      "month": "2025-01",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 367
@@ -636,12 +580,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 1407
-    },
-    {
-      "month": "2025-01",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1417
     },
     {
       "month": "2025-01",
@@ -695,7 +633,7 @@
       "month": "2025-02",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 1111
+      "count": 1112
     },
     {
       "month": "2025-02",
@@ -783,12 +721,6 @@
     },
     {
       "month": "2025-02",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 343
-    },
-    {
-      "month": "2025-02",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 337
@@ -798,12 +730,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 1913
-    },
-    {
-      "month": "2025-02",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1519
     },
     {
       "month": "2025-02",
@@ -933,12 +859,6 @@
     },
     {
       "month": "2025-03",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 352
-    },
-    {
-      "month": "2025-03",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 265
@@ -948,12 +868,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 607
-    },
-    {
-      "month": "2025-03",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1369
     },
     {
       "month": "2025-03",
@@ -1037,7 +951,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1077,12 +991,6 @@
     },
     {
       "month": "2025-04",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 386
-    },
-    {
-      "month": "2025-04",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 317
@@ -1092,12 +1000,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 538
-    },
-    {
-      "month": "2025-04",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1082
     },
     {
       "month": "2025-04",
@@ -1215,21 +1117,9 @@
     },
     {
       "month": "2025-05",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 392
-    },
-    {
-      "month": "2025-05",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 148
-    },
-    {
-      "month": "2025-05",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1084
     },
     {
       "month": "2025-05",
@@ -1317,21 +1207,9 @@
     },
     {
       "month": "2025-06",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 193
-    },
-    {
-      "month": "2025-06",
       "repo": "tn-legislation",
       "state": "TN",
       "count": 3
-    },
-    {
-      "month": "2025-06",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1078
     },
     {
       "month": "2025-06",
@@ -1413,18 +1291,6 @@
     },
     {
       "month": "2025-07",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 23
-    },
-    {
-      "month": "2025-07",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1122
-    },
-    {
-      "month": "2025-07",
       "repo": "vi-legislation",
       "state": "VI",
       "count": 8
@@ -1487,7 +1353,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -1503,21 +1369,9 @@
     },
     {
       "month": "2025-08",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 290
-    },
-    {
-      "month": "2025-08",
       "repo": "tn-legislation",
       "state": "TN",
       "count": 2
-    },
-    {
-      "month": "2025-08",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 354
     },
     {
       "month": "2025-08",
@@ -1599,21 +1453,9 @@
     },
     {
       "month": "2025-09",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 233
-    },
-    {
-      "month": "2025-09",
       "repo": "tn-legislation",
       "state": "TN",
       "count": 3
-    },
-    {
-      "month": "2025-09",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1078
     },
     {
       "month": "2025-09",
@@ -1683,21 +1525,9 @@
     },
     {
       "month": "2025-10",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 288
-    },
-    {
-      "month": "2025-10",
       "repo": "tn-legislation",
       "state": "TN",
       "count": 14
-    },
-    {
-      "month": "2025-10",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 501
     },
     {
       "month": "2025-10",
@@ -1791,21 +1621,9 @@
     },
     {
       "month": "2025-11",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 112
-    },
-    {
-      "month": "2025-11",
       "repo": "tn-legislation",
       "state": "TN",
       "count": 11
-    },
-    {
-      "month": "2025-11",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 726
     },
     {
       "month": "2025-11",
@@ -1865,7 +1683,7 @@
       "month": "2025-12",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 1742
+      "count": 1746
     },
     {
       "month": "2025-12",
@@ -1893,12 +1711,6 @@
     },
     {
       "month": "2025-12",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 96
-    },
-    {
-      "month": "2025-12",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 327
@@ -1914,12 +1726,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 49
-    },
-    {
-      "month": "2025-12",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1028
     },
     {
       "month": "2025-12",
@@ -2051,7 +1857,7 @@
       "month": "2026-01",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 752
+      "count": 753
     },
     {
       "month": "2026-01",
@@ -2109,12 +1915,6 @@
     },
     {
       "month": "2026-01",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 385
-    },
-    {
-      "month": "2026-01",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 894
@@ -2136,12 +1936,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 1478
-    },
-    {
-      "month": "2026-01",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 642
     },
     {
       "month": "2026-01",
@@ -2225,7 +2019,7 @@
       "month": "2026-02",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 977
+      "count": 978
     },
     {
       "month": "2026-02",
@@ -2291,7 +2085,7 @@
       "month": "2026-02",
       "repo": "mo-legislation",
       "state": "MO",
-      "count": 627
+      "count": 632
     },
     {
       "month": "2026-02",
@@ -2355,12 +2149,6 @@
     },
     {
       "month": "2026-02",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 292
-    },
-    {
-      "month": "2026-02",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 1082
@@ -2382,12 +2170,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 1682
-    },
-    {
-      "month": "2026-02",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 742
     },
     {
       "month": "2026-02",
@@ -2583,12 +2365,6 @@
     },
     {
       "month": "2026-03",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 205
-    },
-    {
-      "month": "2026-03",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 581
@@ -2610,12 +2386,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 458
-    },
-    {
-      "month": "2026-03",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 918
     },
     {
       "month": "2026-03",
@@ -2693,7 +2463,7 @@
       "month": "2026-04",
       "repo": "ia-legislation",
       "state": "IA",
-      "count": 104
+      "count": 103
     },
     {
       "month": "2026-04",
@@ -2793,12 +2563,6 @@
     },
     {
       "month": "2026-04",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 166
-    },
-    {
-      "month": "2026-04",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 180
@@ -2814,12 +2578,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 854
-    },
-    {
-      "month": "2026-04",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 899
     },
     {
       "month": "2026-04",
@@ -2909,7 +2667,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -2943,12 +2701,6 @@
     },
     {
       "month": "2026-05",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 242
-    },
-    {
-      "month": "2026-05",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 204
@@ -2958,12 +2710,6 @@
       "repo": "sc-legislation",
       "state": "SC",
       "count": 101
-    },
-    {
-      "month": "2026-05",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 745
     },
     {
       "month": "2026-05",
@@ -3063,12 +2809,6 @@
     },
     {
       "month": "2026-06",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 237
-    },
-    {
-      "month": "2026-06",
       "repo": "ri-legislation",
       "state": "RI",
       "count": 70
@@ -3078,12 +2818,6 @@
       "repo": "sc-legislation",
       "state": "SC",
       "count": 36
-    },
-    {
-      "month": "2026-06",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 935
     },
     {
       "month": "2026-07",
@@ -3146,18 +2880,6 @@
       "count": 74
     },
     {
-      "month": "2026-07",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 26
-    },
-    {
-      "month": "2026-07",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 808
-    },
-    {
       "month": "2026-08",
       "repo": "ca-legislation",
       "state": "CA",
@@ -3207,21 +2929,9 @@
     },
     {
       "month": "2026-08",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 255
-    },
-    {
-      "month": "2026-08",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 86
-    },
-    {
-      "month": "2026-08",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 442
     },
     {
       "month": "2026-09",
@@ -3234,6 +2944,12 @@
       "repo": "mi-legislation",
       "state": "MI",
       "count": 173
+    },
+    {
+      "month": "2026-09",
+      "repo": "mo-legislation",
+      "state": "MO",
+      "count": 2
     },
     {
       "month": "2026-09",
@@ -3267,21 +2983,9 @@
     },
     {
       "month": "2026-09",
-      "repo": "pr-legislation",
-      "state": "PR",
-      "count": 153
-    },
-    {
-      "month": "2026-09",
       "repo": "sc-legislation",
       "state": "SC",
       "count": 3
-    },
-    {
-      "month": "2026-09",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 667
     }
   ],
   "trending_subjects": [
@@ -65178,7 +64882,7 @@
     {
       "month": "2025-02",
       "subject": "banks",
-      "count": 5
+      "count": 4
     },
     {
       "month": "2025-02",
@@ -65557,11 +65261,6 @@
     },
     {
       "month": "2025-02",
-      "subject": "bylaws",
-      "count": 1
-    },
-    {
-      "month": "2025-02",
       "subject": "cable systems",
       "count": 3
     },
@@ -65803,7 +65502,7 @@
     {
       "month": "2025-02",
       "subject": "charter schools",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2025-02",
@@ -65933,7 +65632,7 @@
     {
       "month": "2025-02",
       "subject": "citizenship",
-      "count": 3
+      "count": 4
     },
     {
       "month": "2025-02",
@@ -65963,7 +65662,7 @@
     {
       "month": "2025-02",
       "subject": "civics",
-      "count": 5
+      "count": 6
     },
     {
       "month": "2025-02",
@@ -66133,7 +65832,7 @@
     {
       "month": "2025-02",
       "subject": "college student aid commission",
-      "count": 8
+      "count": 9
     },
     {
       "month": "2025-02",
@@ -67038,7 +66737,7 @@
     {
       "month": "2025-02",
       "subject": "curricula",
-      "count": 40
+      "count": 41
     },
     {
       "month": "2025-02",
@@ -67903,12 +67602,12 @@
     {
       "month": "2025-02",
       "subject": "education board",
-      "count": 11
+      "count": 12
     },
     {
       "month": "2025-02",
       "subject": "education department",
-      "count": 35
+      "count": 36
     },
     {
       "month": "2025-02",
@@ -68888,7 +68587,7 @@
     {
       "month": "2025-02",
       "subject": "financial institutions",
-      "count": 15
+      "count": 14
     },
     {
       "month": "2025-02",
@@ -69743,7 +69442,7 @@
     {
       "month": "2025-02",
       "subject": "high school equivalency diplomas",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2025-02",
@@ -70323,7 +70022,7 @@
     {
       "month": "2025-02",
       "subject": "innovation zone schools",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-02",
@@ -70578,7 +70277,7 @@
     {
       "month": "2025-02",
       "subject": "iowa code",
-      "count": 4
+      "count": 5
     },
     {
       "month": "2025-02",
@@ -70908,7 +70607,7 @@
     {
       "month": "2025-02",
       "subject": "legal publications",
-      "count": 3
+      "count": 4
     },
     {
       "month": "2025-02",
@@ -71573,7 +71272,7 @@
     {
       "month": "2025-02",
       "subject": "meetings",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2025-02",
@@ -71678,7 +71377,7 @@
     {
       "month": "2025-02",
       "subject": "military",
-      "count": 9
+      "count": 10
     },
     {
       "month": "2025-02",
@@ -73228,7 +72927,7 @@
     {
       "month": "2025-02",
       "subject": "private education",
-      "count": 31
+      "count": 32
     },
     {
       "month": "2025-02",
@@ -74323,7 +74022,7 @@
     {
       "month": "2025-02",
       "subject": "residence",
-      "count": 4
+      "count": 5
     },
     {
       "month": "2025-02",
@@ -74693,7 +74392,7 @@
     {
       "month": "2025-02",
       "subject": "scholarships",
-      "count": 7
+      "count": 8
     },
     {
       "month": "2025-02",
@@ -74713,7 +74412,7 @@
     {
       "month": "2025-02",
       "subject": "school boards",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2025-02",
@@ -74733,17 +74432,12 @@
     {
       "month": "2025-02",
       "subject": "school districts",
-      "count": 92
+      "count": 93
     },
     {
       "month": "2025-02",
       "subject": "school finance",
-      "count": 18
-    },
-    {
-      "month": "2025-02",
-      "subject": "school libraries",
-      "count": 1
+      "count": 17
     },
     {
       "month": "2025-02",
@@ -74828,7 +74522,7 @@
     {
       "month": "2025-02",
       "subject": "schools",
-      "count": 81
+      "count": 83
     },
     {
       "month": "2025-02",
@@ -75673,7 +75367,7 @@
     {
       "month": "2025-02",
       "subject": "students",
-      "count": 77
+      "count": 79
     },
     {
       "month": "2025-02",
@@ -76393,7 +76087,7 @@
     {
       "month": "2025-02",
       "subject": "transportation",
-      "count": 10
+      "count": 11
     },
     {
       "month": "2025-02",
@@ -76523,7 +76217,7 @@
     {
       "month": "2025-02",
       "subject": "tuition",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2025-02",
@@ -191458,7 +191152,7 @@
     {
       "month": "2026-02",
       "subject": "agricultural products",
-      "count": 11
+      "count": 10
     },
     {
       "month": "2026-02",
@@ -192868,7 +192562,7 @@
     {
       "month": "2026-02",
       "subject": "civil procedure",
-      "count": 18
+      "count": 19
     },
     {
       "month": "2026-02",
@@ -194338,7 +194032,7 @@
     {
       "month": "2026-02",
       "subject": "dissolution of marriage",
-      "count": 2
+      "count": 3
     },
     {
       "month": "2026-02",
@@ -194418,7 +194112,7 @@
     {
       "month": "2026-02",
       "subject": "domestic relations",
-      "count": 12
+      "count": 13
     },
     {
       "month": "2026-02",
@@ -195988,7 +195682,7 @@
     {
       "month": "2026-02",
       "subject": "grain",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -196642,11 +196336,6 @@
     },
     {
       "month": "2026-02",
-      "subject": "indemnity",
-      "count": 1
-    },
-    {
-      "month": "2026-02",
       "subject": "indications",
       "count": 1
     },
@@ -197253,7 +196942,12 @@
     {
       "month": "2026-02",
       "subject": "law enforcement",
-      "count": 27
+      "count": 28
+    },
+    {
+      "month": "2026-02",
+      "subject": "law enforcement academy council",
+      "count": 1
     },
     {
       "month": "2026-02",
@@ -197768,7 +197462,7 @@
     {
       "month": "2026-02",
       "subject": "marketing",
-      "count": 3
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -198238,7 +197932,7 @@
     {
       "month": "2026-02",
       "subject": "names",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-02",
@@ -223228,7 +222922,7 @@
     {
       "month": "2026-04",
       "subject": "biofuels",
-      "count": 2
+      "count": 1
     },
     {
       "month": "2026-04",
@@ -223743,7 +223437,7 @@
     {
       "month": "2026-04",
       "subject": "fuel taxes",
-      "count": 2
+      "count": 1
     },
     {
       "month": "2026-04",
@@ -224618,7 +224312,7 @@
     {
       "month": "2026-04",
       "subject": "tax credits",
-      "count": 7
+      "count": 6
     },
     {
       "month": "2026-04",
