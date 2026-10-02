@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T16:47:26Z",
+  "generated_at": "2026-10-02T16:11:23Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -100,7 +100,7 @@
     {
       "repo": "mi-legislation",
       "state": "MI",
-      "count": 4195
+      "count": 4211
     },
     {
       "repo": "mn-legislation",
@@ -150,7 +150,7 @@
     {
       "repo": "nj-legislation",
       "state": "NJ",
-      "count": 10980
+      "count": 11062
     },
     {
       "repo": "nm-legislation",
@@ -170,7 +170,7 @@
     {
       "repo": "oh-legislation",
       "state": "OH",
-      "count": 2574
+      "count": 2577
     },
     {
       "repo": "ok-legislation",
@@ -201,11 +201,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 9112
-    },
-    {
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 19186
     },
     {
       "repo": "ut-legislation",
@@ -274,91 +269,91 @@
     },
     {
       "month": "2025-01",
-      "count": 24620
+      "count": 23202
     },
     {
       "month": "2025-02",
-      "count": 22561
+      "count": 21042
     },
     {
       "month": "2025-03",
-      "count": 10972
+      "count": 9603
     },
     {
       "month": "2025-04",
-      "count": 6533
+      "count": 5452
     },
     {
       "month": "2025-05",
-      "count": 4600
+      "count": 3516
     },
     {
       "month": "2025-06",
-      "count": 2613
+      "count": 1535
     },
     {
       "month": "2025-07",
-      "count": 1590
+      "count": 468
     },
     {
       "month": "2025-08",
-      "count": 880
+      "count": 527
     },
     {
       "month": "2025-09",
-      "count": 2256
+      "count": 1178
     },
     {
       "month": "2025-10",
-      "count": 2309
+      "count": 1808
     },
     {
       "month": "2025-11",
-      "count": 2121
+      "count": 1395
     },
     {
       "month": "2025-12",
-      "count": 6060
+      "count": 5032
     },
     {
       "month": "2026-01",
-      "count": 30651
+      "count": 30009
     },
     {
       "month": "2026-02",
-      "count": 24246
+      "count": 23504
     },
     {
       "month": "2026-03",
-      "count": 10445
+      "count": 9527
     },
     {
       "month": "2026-04",
-      "count": 6093
+      "count": 5194
     },
     {
       "month": "2026-05",
-      "count": 4740
+      "count": 3994
     },
     {
       "month": "2026-06",
-      "count": 2575
+      "count": 1640
     },
     {
       "month": "2026-07",
-      "count": 1242
+      "count": 434
     },
     {
       "month": "2026-08",
-      "count": 775
+      "count": 333
     },
     {
       "month": "2026-09",
-      "count": 1376
+      "count": 684
     },
     {
       "month": "2026-10",
-      "count": 1
+      "count": 123
     }
   ],
   "monthly_by_state": [
@@ -528,7 +523,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -589,12 +584,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 1407
-    },
-    {
-      "month": "2025-01",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1417
     },
     {
       "month": "2025-01",
@@ -748,12 +737,6 @@
     },
     {
       "month": "2025-02",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1519
-    },
-    {
-      "month": "2025-02",
       "repo": "vi-legislation",
       "state": "VI",
       "count": 24
@@ -892,12 +875,6 @@
     },
     {
       "month": "2025-03",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1369
-    },
-    {
-      "month": "2025-03",
       "repo": "vi-legislation",
       "state": "VI",
       "count": 9
@@ -978,7 +955,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1027,12 +1004,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 538
-    },
-    {
-      "month": "2025-04",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1082
     },
     {
       "month": "2025-04",
@@ -1156,12 +1127,6 @@
     },
     {
       "month": "2025-05",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1084
-    },
-    {
-      "month": "2025-05",
       "repo": "vi-legislation",
       "state": "VI",
       "count": 9
@@ -1252,12 +1217,6 @@
     },
     {
       "month": "2025-06",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1078
-    },
-    {
-      "month": "2025-06",
       "repo": "vi-legislation",
       "state": "VI",
       "count": 5
@@ -1336,12 +1295,6 @@
     },
     {
       "month": "2025-07",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1122
-    },
-    {
-      "month": "2025-07",
       "repo": "vi-legislation",
       "state": "VI",
       "count": 8
@@ -1404,7 +1357,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -1423,12 +1376,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 2
-    },
-    {
-      "month": "2025-08",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 354
     },
     {
       "month": "2025-08",
@@ -1516,12 +1463,6 @@
     },
     {
       "month": "2025-09",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1078
-    },
-    {
-      "month": "2025-09",
       "repo": "ut-legislation",
       "state": "UT",
       "count": 20
@@ -1591,12 +1532,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 14
-    },
-    {
-      "month": "2025-10",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 501
     },
     {
       "month": "2025-10",
@@ -1693,12 +1628,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 11
-    },
-    {
-      "month": "2025-11",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 726
     },
     {
       "month": "2025-11",
@@ -1801,12 +1730,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 49
-    },
-    {
-      "month": "2025-12",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 1028
     },
     {
       "month": "2025-12",
@@ -2017,12 +1940,6 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 1478
-    },
-    {
-      "month": "2026-01",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 642
     },
     {
       "month": "2026-01",
@@ -2260,12 +2177,6 @@
     },
     {
       "month": "2026-02",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 742
-    },
-    {
-      "month": "2026-02",
       "repo": "ut-legislation",
       "state": "UT",
       "count": 280
@@ -2482,12 +2393,6 @@
     },
     {
       "month": "2026-03",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 918
-    },
-    {
-      "month": "2026-03",
       "repo": "ut-legislation",
       "state": "UT",
       "count": 9
@@ -2680,12 +2585,6 @@
     },
     {
       "month": "2026-04",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 899
-    },
-    {
-      "month": "2026-04",
       "repo": "vt-legislation",
       "state": "VT",
       "count": 60
@@ -2772,7 +2671,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -2815,12 +2714,6 @@
       "repo": "sc-legislation",
       "state": "SC",
       "count": 101
-    },
-    {
-      "month": "2026-05",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 745
     },
     {
       "month": "2026-05",
@@ -2931,12 +2824,6 @@
       "count": 36
     },
     {
-      "month": "2026-06",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 935
-    },
-    {
       "month": "2026-07",
       "repo": "ca-legislation",
       "state": "CA",
@@ -2997,12 +2884,6 @@
       "count": 74
     },
     {
-      "month": "2026-07",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 808
-    },
-    {
       "month": "2026-08",
       "repo": "ca-legislation",
       "state": "CA",
@@ -3055,12 +2936,6 @@
       "repo": "sc-legislation",
       "state": "SC",
       "count": 86
-    },
-    {
-      "month": "2026-08",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 442
     },
     {
       "month": "2026-09",
@@ -3117,16 +2992,22 @@
       "count": 3
     },
     {
-      "month": "2026-09",
-      "repo": "usa-legislation",
-      "state": "USA",
-      "count": 692
-    },
-    {
       "month": "2026-10",
       "repo": "mi-legislation",
       "state": "MI",
-      "count": 1
+      "count": 17
+    },
+    {
+      "month": "2026-10",
+      "repo": "nj-legislation",
+      "state": "NJ",
+      "count": 103
+    },
+    {
+      "month": "2026-10",
+      "repo": "oh-legislation",
+      "state": "OH",
+      "count": 3
     }
   ],
   "trending_subjects": [
@@ -235633,6 +235514,501 @@
     {
       "month": "2026-09",
       "subject": "Women: other",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "AGRICULTURE",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "ALCOHOLIC BE",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "ANIMALS",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "CHILDREN",
+      "count": 3
+    },
+    {
+      "month": "2026-10",
+      "subject": "CIVIL ACTION",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "CIVIL RIGHTS",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "COMMEMORATIO",
+      "count": 6
+    },
+    {
+      "month": "2026-10",
+      "subject": "COMMERCE",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "COMMISSIONS",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "CONSUMER AFF",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "CRIM PROCED",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "CRIMES",
+      "count": 6
+    },
+    {
+      "month": "2026-10",
+      "subject": "CURRICULA",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Campaign finance: advertising",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Campaign finance: public disclosure",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Communications: social media",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Corrections: prisoners",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Counties: employees and officers",
+      "count": 3
+    },
+    {
+      "month": "2026-10",
+      "subject": "Criminal procedure: sentencing guidelines",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "DEVEL DISAB",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "DISABLED",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "ED HEALTH",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "EDUCATION",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "ELECTIONS",
+      "count": 4
+    },
+    {
+      "month": "2026-10",
+      "subject": "ENERGY",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "ENVIRONMENT",
+      "count": 7
+    },
+    {
+      "month": "2026-10",
+      "subject": "Economic development: other",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Elections: election officials",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Elections: offenses",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Elections: other",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Elections: polling places",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Energy: alternative sources",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Environmental protection: air pollution",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Environmental protection: pollution prevention",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "FISH",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "FOOD",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Family law: child support",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Family law: paternity",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "HEALTH",
+      "count": 6
+    },
+    {
+      "month": "2026-10",
+      "subject": "HEALTH INSUR",
+      "count": 3
+    },
+    {
+      "month": "2026-10",
+      "subject": "HEALTH PROF",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "HIGHLANDS",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "HUMAN SVCS",
+      "count": 5
+    },
+    {
+      "month": "2026-10",
+      "subject": "Housing and Real Property",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Human services: fraud",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Human services: services or financial assistance",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "INCOME TAX",
+      "count": 3
+    },
+    {
+      "month": "2026-10",
+      "subject": "JUDGES",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "JUDICIARY",
+      "count": 4
+    },
+    {
+      "month": "2026-10",
+      "subject": "LABOR",
+      "count": 3
+    },
+    {
+      "month": "2026-10",
+      "subject": "LAND USE",
+      "count": 3
+    },
+    {
+      "month": "2026-10",
+      "subject": "LEGISLATURE",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "LOC GOVT",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Local Government",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "MARIJUANA",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "MEDICAID",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "MEMORIALIZAT",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "MINORITY",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "MOTOR VEHICL",
+      "count": 4
+    },
+    {
+      "month": "2026-10",
+      "subject": "MUNICIPALITI",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "MV OFFENSES",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "MV REGULATIO",
+      "count": 4
+    },
+    {
+      "month": "2026-10",
+      "subject": "Mental health: patients",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Military affairs: other",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "NJ HISTORY",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "PENSIONS POL",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "PENSIONS TEA",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "PHARMACEUTIC",
+      "count": 3
+    },
+    {
+      "month": "2026-10",
+      "subject": "POLICE",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "PROPERTY",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "PUB ASSIST",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "PUB SAFETY",
+      "count": 5
+    },
+    {
+      "month": "2026-10",
+      "subject": "PUB UTIL TAX",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "PUBLIC TRANS",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "PUBLIC UTIL",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "SALES TAX",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "SCH BOARDS",
+      "count": 8
+    },
+    {
+      "month": "2026-10",
+      "subject": "SCH FACILITI",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "SCH TRANS",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "SCI AND TECH",
+      "count": 4
+    },
+    {
+      "month": "2026-10",
+      "subject": "SPORTS",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "STATE AID",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "STATE BUDGT",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "STATE GOVT",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "SUPPL APPROP",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "State agencies (existing): attorney general",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "State agencies (existing): corrections",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "State agencies (existing): environment, Great Lakes, and energy",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "State and Local Government",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "TAXATION",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "TELEVISION",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "TERRORISM",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "TRANSPORT",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Taxation",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Traffic control: traffic regulation",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Transportation: transportation network companies",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "UNEMPL COMP",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "VETERANS",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Vehicles: trucks",
       "count": 1
     }
   ]
