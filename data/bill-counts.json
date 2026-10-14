@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T17:18:06Z",
+  "generated_at": "2026-10-14T14:48:59Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -115,7 +115,7 @@
     {
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 341
+      "count": 343
     },
     {
       "repo": "ms-legislation",
@@ -170,7 +170,7 @@
     {
       "repo": "oh-legislation",
       "state": "OH",
-      "count": 2580
+      "count": 2587
     },
     {
       "repo": "ok-legislation",
@@ -269,7 +269,7 @@
     },
     {
       "month": "2025-01",
-      "count": 23203
+      "count": 23202
     },
     {
       "month": "2025-02",
@@ -281,7 +281,7 @@
     },
     {
       "month": "2025-04",
-      "count": 5451
+      "count": 5452
     },
     {
       "month": "2025-05",
@@ -297,7 +297,7 @@
     },
     {
       "month": "2025-08",
-      "count": 526
+      "count": 527
     },
     {
       "month": "2025-09",
@@ -333,7 +333,7 @@
     },
     {
       "month": "2026-05",
-      "count": 3995
+      "count": 3994
     },
     {
       "month": "2026-06",
@@ -353,7 +353,7 @@
     },
     {
       "month": "2026-10",
-      "count": 258
+      "count": 267
     }
   ],
   "monthly_by_state": [
@@ -523,7 +523,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -955,7 +955,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1357,7 +1357,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -2671,7 +2671,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -2999,6 +2999,12 @@
     },
     {
       "month": "2026-10",
+      "repo": "mp-legislation",
+      "state": "MP",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
       "repo": "nj-legislation",
       "state": "NJ",
       "count": 234
@@ -3007,7 +3013,7 @@
       "month": "2026-10",
       "repo": "oh-legislation",
       "state": "OH",
-      "count": 6
+      "count": 13
     }
   ],
   "trending_subjects": [
@@ -235538,6 +235544,11 @@
     },
     {
       "month": "2026-10",
+      "subject": "Administrative Procedure",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
       "subject": "BUS TAXES",
       "count": 3
     },
@@ -235639,7 +235650,7 @@
     {
       "month": "2026-10",
       "subject": "Crimes, Corrections, and Law Enforcement",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-10",
@@ -235728,6 +235739,11 @@
     },
     {
       "month": "2026-10",
+      "subject": "Elections",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
       "subject": "Elections: election officials",
       "count": 1
     },
@@ -235789,6 +235805,21 @@
     {
       "month": "2026-10",
       "subject": "Family law: paternity",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Firearms",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Gambling",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "General Assembly",
       "count": 1
     },
     {
@@ -235919,7 +235950,7 @@
     {
       "month": "2026-10",
       "subject": "Local Government",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-10",
@@ -236118,6 +236149,21 @@
     },
     {
       "month": "2026-10",
+      "subject": "Special Designations",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "State Government",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "State Symbols",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
       "subject": "State agencies (existing): attorney general",
       "count": 1
     },
@@ -236134,7 +236180,7 @@
     {
       "month": "2026-10",
       "subject": "State and Local Government",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-10",
@@ -236159,7 +236205,7 @@
     {
       "month": "2026-10",
       "subject": "Taxation",
-      "count": 1
+      "count": 2
     },
     {
       "month": "2026-10",
