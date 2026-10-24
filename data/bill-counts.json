@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T14:34:56Z",
+  "generated_at": "2026-10-24T13:42:08Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -100,7 +100,7 @@
     {
       "repo": "mi-legislation",
       "state": "MI",
-      "count": 4230
+      "count": 4237
     },
     {
       "repo": "mn-legislation",
@@ -269,7 +269,7 @@
     },
     {
       "month": "2025-01",
-      "count": 23203
+      "count": 23202
     },
     {
       "month": "2025-02",
@@ -281,7 +281,7 @@
     },
     {
       "month": "2025-04",
-      "count": 5451
+      "count": 5452
     },
     {
       "month": "2025-05",
@@ -297,7 +297,7 @@
     },
     {
       "month": "2025-08",
-      "count": 526
+      "count": 527
     },
     {
       "month": "2025-09",
@@ -333,7 +333,7 @@
     },
     {
       "month": "2026-05",
-      "count": 3995
+      "count": 3994
     },
     {
       "month": "2026-06",
@@ -353,7 +353,7 @@
     },
     {
       "month": "2026-10",
-      "count": 482
+      "count": 489
     }
   ],
   "monthly_by_state": [
@@ -523,7 +523,7 @@
       "month": "2025-01",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 13
+      "count": 12
     },
     {
       "month": "2025-01",
@@ -955,7 +955,7 @@
       "month": "2025-04",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 16
+      "count": 17
     },
     {
       "month": "2025-04",
@@ -1357,7 +1357,7 @@
       "month": "2025-08",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 21
+      "count": 22
     },
     {
       "month": "2025-08",
@@ -2671,7 +2671,7 @@
       "month": "2026-05",
       "repo": "mp-legislation",
       "state": "MP",
-      "count": 10
+      "count": 9
     },
     {
       "month": "2026-05",
@@ -2995,7 +2995,7 @@
       "month": "2026-10",
       "repo": "mi-legislation",
       "state": "MI",
-      "count": 36
+      "count": 43
     },
     {
       "month": "2026-10",
@@ -235570,7 +235570,7 @@
     {
       "month": "2026-10",
       "subject": "Agriculture: other",
-      "count": 1
+      "count": 3
     },
     {
       "month": "2026-10",
@@ -235685,6 +235685,16 @@
     {
       "month": "2026-10",
       "subject": "Campaign finance: public disclosure",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Civil procedure: civil actions",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Civil procedure: statute of limitations",
       "count": 1
     },
     {
@@ -236029,6 +236039,21 @@
     },
     {
       "month": "2026-10",
+      "subject": "Individual income tax: credit",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Individual income tax: other",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Insurance: health benefits",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
       "subject": "Insurance: no-fault",
       "count": 1
     },
@@ -236105,6 +236130,11 @@
     {
       "month": "2026-10",
       "subject": "Law Enforcement",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Legislature: legislators",
       "count": 1
     },
     {
@@ -236274,7 +236304,22 @@
     },
     {
       "month": "2026-10",
+      "subject": "Property tax: assessments",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
       "subject": "Property: conveyance of state property",
+      "count": 1
+    },
+    {
+      "month": "2026-10",
+      "subject": "Property: recording",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "subject": "Public employees and officers: compensation and benefits",
       "count": 1
     },
     {
