@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T16:13:53Z",
+  "generated_at": "2026-10-31T15:40:31Z",
   "source": "https://chihacknight.github.io/govbot/",
   "rows": [
     {
@@ -218,6 +218,11 @@
       "count": 1718
     },
     {
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 3411
+    },
+    {
       "repo": "wi-legislation",
       "state": "WI",
       "count": 2751
@@ -260,23 +265,23 @@
     },
     {
       "month": "2024-12",
-      "count": 4225
+      "count": 4512
     },
     {
       "month": "2025-01",
-      "count": 22218
+      "count": 23381
     },
     {
       "month": "2025-02",
-      "count": 27065
+      "count": 27517
     },
     {
       "month": "2025-03",
-      "count": 9814
+      "count": 9901
     },
     {
       "month": "2025-04",
-      "count": 5552
+      "count": 5638
     },
     {
       "month": "2025-05",
@@ -308,19 +313,19 @@
     },
     {
       "month": "2025-12",
-      "count": 4957
+      "count": 5252
     },
     {
       "month": "2026-01",
-      "count": 28901
+      "count": 29797
     },
     {
       "month": "2026-02",
-      "count": 23410
+      "count": 23519
     },
     {
       "month": "2026-03",
-      "count": 9816
+      "count": 9852
     },
     {
       "month": "2026-04",
@@ -447,6 +452,12 @@
       "repo": "tn-legislation",
       "state": "TN",
       "count": 63
+    },
+    {
+      "month": "2024-12",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 287
     },
     {
       "month": "2025-01",
@@ -591,6 +602,12 @@
       "repo": "vt-legislation",
       "state": "VT",
       "count": 211
+    },
+    {
+      "month": "2025-01",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 1163
     },
     {
       "month": "2025-01",
@@ -744,6 +761,12 @@
     },
     {
       "month": "2025-02",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 452
+    },
+    {
+      "month": "2025-02",
       "repo": "wi-legislation",
       "state": "WI",
       "count": 193
@@ -882,6 +905,12 @@
     },
     {
       "month": "2025-03",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 87
+    },
+    {
+      "month": "2025-03",
       "repo": "wi-legislation",
       "state": "WI",
       "count": 155
@@ -1011,6 +1040,12 @@
       "repo": "vt-legislation",
       "state": "VT",
       "count": 92
+    },
+    {
+      "month": "2025-04",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 86
     },
     {
       "month": "2025-04",
@@ -1752,6 +1787,12 @@
     },
     {
       "month": "2025-12",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 295
+    },
+    {
+      "month": "2025-12",
       "repo": "wi-legislation",
       "state": "WI",
       "count": 245
@@ -1959,6 +2000,12 @@
       "repo": "vt-legislation",
       "state": "VT",
       "count": 543
+    },
+    {
+      "month": "2026-01",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 896
     },
     {
       "month": "2026-01",
@@ -2190,6 +2237,12 @@
     },
     {
       "month": "2026-02",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 109
+    },
+    {
+      "month": "2026-02",
       "repo": "wi-legislation",
       "state": "WI",
       "count": 289
@@ -2397,6 +2450,12 @@
       "repo": "vt-legislation",
       "state": "VT",
       "count": 65
+    },
+    {
+      "month": "2026-03",
+      "repo": "wa-legislation",
+      "state": "WA",
+      "count": 36
     },
     {
       "month": "2026-03",
